@@ -216,6 +216,10 @@ body {
 	text-shadow: 1px 1px 1px rgba(255,255,255, .5); 
 	font-family: 'Open Sans';
 }
+header h1 {
+	font-family: 'Crete Round', serif;
+}
+
 #container {
 	margin-right: auto;
 	margin-left: auto;
@@ -236,7 +240,10 @@ body {
 	height: 4em;
 	-webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 1);
 	-moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 1);
+/*
 	box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 1);
+*/
+	font-family: 'Crete Round', serif;
 	position: relative;
 	z-index: 6;
 }
@@ -271,7 +278,7 @@ body {
 	background-color: purple;
 }
 #content {
-	width: 95%;
+	width: 90%;
 	height: 100%;
 	margin-right: auto;
 	margin-left: auto;

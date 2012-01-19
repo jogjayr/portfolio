@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Crete+Round|Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
   
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -44,7 +44,7 @@
 				<li class='menu_item'>
 					<a href='projects.html'>Projects</a>
 				</li>
-				<li class='menu_item'>
+				<li id='current' class='menu_item'>
 					<a href='resume.html'>Resume</a>
 				</li>
 				<li class='menu_item'>
@@ -53,9 +53,56 @@
 			</ul>
 		</div>
 		<div id='content'>
-			<p>This is my personal website.</p>
-			<p>I'm currently busy with my venture <a href='http://kanj.us'>Kanjus</a></p>
-			
+			<header>
+				<h1>
+					Resume
+				</h1>
+			</header>
+			<header>
+				<h2>
+					Education
+				</h2>
+			</header>
+			<div class='resume_section'>
+				<ul>
+					<li>
+						MS Digital Media, Georgia Tech, Atlanta - GPA 3.8
+					</li>
+					<li>
+						BE Information Technology, University of Mumbai, Fr. C Rodrigues Institute of Technology - Aggegate 66.7%, Graduated with distinction
+					</li>
+				</ul>
+			</div>
+			<header>
+				<h2>
+					Work
+				</h2>
+			</header>
+			<div class='resume_section'>
+				<ul>
+					<li>
+						June 2011 to present - Co-founder and managing member at Jajavy, LLC
+					</li>
+					<li>
+						August 2011 to present - Part-time web developer at Georgia Tech
+					</li>
+					<li>
+						August 2010 to August 2011 - Graduate research assistant at Georgia Tech
+					</li>
+					<li>
+						May 2010 to August 2010 - Summer intern at Siemens Corporate Research, Princeton
+					</li>
+					<li>
+						September 2009 to May 2010 - Graduate research assistant at Georgia Tech
+					</li>
+					<li>
+						November 2008 to July 2009 - Assistant Systems Engineer, Trainee at Tata Consultancy Services
+					</li>
+				</ul>
+			</div>
+			<div id='date'>
+				
+			</div>
 		</div>
 		<footer>
 				Copyright Jayraj Jog, 2012
@@ -76,7 +123,67 @@
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
   <!-- end scripts -->
-
+  <script>
+	var timelineDraw = function() {
+		var timeDiv = $("#date"),
+			jobHistory = [
+							{
+								"org": "Jajavy, LLC", 
+								"start_month": "June", 
+								"start_year": "2011", 
+								"end_month": "Present", 
+								"end_year":"Present", 
+								"title": "Co-founder, lead developer", 
+								"description": "Responsible for programming at Jajavy"
+							},
+							{
+								"org": "Georgia Tech", 
+								"start_month": "August", 
+								"start_year": "2011", 
+								"end_month": "Present", 
+								"end_year":"Present", 
+								"title": "Part-time web developer", 
+								"description": "Worked on MS HCI (<a href='http://mshci.gatech.edu'>http://mshci.gatech.edu</a>) and Interactivity <a href='http://interactivity.cc.gatech.edu'>http://interactivity.cc.gatech.edu</a> main and mobile websites"
+							},
+							{
+								"org": "Georgia Tech", 
+								"start_month": "August", 
+								"start_year": "2010", 
+								"end_month": "August", 
+								"end_year":"2011", 
+								"title": "Graduate research assistant", 
+								"description": "Java programmer on the InTEL (<a href='http://intel.gatech.edu'>http://intel.gatech.edu</a>) project. Code available on Github <a href='https://github.com/jogjayr/InTEL-Project'>https://github.com/jogjayr/InTEL-Project</a>"
+							},
+							{
+								"org": "Siemens Corporate Research", 
+								"start_month": "May", 
+								"start_year": "2010", 
+								"end_month": "August", 
+								"end_year":"2010", 
+								"title": "Summer intern", 
+								"description": "Created a virtual world-based knowledge management system"
+							},
+							{
+								"org": "", 
+								"start_month": "", 
+								"start_year": "", 
+								"end_month": "", 
+								"end_year":"", 
+								"title": "", 
+								"description": ""
+							},
+							{
+								"org": "", 
+								"start_month": "", 
+								"start_year": "", 
+								"end_month": "", 
+								"end_year":"", 
+								"title": "", 
+								"description": ""
+							}
+						];
+	}
+  </script>
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet -->

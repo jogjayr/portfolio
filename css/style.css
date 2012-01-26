@@ -221,9 +221,6 @@ td { vertical-align: top; }
 
 html {
 	background-image: url(../img/bg-paper.png);
-/*
-	url(../img/bg-13.png),url(../img/bg-23.png),url(../img/bg-17.png),url(../img/bg-37.png);
-*/
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -351,6 +348,7 @@ header h1, header h2, h1, h2, .project_title {
 .tag {
 	cursor: pointer;
 	text-decoration: underline;
+	text-transform: lowercase;
 }
 .tag:hover {
 	background: gray;

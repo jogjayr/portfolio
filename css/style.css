@@ -351,6 +351,9 @@ header h1, header h2, h1, h2, .project_title {
 .tag:active {
 	color: white;
 }
+header.project_header {
+	clear: left;
+}
 /**
  * End projects.html
  */
@@ -360,8 +363,13 @@ header h1, header h2, h1, h2, .project_title {
  */
 .resume_list{
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
+.resume_list li {
+	margin-bottom: 10px;
+}
 /**
  * End resume.html
  */

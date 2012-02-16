@@ -217,13 +217,8 @@ td { vertical-align: top; }
     font-style: normal;
 }
 
-
-
 html {
 	background-image: url(../img/bg-paper.png);
-/*
-	url(../img/bg-13.png),url(../img/bg-23.png),url(../img/bg-17.png),url(../img/bg-37.png);
-*/
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -239,8 +234,6 @@ header h1, header h2, h1, h2, .project_title {
 #container {
 	margin-right: auto;
 	margin-left: auto;
-	width: 960px;
-	min-height: 1000px;
 	margin-top: 1em;
 }
 #inner-box {
@@ -256,7 +249,7 @@ header h1, header h2, h1, h2, .project_title {
 #body-text {
 	float: left;
 	margin-left: 1em;
-	width: 65%;
+	/*width: 65%;*/
 }
 #nav {
 	background: #f0b7a1; /* Old browsers */
@@ -362,12 +355,22 @@ header h1, header h2, h1, h2, .project_title {
  * End projects.html
  */
 
+/**
+ * Start resume.html
+ */
+ 
+
+/**
+ * End resume.html
+ */
+
 /*
  * Start contact.html
  */
 .social_list {
 	list-style: none;
 	padding-left: 0;
+	text-overflow: ellipsis;
 }
 
 
@@ -378,9 +381,12 @@ header h1, header h2, h1, h2, .project_title {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 300px) {
   /* Style adjustments for viewports 480px and over go here */
-
+	.menu_item {
+		margin-left: 0.6em;
+		font-size: 1em;
+	}
 }
 
 @media only screen and (min-width: 768px) {

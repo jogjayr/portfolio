@@ -358,7 +358,9 @@ header h1, header h2, h1, h2, .project_title {
 /**
  * Start resume.html
  */
- 
+.resume_list{
+	list-style: none;
+}
 
 /**
  * End resume.html

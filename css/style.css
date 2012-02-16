@@ -336,10 +336,10 @@ header h1, header h2, h1, h2, .project_title {
 .project_text {
 	float: left;
 	margin-left: 1em;
-	width: 70%;
+	width: 90%;
 }
 .project_title {
-	font-size: 2em;
+	font-size: 1.7em;
 }
 .tag {
 	cursor: pointer;

@@ -344,6 +344,7 @@ header h1, header h2, h1, h2, .project_title {
 .tag {
 	cursor: pointer;
 	text-decoration: underline;
+	text-transform: lowercase;
 }
 .tag:hover {
 	background: gray;

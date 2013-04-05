@@ -233,6 +233,7 @@ header h1, header h2, h1, h2, .project_title {
 
 #container {
 	margin: 1em auto 0 auto;
+	padding-bottom: 1em;
 }
 #inner-box {
 	width: 100%;
@@ -303,7 +304,7 @@ header h1, header h2, h1, h2, .project_title {
 #content {
 	width: 90%;
 	min-height: 1000px;
-	margin-top: -1em auto 2em;
+	margin: -1em auto 2em;
 	padding: 2em 0 2em 2em;
 	background: white;
 	position: relative;

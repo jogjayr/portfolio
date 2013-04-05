@@ -280,13 +280,12 @@ header h1, header h2, h1, h2, .project_title {
 #menu {
 	list-style-type: none;
 	padding: 0;
-	margin-right: 5em;
-	margin-top: 0.7em;
+	margin: 0.7em 5em 0 0;
 	float:right;
 }
 .menu_item {
 	float: left;
-	margin-left: 1em;
+	margin-right: 1em;
 	font-size: 1.7em;
 }
 .menu_item a {
@@ -294,12 +293,12 @@ header h1, header h2, h1, h2, .project_title {
 	color: black;
 }
 .menu_item:hover {
-	background-color: #FE57A1;
+	border-bottom: 2px solid white;
 	opacity: 0.7;
 }
 #current {
-	background-color: #FE57A1;
 	opacity: 0.7;
+	border-bottom: 2px solid white;
 }
 #content {
 	width: 90%;

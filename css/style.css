@@ -308,7 +308,7 @@ header h1, header h2, h1, h2, .project_title {
 #content {
 	width: 90%;
 	min-height: 1000px;
-	margin: 2em;
+	margin: auto;
 	padding: 2em 0 2em 2em;
 	background: white;
 	position: relative;
@@ -456,7 +456,24 @@ header.project_header {
   h1{display: inline;}
   p, h2, h3 { orphans: 3; widows: 3; font-weight: normal; }
   h2, h3 { page-break-after: avoid; }
+	h1 {
+  	font-size: 26px;
+  	font-weight: normal;
+  	display: inline-block;
+  	margin-right: 30px;
+  }
+  h2 {
+  	font-size: 20px;
+  }
   #nav{
   	display: none;
   }
+  .print_right {
+      display: inline-block;
+
+  }
+  #content {
+      overflow: visible;
+      font-size: 14px;
+      }
 }

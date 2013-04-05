@@ -390,7 +390,11 @@ header.project_header {
    These override the primary ('mobile first') styles
    Modify as content requires.
    ========================================================================== */
-
+@media only screen {
+	.print_only {
+		display:none;
+	}
+}
 @media only screen and (max-width: 300px) {
   /* Style adjustments for viewports 480px and over go here */
 	.menu_item {
@@ -451,4 +455,7 @@ header.project_header {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
+  #nav{
+  	display: none;
+  }
 }

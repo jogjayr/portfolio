@@ -1,0 +1,22 @@
+# This is the default format. 
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:categories/:year/:month/:day/:title 
+auto: true
+pygments: true
+var:
+  archive_path: /archive.html
+  categories_path : /categories.html
+  tags_path : /tags.html
+  rss_path: /atom.xml
+
+production_url : http://jogjayr.github.com # or your custom domain name
+title : Today I Read
+tagline : Tech links, comments, updates and more
+
+author :
+  name : Jayraj Jog
+  email : jog@jayraj.net
+  github : jogjayr
+  twitter : jayjog
+
+exclude: .rbenv-version

@@ -1,0 +1,10 @@
+
+http://jogjayr.github.com/sitemap.txt
+http://jogjayr.github.com/atom.xml
+http://jogjayr.github.com/index.html
+http://jogjayr.github.com/tags.html
+http://jogjayr.github.com/archive.html
+http://jogjayr.github.com/pages.html
+http://jogjayr.github.com/categories.html
+
+http://jogjayr.github.com/links/2012/01/18/WIRT

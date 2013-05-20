@@ -90,34 +90,64 @@
         <ul class='unstyled'>
 
   
-  <h2>Poor Little Rich Kid</h2>
+  <h2>Backbone View Collection - Part 1</h2>
   <span class='post_date'>
-	&raquo; Posted May  5, 2012
+	&raquo; Posted May 19, 2013
   </span> 
   <div>
-	<h3 id='a_rock_and_a_hard_place'>A Rock and a Hard Place</h3>
+	<p>I love <a href='http://backbonejs.org'>Backbone.js</a> for many reasons: it&#8217;s lightweight, small (it&#8217;s the first open-source library whose code I&#8217;ve actually completely read), super simple to get started with and has a very active community.</p>
 
-<p>AT&amp;T head honcho Randall Stephenson put his foot in his mouth on Wednesday, May 2, while demonstrating his commitment to shareholders.</p>
+<p>Backbone Views leave a bit to be desired because they do very little. As the <a href='http://backbonejs.org/#View'>documentation</a> itself says &#8220;Backbone views are almost more convention than they are code&#8221;.</p>
 
-<p><a href='http://www.milkeninstitute.org/events/gcprogram.taf?function=detail&amp;EvID=3314&amp;eventid=GC12'>At a conference</a> hosted by the <a href='http://www.milkeninstitute.org'>Milken institute</a> the New York Times <a href='http://bits.blogs.nytimes.com/2012/05/04/att-randall-stephenson/'>reported</a> Stephenson bemoaning the decision to give iPhone users all-you-can-eat data.</p>
-<hr />
-<blockquote>
-<p>My only regret was how we introduced pricing in the beginning, because how did we introduce pricing? Thirty dollars and you get all you can eat. And it’s a variable cost model. Every additional megabyte you use in this network, I have to invest capital.</p>
-</blockquote>
-<hr />
-<p>Not much sympathy for him there. The iPhone was exclusive to AT&amp;T for 4 years. People who hated AT&amp;T would become subscribers because of the iPhone. And when its massive data sucking caused dropped calls for everyone, people not only put up with it, they <em>bought their own mini cell towers and operated them at their own cost</em>.</p>
+<p>One particular pain point I&#8217;ve had is the inability to manage collections of views. There already exist a <a href='http://marionettejs.com/'>number</a> of <a href='http://chaplinjs.org/'>solutions</a> that provide you a nice way to build applications with more structure that what Backbone alone will give you. I decided to write Backbone ViewCollection for 2 reasons:</p>
 
-<p>Not content with pissing off the masses with his griping about having to spend so fuckin&#8217; much to provide service to his customers, Stephenson railed about the unfairness of it all, with iMessage eating into his sweet, sweet texting margins. Woe is me, indeed.</p>
-<hr />
-<blockquote>
-<p>You lie awake at night worrying about what is that which will disrupt your business model. Apple iMessage is a classic example. If you’re using iMessage, you’re not using one of our messaging services, right? That’s disruptive to our messaging revenue stream</p>
-</blockquote>
-<hr />
-<p>That clearly didn&#8217;t go down well with commenters on the article either. Because text messages are so ridiculously lucrative for carriers, and carry such high margins, it&#8217;s not even funny.</p>
+<p>1. I wanted to write it myself, to learn how 2. A Backbone ViewCollection provides a better way of managing Backbone views while still keeping the application pure Backbone</p>
 
-<p>Randall Stephenson was speaking at an industry conference surrounded by fellow worshippers of capitalism (the Milken institute &#8220;believes in the power of capital markets to solve urgent social and economic challenges and improve lives&#8221;). His remarks were clearly right for the setting, and right by his shareholders, but he might&#8217;ve stopped to consider the impression formed with a broader audience, who clearly see this as greedy bellyaching. (Just see the comments on the article)</p>
+<p>*** What should a View Collection Do? ***</p>
+
+<p>These are the things I wanted from a View Collection class:</p>
+
+<p>1. Renders a Backbone Collection into a Backbone View that is composed of further, child views. Each model in the collection corresponds to a child view 2. A <code>render</code> method that calls <code>render</code> on all its child elements 3. Handles <code>delegateEvent</code> and all the other crap associated with it 4. Manages child view creation and destruction and prevents memory leaks or zombie views 5. Child views can be anything - as long as they are nodes of the parent view</p>
+
+<p>Here is an example of what such a class would do:</p>
+
+<pre><code>`var Pokemon = Backbone.Model.extend({});
+ var Pokedex = new Backbone.Collection({
+ 	model: Pokemon;
+ });
+ var PokemonView = Backbone.View.extend({
+	render: function() {
+		//some code to render a Pokemon&#39;s info
+	}
+ });
+ var PokedexView = new Backbone.ViewCollection({
+	childView: PokemonView,
+	collection: Pokedex
+ });
+ //This will create an instance of PokemonView for each model in
+ //the Pokedex collection and call its render() method
+ PokedexView.render();`</code></pre>
+
+<p>In the coming blog posts, I will describe how I made my ViewCollection.</p>
   </div>
   <h2>Recent Posts</h2>
+  
+  
+
+  
+  <li>
+	  <p class='post_title'>
+		  <a href='/links/2012/05/05/WIRT'>Poor Little Rich Kid</a>
+	  </p>
+	  <p>
+		  <span class='post_date'>
+			  &raquo; May  5, 2012
+		  </span> 
+	  </p>
+	  <p class='teaser'>
+		  How to piss off your customers whilst doing your job<a href='/links/2012/05/05/WIRT'> Read more...</a>
+	  </p>
+	</li>
   
   
 
@@ -150,23 +180,6 @@
 	  </p>
 	  <p class='teaser'>
 		  More bubble talk too<a href='/links/2012/04/16/WIRT'> Read more...</a>
-	  </p>
-	</li>
-  
-  
-
-  
-  <li>
-	  <p class='post_title'>
-		  <a href='/links/2012/04/13/WIRT'>Did you Expect any Better from TV?</a>
-	  </p>
-	  <p>
-		  <span class='post_date'>
-			  &raquo; April 13, 2012
-		  </span> 
-	  </p>
-	  <p class='teaser'>
-		  Reality TV exists for reasons unrelated to quality<a href='/links/2012/04/13/WIRT'> Read more...</a>
 	  </p>
 	</li>
   

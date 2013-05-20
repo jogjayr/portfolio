@@ -4,13 +4,54 @@
  <title>Today I Read</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2013-05-17T23:32:39-07:00</updated>
+ <updated>2013-05-19T19:45:24-07:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
    <email>jog@jayraj.net</email>
  </author>
 
+ 
+ <entry>
+   <title>Backbone View Collection - Part 1</title>
+   <link href="http://jayraj.net/2013/05/19/backbone-view-collection-part-1"/>
+   <updated>2013-05-19T00:00:00-07:00</updated>
+   <id>hhttp://jayraj.net/2013/05/19/backbone-view-collection-part-1</id>
+   <content type="html">&lt;p&gt;I love &lt;a href='http://backbonejs.org'&gt;Backbone.js&lt;/a&gt; for many reasons: it&amp;#8217;s lightweight, small (it&amp;#8217;s the first open-source library whose code I&amp;#8217;ve actually completely read), super simple to get started with and has a very active community.&lt;/p&gt;
+
+&lt;p&gt;Backbone Views leave a bit to be desired because they do very little. As the &lt;a href='http://backbonejs.org/#View'&gt;documentation&lt;/a&gt; itself says &amp;#8220;Backbone views are almost more convention than they are code&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;One particular pain point I&amp;#8217;ve had is the inability to manage collections of views. There already exist a &lt;a href='http://marionettejs.com/'&gt;number&lt;/a&gt; of &lt;a href='http://chaplinjs.org/'&gt;solutions&lt;/a&gt; that provide you a nice way to build applications with more structure that what Backbone alone will give you. I decided to write Backbone ViewCollection for 2 reasons:&lt;/p&gt;
+
+&lt;p&gt;1. I wanted to write it myself, to learn how 2. A Backbone ViewCollection provides a better way of managing Backbone views while still keeping the application pure Backbone&lt;/p&gt;
+
+&lt;p&gt;*** What should a View Collection Do? ***&lt;/p&gt;
+
+&lt;p&gt;These are the things I wanted from a View Collection class:&lt;/p&gt;
+
+&lt;p&gt;1. Renders a Backbone Collection into a Backbone View that is composed of further, child views. Each model in the collection corresponds to a child view 2. A &lt;code&gt;render&lt;/code&gt; method that calls &lt;code&gt;render&lt;/code&gt; on all its child elements 3. Handles &lt;code&gt;delegateEvent&lt;/code&gt; and all the other crap associated with it 4. Manages child view creation and destruction and prevents memory leaks or zombie views 5. Child views can be anything - as long as they are nodes of the parent view&lt;/p&gt;
+
+&lt;p&gt;Here is an example of what such a class would do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;`var Pokemon = Backbone.Model.extend({});
+ var Pokedex = new Backbone.Collection({
+ 	model: Pokemon;
+ });
+ var PokemonView = Backbone.View.extend({
+	render: function() {
+		//some code to render a Pokemon&amp;#39;s info
+	}
+ });
+ var PokedexView = new Backbone.ViewCollection({
+	childView: PokemonView,
+	collection: Pokedex
+ });
+ //This will create an instance of PokemonView for each model in
+ //the Pokedex collection and call its render() method
+ PokedexView.render();`&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the coming blog posts, I will describe how I made my ViewCollection.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Poor Little Rich Kid</title>
@@ -154,7 +195,7 @@
 &lt;p&gt;There isn&amp;#8217;t a single idea in this whole enterprise that doesn&amp;#8217;t have a faint touch of the ridiculous. From gems like: &amp;#8220;If government agencies were authorized to create a major program to grab stolen data leaving the country, they could drastically reduce today’s wholesale theft of American corporate secrets&amp;#8221;, to the only flaw in the plan being &amp;#8220;privacy advocates&amp;#8221;. The only person who stands to benefit from any such legislation is Richard A Clarke himself. An expert like him could stand to mint a small fortune from consulting engagements, if such legislation or executive orders were considered. It seems about par for a man who has Amazon affiliate links to his own book on his own &lt;a href='http://www.richardaclarke.net/'&gt;website&lt;/a&gt; (seriously, who does that?).&lt;/p&gt;
 
 &lt;p&gt;Interestingly, Mr. Clarke unwittingly offers a much simpler solution himself. He notes that the SEC recommends companies to disclose breaches in security. Perhaps it should be made mandatory. The only ways to get CEOs to pay attention to regulatory issues are the threat of jail time, or a drop in the stock price. Repeated breaches, when revealed by force of SEC regulation, will do plenty to ensure the latter.&lt;/p&gt;
-&lt;iframe height='315' src='http://www.youtube.com/embed/HGVeJ7w4R6U' frameborder='0' width='420' allowfullscreen='allowfullscreen' /&gt;</content>
+&lt;iframe height='315' width='420' frameborder='0' src='http://www.youtube.com/embed/HGVeJ7w4R6U' allowfullscreen='allowfullscreen' /&gt;</content>
  </entry>
  
  <entry>
@@ -387,7 +428,7 @@
    <updated>2012-01-28T00:00:00-08:00</updated>
    <id>hhttp://jayraj.net/links/2012/01/28/WIRT</id>
    <content type="html">&lt;h3 id='youre_not_you_when_youre_being_paid_by_someone_else'&gt;You&amp;#8217;re Not You When You&amp;#8217;re Being Paid By Someone Else&lt;/h3&gt;
-&lt;blockquote class='twitter-tweet tw-align-center'&gt;&lt;p&gt;You’re not you when you’re hungry @&lt;a href='https://twitter.com/snickersUk'&gt;snickersUk&lt;/a&gt;#hungry#spon   &lt;a href='http://t.co/PUZnINcl' title='http://lockerz.com/s/177408824'&gt;lockerz.com/s/177408824&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rio Ferdinand (@rioferdy5) &lt;a href='https://twitter.com/rioferdy5/status/161840144628973568' data-datetime='2012-01-24T15:57:51+00:00'&gt;January 24, 2012&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class='twitter-tweet tw-align-center'&gt;&lt;p&gt;You’re not you when you’re hungry @&lt;a href='https://twitter.com/snickersUk'&gt;snickersUk&lt;/a&gt;#hungry#spon   &lt;a href='http://t.co/PUZnINcl' title='http://lockerz.com/s/177408824'&gt;lockerz.com/s/177408824&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rio Ferdinand (@rioferdy5) &lt;a data-datetime='2012-01-24T15:57:51+00:00' href='https://twitter.com/rioferdy5/status/161840144628973568'&gt;January 24, 2012&lt;/a&gt;&lt;/blockquote&gt;
 &lt;p&gt;Rio Ferdinand of Manchester United (sigh) was responsible for a storm in a tempest (shield your eyes if you expect cliches used correctly) today when he promoted a Snickers bar on his Twitter feed.&lt;/p&gt;
 
 &lt;p&gt;Paul Sawers at &lt;a href='http://thenextweb.com/twitter/2012/01/28/brands-may-be-paying-celebrities-for-tweets-but-whos-paying-twitter/'&gt;The Next Web&lt;/a&gt; wrote that the UK authorities might have a problem with any implied (ie, not explicit) endorsement as being unfair. It&amp;#8217;s safe to say that won&amp;#8217;t happen (as many commenters on the post pointed out), because of the #spon hashtag, coupled with the fact that it was so out of the ordinary for Rio (sample tweet: &amp;#8220;Morning tweeps! Back from training! Wazza in my #pocket. #stayonyourfeet #piershasmoobs&amp;#8221;)&lt;/p&gt;
@@ -573,7 +614,7 @@
 &lt;h3 id='better_than_the_real_sport_video_of_the_day'&gt;&amp;#8220;Better than the real sport&amp;#8221; video of the day&lt;/h3&gt;
 
 &lt;p&gt;Zorbing is fun. Football is fun. Obviously you have to put them together. Right?&lt;/p&gt;
-&lt;iframe height='315' src='http://www.youtube.com/embed/xIl45f6i1PU' frameborder='0' width='560' allowfullscreen='allowfullscreen' /&gt;</content>
+&lt;iframe height='315' width='560' frameborder='0' src='http://www.youtube.com/embed/xIl45f6i1PU' allowfullscreen='allowfullscreen' /&gt;</content>
  </entry>
  
  

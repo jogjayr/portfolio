@@ -2,6 +2,7 @@
 layout: post
 title: Backbone View Collection - Part 1
 ---
+
 I love [Backbone.js](http://backbonejs.org) for many reasons: it's lightweight, small (it's the first open-source library whose code I've actually completely read), super simple to get started with and has a very active community.
 
 Backbone Views leave a bit to be desired because they do very little. As the [documentation](http://backbonejs.org/#View) itself says "Backbone views are almost more convention than they are code". 
@@ -11,7 +12,7 @@ One particular pain point I've had is the inability to manage collections of vie
   1. I wanted to write it myself, to learn how
   2. A Backbone ViewCollection provides a better way of managing Backbone views while still keeping the application pure Backbone
 
-*** What should a View Collection Do? ***
+***What should a View Collection Do?***
 
 These are the things I wanted from a View Collection class:
 

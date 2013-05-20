@@ -99,13 +99,27 @@
 
 <p>One particular pain point I&#8217;ve had is the inability to manage collections of views. There already exist a <a href='http://marionettejs.com/'>number</a> of <a href='http://chaplinjs.org/'>solutions</a> that provide you a nice way to build applications with more structure that what Backbone alone will give you. I decided to write Backbone ViewCollection for 2 reasons:</p>
 
-<p>1. I wanted to write it myself, to learn how 2. A Backbone ViewCollection provides a better way of managing Backbone views while still keeping the application pure Backbone</p>
+<ol>
+<li>I wanted to write it myself, to learn how</li>
+
+<li>A Backbone ViewCollection provides a better way of managing Backbone views while still keeping the application pure Backbone</li>
+</ol>
 
 <p><strong><em>What should a View Collection Do?</em></strong></p>
 
 <p>These are the things I wanted from a View Collection class:</p>
 
-<p>1. Renders a Backbone Collection into a Backbone View that is composed of further, child views. Each model in the collection corresponds to a child view 2. A <code>render</code> method that calls <code>render</code> on all its child elements 3. Handles <code>delegateEvent</code> and all the other crap associated with it 4. Manages child view creation and destruction and prevents memory leaks or zombie views 5. Child views can be anything - as long as they are nodes of the parent view</p>
+<ol>
+<li>Renders a Backbone Collection into a Backbone View that is composed of further, child views. Each model in the collection corresponds to a child view</li>
+
+<li>A <code>render</code> method that calls <code>render</code> on all its child elements</li>
+
+<li>Handles <code>delegateEvent</code> and all the other crap associated with it</li>
+
+<li>Manages child view creation and destruction and prevents memory leaks or zombie views</li>
+
+<li>Child views can be anything - as long as they are nodes of the parent view</li>
+</ol>
 
 <p>Here is an example of what such a class would do:</p>
 

@@ -24,22 +24,22 @@ These are the things I wanted from a View Collection class:
 
 Here is an example of what such a class would do:
 
-    `var Pokemon = Backbone.Model.extend({});
-     var Pokedex = new Backbone.Collection({
-     	model: Pokemon;
- 	 });
- 	 var PokemonView = Backbone.View.extend({
+    var Pokemon = Backbone.Model.extend({});
+    var Pokedex = new Backbone.Collection({
+    	model: Pokemon;
+ 	});
+ 	var PokemonView = Backbone.View.extend({
 		render: function() {
 			//some code to render a Pokemon's info
 		}
- 	 });
- 	 var PokedexView = new Backbone.ViewCollection({
+ 	});
+ 	var PokedexView = new Backbone.ViewCollection({
 		childView: PokemonView,
 		collection: Pokedex
- 	 });
- 	 //This will create an instance of PokemonView for each model in
- 	 //the Pokedex collection and call its render() method
- 	 PokedexView.render();`
+ 	});
+ 	//This will create an instance of PokemonView for each model in
+ 	//the Pokedex collection and call its render() method
+ 	PokedexView.render();
 
 In the coming blog posts, I will describe how I made my ViewCollection.
 

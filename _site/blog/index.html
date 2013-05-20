@@ -125,22 +125,22 @@
 
 <p>Here is an example of what such a class would do:</p>
 
-<pre><code>`var Pokemon = Backbone.Model.extend({});
- var Pokedex = new Backbone.Collection({
- 	model: Pokemon;
- });
- var PokemonView = Backbone.View.extend({
+<pre><code>var Pokemon = Backbone.Model.extend({});
+var Pokedex = new Backbone.Collection({
+	model: Pokemon;
+});
+var PokemonView = Backbone.View.extend({
 	render: function() {
 		//some code to render a Pokemon&#39;s info
 	}
- });
- var PokedexView = new Backbone.ViewCollection({
+});
+var PokedexView = new Backbone.ViewCollection({
 	childView: PokemonView,
 	collection: Pokedex
- });
- //This will create an instance of PokemonView for each model in
- //the Pokedex collection and call its render() method
- PokedexView.render();`</code></pre>
+});
+//This will create an instance of PokemonView for each model in
+//the Pokedex collection and call its render() method
+PokedexView.render();</code></pre>
 
 <p>In the coming blog posts, I will describe how I made my ViewCollection.</p>
   </div>

@@ -4,7 +4,7 @@
  <title>Today I Read</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2013-05-19T19:51:45-07:00</updated>
+ <updated>2013-05-19T19:58:28-07:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
@@ -47,22 +47,22 @@
 
 &lt;p&gt;Here is an example of what such a class would do:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;`var Pokemon = Backbone.Model.extend({});
- var Pokedex = new Backbone.Collection({
- 	model: Pokemon;
- });
- var PokemonView = Backbone.View.extend({
+&lt;pre&gt;&lt;code&gt;var Pokemon = Backbone.Model.extend({});
+var Pokedex = new Backbone.Collection({
+	model: Pokemon;
+});
+var PokemonView = Backbone.View.extend({
 	render: function() {
 		//some code to render a Pokemon&amp;#39;s info
 	}
- });
- var PokedexView = new Backbone.ViewCollection({
+});
+var PokedexView = new Backbone.ViewCollection({
 	childView: PokemonView,
 	collection: Pokedex
- });
- //This will create an instance of PokemonView for each model in
- //the Pokedex collection and call its render() method
- PokedexView.render();`&lt;/code&gt;&lt;/pre&gt;
+});
+//This will create an instance of PokemonView for each model in
+//the Pokedex collection and call its render() method
+PokedexView.render();&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;In the coming blog posts, I will describe how I made my ViewCollection.&lt;/p&gt;</content>
  </entry>
@@ -209,7 +209,7 @@
 &lt;p&gt;There isn&amp;#8217;t a single idea in this whole enterprise that doesn&amp;#8217;t have a faint touch of the ridiculous. From gems like: &amp;#8220;If government agencies were authorized to create a major program to grab stolen data leaving the country, they could drastically reduce today’s wholesale theft of American corporate secrets&amp;#8221;, to the only flaw in the plan being &amp;#8220;privacy advocates&amp;#8221;. The only person who stands to benefit from any such legislation is Richard A Clarke himself. An expert like him could stand to mint a small fortune from consulting engagements, if such legislation or executive orders were considered. It seems about par for a man who has Amazon affiliate links to his own book on his own &lt;a href='http://www.richardaclarke.net/'&gt;website&lt;/a&gt; (seriously, who does that?).&lt;/p&gt;
 
 &lt;p&gt;Interestingly, Mr. Clarke unwittingly offers a much simpler solution himself. He notes that the SEC recommends companies to disclose breaches in security. Perhaps it should be made mandatory. The only ways to get CEOs to pay attention to regulatory issues are the threat of jail time, or a drop in the stock price. Repeated breaches, when revealed by force of SEC regulation, will do plenty to ensure the latter.&lt;/p&gt;
-&lt;iframe allowfullscreen='allowfullscreen' width='420' src='http://www.youtube.com/embed/HGVeJ7w4R6U' frameborder='0' height='315' /&gt;</content>
+&lt;iframe src='http://www.youtube.com/embed/HGVeJ7w4R6U' allowfullscreen='allowfullscreen' frameborder='0' width='420' height='315' /&gt;</content>
  </entry>
  
  <entry>
@@ -585,13 +585,13 @@
    <id>hhttp://jayraj.net/links/2012/01/20/WIRT</id>
    <content type="html">&lt;h3 id='fallout_from_the_megaupload_takedown'&gt;Fallout from the Megaupload takedown&lt;/h3&gt;
 
-&lt;p&gt;At Ars Technica, &lt;a href='http://arstechnica.com/tech-policy/news/2012/01/why-the-feds-smashed-megaupload.ars' title='Why the feds smashed Megaupload'&gt;Nate Anderson&lt;/a&gt;, does a great piece on analyzing the specific timing of the Megaupload crackdown, with his sources implying that it wasn&amp;#8217;t a coincidence that it happened a day after Congress&amp;#8217; SOPA/PIPA debacle. &lt;a href='http://en.wikipedia.org/wiki/Kim_Schmitz' title='Kim Dotcom'&gt;Kim Dotcom&lt;/a&gt; is a great name, it has to be said.&lt;/p&gt;
+&lt;p&gt;At Ars Technica, &lt;a title='Why the feds smashed Megaupload' href='http://arstechnica.com/tech-policy/news/2012/01/why-the-feds-smashed-megaupload.ars'&gt;Nate Anderson&lt;/a&gt;, does a great piece on analyzing the specific timing of the Megaupload crackdown, with his sources implying that it wasn&amp;#8217;t a coincidence that it happened a day after Congress&amp;#8217; SOPA/PIPA debacle. &lt;a title='Kim Dotcom' href='http://en.wikipedia.org/wiki/Kim_Schmitz'&gt;Kim Dotcom&lt;/a&gt; is a great name, it has to be said.&lt;/p&gt;
 
-&lt;p&gt;Over at CNET &lt;a href='http://news.cnet.com/8301-31322_3-57362437-256/anonymous-goes-nuclear-everybody-loses/' title='Anonymous Megaupload'&gt;Molly Wood&lt;/a&gt; criticized Anonymous&amp;#8217; actions in DDoS-ing the Justice Department, MPAA, RIAA, Boy Scouts of America and half a dozen nuns at a mission in Costa Rica. IMHO, no one except Justice Department, MPAA and RIAA employees, and reporters doing research, ever accesses those websites. Despite a scary looking screenshot from &lt;a href='http://www.akamai.com/html/technology/dataviz1.html,' title='Akamai Internet Monitor'&gt;Akamai&amp;#8217;s Internet monitor&lt;/a&gt;, it&amp;#8217;s evident that the US has actually had fewer attacks in the last 24 hours (not sure how Akamai defines an &amp;#8220;attack&amp;#8221;) than parts of the world that have had nothing to do with these events, to wit Brazil, Peru, China, Russia and Taiwan.&lt;/p&gt;
+&lt;p&gt;Over at CNET &lt;a title='Anonymous Megaupload' href='http://news.cnet.com/8301-31322_3-57362437-256/anonymous-goes-nuclear-everybody-loses/'&gt;Molly Wood&lt;/a&gt; criticized Anonymous&amp;#8217; actions in DDoS-ing the Justice Department, MPAA, RIAA, Boy Scouts of America and half a dozen nuns at a mission in Costa Rica. IMHO, no one except Justice Department, MPAA and RIAA employees, and reporters doing research, ever accesses those websites. Despite a scary looking screenshot from &lt;a title='Akamai Internet Monitor' href='http://www.akamai.com/html/technology/dataviz1.html,'&gt;Akamai&amp;#8217;s Internet monitor&lt;/a&gt;, it&amp;#8217;s evident that the US has actually had fewer attacks in the last 24 hours (not sure how Akamai defines an &amp;#8220;attack&amp;#8221;) than parts of the world that have had nothing to do with these events, to wit Brazil, Peru, China, Russia and Taiwan.&lt;/p&gt;
 
 &lt;h3 id='googleappleadobe_poaching_antitrust_lawsuit'&gt;Google-Apple-Adobe Poaching Antitrust Lawsuit&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href='http://techcrunch.com/2012/01/19/damning-evidence-emerges-in-google-apple-no-poach-antitrust-lawsuit/' title='Google Apple Poaching'&gt;Techcrunch&lt;/a&gt; reported that the Department of Justice found documentary evidence of &amp;#8220;no-poaching&amp;#8221; agreements between some of the Valley&amp;#8217;s highest-profile companies, among them Google, Apple, Adobe, Intuit, Lucasfilm, Pixar and Intel.&lt;/p&gt;
+&lt;p&gt;&lt;a title='Google Apple Poaching' href='http://techcrunch.com/2012/01/19/damning-evidence-emerges-in-google-apple-no-poach-antitrust-lawsuit/'&gt;Techcrunch&lt;/a&gt; reported that the Department of Justice found documentary evidence of &amp;#8220;no-poaching&amp;#8221; agreements between some of the Valley&amp;#8217;s highest-profile companies, among them Google, Apple, Adobe, Intuit, Lucasfilm, Pixar and Intel.&lt;/p&gt;
 
 &lt;p&gt;The companies agreed not only to not steal each others&amp;#8217; employees but even notify an applicant&amp;#8217;s current employers, a move one would associate with the likes of Foxconn or Soviet Russia. Presumably, the offending employees are then sent off to gulags/iPhone-assembly factories with n-hexane.&lt;/p&gt;
 
@@ -619,7 +619,7 @@
 
 &lt;h3 id='julian_assange_on_rolling_stone_magazine'&gt;Julian Assange on Rolling Stone magazine&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href='http://www.rollingstone.com/politics/news/julian-assange-the-rolling-stone-interview-20120118' title='Assange on Rolling Stone'&gt;Julian Assange&lt;/a&gt;, founder of Wikileaks, international hacker and possesor of the coolest white hair around, spoke to Rolling Stones magazine. Some of what he says is sensible: &amp;#8220;people determined to be in a democracy, to be their own governments, must have the power that knowledge will bring&amp;#8221;. Some of it is exactly the kind of thing that a rumoured egomaniac would say: &amp;#8220;I don&amp;#8217;t think I have a massive ego&amp;#8221;. Great interview.&lt;/p&gt;
+&lt;p&gt;&lt;a title='Assange on Rolling Stone' href='http://www.rollingstone.com/politics/news/julian-assange-the-rolling-stone-interview-20120118'&gt;Julian Assange&lt;/a&gt;, founder of Wikileaks, international hacker and possesor of the coolest white hair around, spoke to Rolling Stones magazine. Some of what he says is sensible: &amp;#8220;people determined to be in a democracy, to be their own governments, must have the power that knowledge will bring&amp;#8221;. Some of it is exactly the kind of thing that a rumoured egomaniac would say: &amp;#8220;I don&amp;#8217;t think I have a massive ego&amp;#8221;. Great interview.&lt;/p&gt;
 
 &lt;h3 id='instagram_on_wp7_before_android'&gt;Instagram on WP7 before Android?&lt;/h3&gt;
 
@@ -628,7 +628,7 @@
 &lt;h3 id='better_than_the_real_sport_video_of_the_day'&gt;&amp;#8220;Better than the real sport&amp;#8221; video of the day&lt;/h3&gt;
 
 &lt;p&gt;Zorbing is fun. Football is fun. Obviously you have to put them together. Right?&lt;/p&gt;
-&lt;iframe allowfullscreen='allowfullscreen' width='560' src='http://www.youtube.com/embed/xIl45f6i1PU' frameborder='0' height='315' /&gt;</content>
+&lt;iframe src='http://www.youtube.com/embed/xIl45f6i1PU' allowfullscreen='allowfullscreen' frameborder='0' width='560' height='315' /&gt;</content>
  </entry>
  
  

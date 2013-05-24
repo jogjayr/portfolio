@@ -4,7 +4,7 @@
  <title>Today I Read</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2013-05-23T23:12:26-07:00</updated>
+ <updated>2013-05-23T23:17:09-07:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
@@ -20,45 +20,45 @@
    <content type="html">&lt;p&gt;In &lt;span&gt;part 1&lt;/span&gt; of this series, I explained what I wanted from a Backbone View Collection. The first and foremost thing was a common render method:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Backbone.ViewCollection = Backbone.View.extend({
-	childViews: [],
-	render: function() {
+  childViews: [],
+  render: function() {
 
-		//The Backbone view class passed in that is 
-		//used to generate child views
-		var ItemViewClass = this.options.ItemView || Backbone.View;
+    //The Backbone view class passed in that is 
+    //used to generate child views
+    var ItemViewClass = this.options.ItemView || Backbone.View;
 
-		var me = this;
-		_(me.collection).each(function(model, index, collection) {
+    var me = this;
+    _(me.collection).each(function(model, index, collection) {
 
-			//for every model in the collection, create a new view
-			var new_item_view = new ItemViewClass({model: model});
+    //for every model in the collection, create a new view
+    var new_item_view = new ItemViewClass({model: model});
 
-			//add it to the list of child views the collection holds
-			me.childViews.push(new_item_view);
+    //add it to the list of child views the collection holds
+    me.childViews.push(new_item_view);
 
-			//also add it to the view collection&amp;#39;s own HTML element
-			me.$el.append(new_item_view.$el);
-		});
-	}
+    //also add it to the view collection&amp;#39;s own HTML element
+    me.$el.append(new_item_view.$el);
+   });
+  }
 });&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This approach carries a couple of issues. The first one I faced was actually quite silly; setting &lt;code&gt;childViews&lt;/code&gt; to an empty array in the class definition results in &lt;strong&gt;every&lt;/strong&gt; instance of that class pointing to the same array. This is quite disastrous; all the child items of every instance of ViewCollection are added to the same array. We have to fix this, and it&amp;#8217;s quite simple:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Backbone.ViewCollection = Backbone.View.extend({
-	render: function() {
-		//all the stuff we wrote above...
-	},
-	initialize: function() {
-		//this ensures every instance of ViewCollection has a fresh array of childViews
-		this.childViews = [];
-	}
+  render: function() {
+  //all the stuff we wrote above...
+  },
+  initialize: function() {
+    //this ensures every instance of ViewCollection has a fresh array of childViews
+    this.childViews = [];
+  }
 });&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;There&amp;#8217;s also another problem, and it has to do with how we pass &lt;code&gt;ItemView&lt;/code&gt; to ViewCollection. If we were to create a new ViewCollection like so:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;var PokedexView = new Backbone.ViewCollection({
-	collection: Pokedex,
-	ItemView: PokemonView 
+  collection: Pokedex,
+  ItemView: PokemonView 
 });&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;then the line:&lt;/p&gt;
@@ -68,12 +68,12 @@
 &lt;p&gt;works perfectly. The &lt;code&gt;options&lt;/code&gt; attribute of a Backbone view is composed of the object you pass into the constructor. But what if you don&amp;#8217;t call the constructor directly? Consider the following:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;var PokedexView = Backbone.ViewCollection.extend({
-	collection: Pokedex
+  collection: Pokedex
 });
 //a specific type of Pokedex that uses a grid layout
 var PokemonGridItemView = Backbone.View.extend({});
 var PokedexGridView = PokedexView.extend({
-	ItemView: PokemonGridItemView
+  ItemView: PokemonGridItemView
 });&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Now, &lt;code&gt;this.options.ItemView&lt;/code&gt; is &lt;code&gt;undefined&lt;/code&gt;. This does not bode well for being able to build complex class hierarchies with ViewCollection, so we have to modify what we wrote just a little bit:&lt;/p&gt;
@@ -92,28 +92,28 @@ var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;&lt;
 &lt;p&gt;Having learned all this, here&amp;#8217;s ViewCollection now:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Backbone.ViewCollection = Backbone.View.extend({
-	render: function() {
+  render: function() {
 
-		//The Backbone view class passed in that is 
-		//used to generate child views
-		var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
-		var collection = this.options.collection || this.collection;
-		var me = this;
-		_(collection).each(function(model, index, collection) {
+    //The Backbone view class passed in that is 
+    //used to generate child views
+    var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
+    var collection = this.options.collection || this.collection;
+    var me = this;
+    _(collection).each(function(model, index, collection) {
 
-			//for every model in the collection, create a new view
-			var new_item_view = new ItemViewClass({model: model});
+      //for every model in the collection, create a new view
+      var new_item_view = new ItemViewClass({model: model});
 
-			//add it to the list of child views the collection holds
-			me.childViews.push(new_item_view);
+      //add it to the list of child views the collection holds
+      me.childViews.push(new_item_view);
 
-			//also add it to the view collection&amp;#39;s own HTML element
-			me.$el.append(new_item_view.$el);
-		});
-	},
-	initialize: function() {
-		this.childViews = [];
-	}
+      //also add it to the view collection&amp;#39;s own HTML element
+      me.$el.append(new_item_view.$el);
+    });
+  },
+  initialize: function() {
+    this.childViews = [];
+  }
 });&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;To be continued&amp;#8230;&lt;/p&gt;</content>
@@ -316,7 +316,7 @@ PokedexView.render();&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;There isn&amp;#8217;t a single idea in this whole enterprise that doesn&amp;#8217;t have a faint touch of the ridiculous. From gems like: &amp;#8220;If government agencies were authorized to create a major program to grab stolen data leaving the country, they could drastically reduce today’s wholesale theft of American corporate secrets&amp;#8221;, to the only flaw in the plan being &amp;#8220;privacy advocates&amp;#8221;. The only person who stands to benefit from any such legislation is Richard A Clarke himself. An expert like him could stand to mint a small fortune from consulting engagements, if such legislation or executive orders were considered. It seems about par for a man who has Amazon affiliate links to his own book on his own &lt;a href='http://www.richardaclarke.net/'&gt;website&lt;/a&gt; (seriously, who does that?).&lt;/p&gt;
 
 &lt;p&gt;Interestingly, Mr. Clarke unwittingly offers a much simpler solution himself. He notes that the SEC recommends companies to disclose breaches in security. Perhaps it should be made mandatory. The only ways to get CEOs to pay attention to regulatory issues are the threat of jail time, or a drop in the stock price. Repeated breaches, when revealed by force of SEC regulation, will do plenty to ensure the latter.&lt;/p&gt;
-&lt;iframe height='315' width='420' src='http://www.youtube.com/embed/HGVeJ7w4R6U' frameborder='0' allowfullscreen='allowfullscreen' /&gt;</content>
+&lt;iframe width='420' height='315' src='http://www.youtube.com/embed/HGVeJ7w4R6U' allowfullscreen='allowfullscreen' frameborder='0' /&gt;</content>
  </entry>
  
  <entry>
@@ -735,7 +735,7 @@ PokedexView.render();&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id='better_than_the_real_sport_video_of_the_day'&gt;&amp;#8220;Better than the real sport&amp;#8221; video of the day&lt;/h3&gt;
 
 &lt;p&gt;Zorbing is fun. Football is fun. Obviously you have to put them together. Right?&lt;/p&gt;
-&lt;iframe height='315' width='560' src='http://www.youtube.com/embed/xIl45f6i1PU' frameborder='0' allowfullscreen='allowfullscreen' /&gt;</content>
+&lt;iframe width='560' height='315' src='http://www.youtube.com/embed/xIl45f6i1PU' allowfullscreen='allowfullscreen' frameborder='0' /&gt;</content>
  </entry>
  
  

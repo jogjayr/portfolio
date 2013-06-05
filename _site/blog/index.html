@@ -75,6 +75,8 @@
 
   
 
+  
+
 
 
 
@@ -90,113 +92,65 @@
         <ul class='unstyled'>
 
   
-  <h2>Backbone View Collection - Part 2</h2>
+  <h2>Backbone View Collection - Part 3</h2>
   <span class='post_date'>
-	&raquo; Posted May 22, 2013
+	&raquo; Posted June  3, 2013
   </span> 
   <div>
-	<p>In <span>part 1</span> of this series, I explained what I wanted from a Backbone View Collection. The first and foremost thing was a common render method:</p>
+	<p>In this series of posts on how I wrote a collection class for Backbone views, I covered the objectives of the enterprise in <a href='http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1'>part 1</a>. In <a href='http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-2'>part 2</a> the Backbone ViewCollection accomplished its first goal: create a lot of child views of a specified type, off of a collection passed to it.</p>
 
-<pre><code>Backbone.ViewCollection = Backbone.View.extend({
-  childViews: [],
-  render: function() {
+<p>This post will discuss how I event handling works with so many child views. I saw numerous blog posts and StackOverflow questions related to event binding when <code>empty</code> is called on a jQuery object. For me, the most important bit of knowledge was that when you do the following <a href='http://jsfiddle.net/jogjayr/3QfLc/1/'>JSFiddle</a>:</p>
 
-    //The Backbone view class passed in that is 
-    //used to generate child views
-    var ItemViewClass = this.options.ItemView || Backbone.View;
+<pre><code>var $child_el = $(&quot;#my_div&quot;).on(&quot;click&quot;, function() {
+    console.log(&quot;clicked me&quot;);
+})
+$(&quot;#parent_elem&quot;).html($child_el); //Clicking on the child will do nothing</code></pre>
 
-    var me = this;
-    _(me.collection).each(function(model, index, collection) {
+<p>The CHILD VIEW&#8217;S EVENTS ARE LOST! I suppose this is general knowledge among those familiar with the DOM&#8217;s secrets, but it was a revelation to me.</p>
 
-    //for every model in the collection, create a new view
-    var new_item_view = new ItemViewClass({model: model});
+<p>Second revelation (in fact, as I started writing this blog post), is that the child views&#8217; events actually need to delegate to the parent. Previously, I used to do the following:</p>
 
-    //add it to the list of child views the collection holds
-    me.childViews.push(new_item_view);
+<pre><code>var Backbone.ViewCollection = Backbone.View.extend({
+	//other View Collection methods here
 
-    //also add it to the view collection&#39;s own HTML element
-    me.$el.append(new_item_view.$el);
-   });
-  }
+	//delegateEvents not only re-attaches the collections&#39;s events
+	//it also re-attaches childEvents without calling them individually
+	delegateEvents: function() {
+		Backbone.View.prototype.delegateEvents.call(this);
+		_(this.childViews).each(function(view, index, childViews) {
+			view.delegateEvents();
+		});
+	}
 });</code></pre>
 
-<p>This approach carries a couple of issues. The first one I faced was actually quite silly; setting <code>childViews</code> to an empty array in the class definition results in <strong>every</strong> instance of that class pointing to the same array. This is quite disastrous; all the child items of every instance of ViewCollection are added to the same array. We have to fix this, and it&#8217;s quite simple:</p>
+<p>Thanks to <a href='http://lostechies.com/derickbailey/2011/10/11/backbone-js-getting-the-model-for-a-clicked-element/'>this blog post</a> by the inestimable Derick Bailey of KendoUI and MarionetteJS fame, I have realized that this my existing approach is COMPLETELY MORONIC. I will have to go back to the projects that inspired this library and fix it, but I will do it first here.</p>
 
-<pre><code>Backbone.ViewCollection = Backbone.View.extend({
-  render: function() {
-  //all the stuff we wrote above...
-  },
-  initialize: function() {
-    //this ensures every instance of ViewCollection has a fresh array of childViews
-    this.childViews = [];
-  }
-});</code></pre>
+<p>The reason it&#8217;s so stupid is because when you attach an event to each individual child event:</p>
 
-<p>There&#8217;s also another problem, and it has to do with how we pass <code>ItemView</code> to ViewCollection. If we were to create a new ViewCollection like so:</p>
+<ol>
+<li>Your application uses a lot more memory. Each event listener is extra overhead.</li>
 
-<pre><code>var PokedexView = new Backbone.ViewCollection({
-  collection: Pokedex,
-  ItemView: PokemonView 
-});</code></pre>
-
-<p>then the line:</p>
-
-<pre><code>var ItemViewClass = this.options.ItemView || Backbone.View;</code></pre>
-
-<p>works perfectly. The <code>options</code> attribute of a Backbone view is composed of the object you pass into the constructor. But what if you don&#8217;t call the constructor directly? Consider the following:</p>
-
-<pre><code>var PokedexView = Backbone.ViewCollection.extend({
-  collection: Pokedex
-});
-//a specific type of Pokedex that uses a grid layout
-var PokemonGridItemView = Backbone.View.extend({});
-var PokedexGridView = PokedexView.extend({
-  ItemView: PokemonGridItemView
-});</code></pre>
-
-<p>Now, <code>this.options.ItemView</code> is <code>undefined</code>. This does not bode well for being able to build complex class hierarchies with ViewCollection, so we have to modify what we wrote just a little bit:</p>
-
-<pre><code>//Either `this` is an instance of ViewCollection, in which case ItemView is an `option`
-//or `this` is an instance of a another type derived from ViewCollection
-//or use the plain-old Backbone.View class
-var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;</code></pre>
-
-<p>Same thing applies for collection. So</p>
-
-<pre><code>_(me.collection).each(...)</code></pre>
-
-<p>won&#8217;t work every time.</p>
-
-<p>Having learned all this, here&#8217;s ViewCollection now:</p>
-
-<pre><code>Backbone.ViewCollection = Backbone.View.extend({
-  render: function() {
-
-    //The Backbone view class passed in that is 
-    //used to generate child views
-    var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
-    var collection = this.options.collection || this.collection;
-    var me = this;
-    _(collection).each(function(model, index, collection) {
-
-      //for every model in the collection, create a new view
-      var new_item_view = new ItemViewClass({model: model});
-
-      //add it to the list of child views the collection holds
-      me.childViews.push(new_item_view);
-
-      //also add it to the view collection&#39;s own HTML element
-      me.$el.append(new_item_view.$el);
-    });
-  },
-  initialize: function() {
-    this.childViews = [];
-  }
-});</code></pre>
-
-<p>To be continued&#8230;</p>
+<li>The clue was in the method name <code>delegateEvent</code>. I should be using the time-tested <a href='http://davidwalsh.name/event-delegate'>event delegation pattern</a></li>
+</ol>
   </div>
   <h2>Recent Posts</h2>
+  
+  
+
+  
+  <li>
+	  <p class='post_title'>
+		  <a href='/2013/05/22/backbone-view-collection-part-2'>Backbone View Collection - Part 2</a>
+	  </p>
+	  <p>
+		  <span class='post_date'>
+			  &raquo; May 22, 2013
+		  </span> 
+	  </p>
+	  <p class='teaser'>
+		  <a href='/2013/05/22/backbone-view-collection-part-2'> Read more...</a>
+	  </p>
+	</li>
   
   
 
@@ -229,23 +183,6 @@ var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;</co
 	  </p>
 	  <p class='teaser'>
 		  How to piss off your customers whilst doing your job<a href='/links/2012/05/05/WIRT'> Read more...</a>
-	  </p>
-	</li>
-  
-  
-
-  
-  <li>
-	  <p class='post_title'>
-		  <a href='/links/2012/04/21/WIRT'>Farewell Forbes</a>
-	  </p>
-	  <p>
-		  <span class='post_date'>
-			  &raquo; April 21, 2012
-		  </span> 
-	  </p>
-	  <p class='teaser'>
-		  Logical fallacies mean it's the end of the road for the once-great magazine<a href='/links/2012/04/21/WIRT'> Read more...</a>
 	  </p>
 	</li>
   

@@ -1,0 +1,17 @@
+---
+layout: page
+title: Hashed DNA databases could be the answer to crimefighting and privacy issues
+---
+
+There's a simple solution to the [Supreme Court's ruling that taking DNA swabs of arrestees is permissible](http://www.npr.org/2013/06/03/188397999/supreme-court-rules-arrest-dna-collection-reasonable). It's a ruling that has privacy advocates [up](http://www.techdirt.com/articles/20130603/16534123300/horrifying-supreme-court-ruling-lets-police-collect-dna-because-you-might-just-be-horrible-criminal.shtml) [in](http://www.techdirt.com/articles/20130603/16534123300/horrifying-supreme-court-ruling-lets-police-collect-dna-because-you-might-just-be-horrible-criminal.shtml) [arms](http://www.aclu.org/criminal-law-reform/aclu-comment-maryland-v-king-decision).
+
+There are reasons to worry about this decision. Some are speculative, pessimistic or dystopian: it opens the door to a police state, it makes it easier for authorities to track your whereabouts and frame you. Some are genuine: DNA is private information about the very thing that makes a person who they are, and there are fears that insurance companies and even less benign parties may gain access to this information to misuse it. 
+
+Since I'm in Silicon Valley, it's almost obligatory to come up with a technological solution to this. The basic [DNA fingerprinting process](http://www.cigna.com/individualandfamilies/health-and-well-being/hw/dna-fingerprinting-in-a-criminal-investigation-zm2567.html#zm2567-sec) is a 4-step procedure that ends with a nylon membrane with a pattern on it, which can be compared to existing patterns. I propose creating a national DNA fingerprint database, similar to the one the [FBI has for regular fingerprints](http://www.fbi.gov/about-us/cjis/fingerprints_biometrics/iafis/iafis). The database should, by law, only be allowed to store a hash of a person's DNA pattern. 
+
+The benefits are obvious:
+
+1. Law enforcement has another tool to identify suspects uniquely
+2. Privacy advocates are happy because it reduces DNA information to something as devoid of external meaning as a fingerprint. A DNA hash can't betray anything about a person's ancestry, probabilities of developing medical conditions or anything else that can be gleaned from a DNA sample.
+
+Everyone wins here. Hashed databases have to be the way to go.

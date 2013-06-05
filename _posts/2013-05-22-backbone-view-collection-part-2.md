@@ -3,7 +3,7 @@ layout: post
 title: Backbone View Collection - Part 2
 ---
 
-In [part 1] of this series, I explained what I wanted from a Backbone View Collection. The first and foremost thing was a common render method:
+In [part 1](http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1) of this series, I explained what I wanted from a Backbone View Collection. The first and foremost thing was a common render method:
 
     Backbone.ViewCollection = Backbone.View.extend({
       childViews: [],

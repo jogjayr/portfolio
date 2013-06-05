@@ -4,7 +4,7 @@
  <title>Today I Read</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2013-05-23T23:17:09-07:00</updated>
+ <updated>2013-06-04T21:05:50-07:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
@@ -13,11 +13,53 @@
 
  
  <entry>
+   <title>Backbone View Collection - Part 3</title>
+   <link href="http://jayraj.net/2013/06/03/backbone-view-collection-part-3"/>
+   <updated>2013-06-03T00:00:00-07:00</updated>
+   <id>hhttp://jayraj.net/2013/06/03/backbone-view-collection-part-3</id>
+   <content type="html">&lt;p&gt;In this series of posts on how I wrote a collection class for Backbone views, I covered the objectives of the enterprise in &lt;a href='http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1'&gt;part 1&lt;/a&gt;. In &lt;a href='http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-2'&gt;part 2&lt;/a&gt; the Backbone ViewCollection accomplished its first goal: create a lot of child views of a specified type, off of a collection passed to it.&lt;/p&gt;
+
+&lt;p&gt;This post will discuss how I event handling works with so many child views. I saw numerous blog posts and StackOverflow questions related to event binding when &lt;code&gt;empty&lt;/code&gt; is called on a jQuery object. For me, the most important bit of knowledge was that when you do the following &lt;a href='http://jsfiddle.net/jogjayr/3QfLc/1/'&gt;JSFiddle&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var $child_el = $(&amp;quot;#my_div&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
+    console.log(&amp;quot;clicked me&amp;quot;);
+})
+$(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child will do nothing&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The CHILD VIEW&amp;#8217;S EVENTS ARE LOST! I suppose this is general knowledge among those familiar with the DOM&amp;#8217;s secrets, but it was a revelation to me.&lt;/p&gt;
+
+&lt;p&gt;Second revelation (in fact, as I started writing this blog post), is that the child views&amp;#8217; events actually need to delegate to the parent. Previously, I used to do the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var Backbone.ViewCollection = Backbone.View.extend({
+	//other View Collection methods here
+
+	//delegateEvents not only re-attaches the collections&amp;#39;s events
+	//it also re-attaches childEvents without calling them individually
+	delegateEvents: function() {
+		Backbone.View.prototype.delegateEvents.call(this);
+		_(this.childViews).each(function(view, index, childViews) {
+			view.delegateEvents();
+		});
+	}
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Thanks to &lt;a href='http://lostechies.com/derickbailey/2011/10/11/backbone-js-getting-the-model-for-a-clicked-element/'&gt;this blog post&lt;/a&gt; by the inestimable Derick Bailey of KendoUI and MarionetteJS fame, I have realized that this my existing approach is COMPLETELY MORONIC. I will have to go back to the projects that inspired this library and fix it, but I will do it first here.&lt;/p&gt;
+
+&lt;p&gt;The reason it&amp;#8217;s so stupid is because when you attach an event to each individual child event:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Your application uses a lot more memory. Each event listener is extra overhead.&lt;/li&gt;
+
+&lt;li&gt;The clue was in the method name &lt;code&gt;delegateEvent&lt;/code&gt;. I should be using the time-tested &lt;a href='http://davidwalsh.name/event-delegate'&gt;event delegation pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>Backbone View Collection - Part 2</title>
    <link href="http://jayraj.net/2013/05/22/backbone-view-collection-part-2"/>
    <updated>2013-05-22T00:00:00-07:00</updated>
    <id>hhttp://jayraj.net/2013/05/22/backbone-view-collection-part-2</id>
-   <content type="html">&lt;p&gt;In &lt;span&gt;part 1&lt;/span&gt; of this series, I explained what I wanted from a Backbone View Collection. The first and foremost thing was a common render method:&lt;/p&gt;
+   <content type="html">&lt;p&gt;In &lt;a href='http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1'&gt;part 1&lt;/a&gt; of this series, I explained what I wanted from a Backbone View Collection. The first and foremost thing was a common render method:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Backbone.ViewCollection = Backbone.View.extend({
   childViews: [],
@@ -316,7 +358,7 @@ PokedexView.render();&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;There isn&amp;#8217;t a single idea in this whole enterprise that doesn&amp;#8217;t have a faint touch of the ridiculous. From gems like: &amp;#8220;If government agencies were authorized to create a major program to grab stolen data leaving the country, they could drastically reduce today’s wholesale theft of American corporate secrets&amp;#8221;, to the only flaw in the plan being &amp;#8220;privacy advocates&amp;#8221;. The only person who stands to benefit from any such legislation is Richard A Clarke himself. An expert like him could stand to mint a small fortune from consulting engagements, if such legislation or executive orders were considered. It seems about par for a man who has Amazon affiliate links to his own book on his own &lt;a href='http://www.richardaclarke.net/'&gt;website&lt;/a&gt; (seriously, who does that?).&lt;/p&gt;
 
 &lt;p&gt;Interestingly, Mr. Clarke unwittingly offers a much simpler solution himself. He notes that the SEC recommends companies to disclose breaches in security. Perhaps it should be made mandatory. The only ways to get CEOs to pay attention to regulatory issues are the threat of jail time, or a drop in the stock price. Repeated breaches, when revealed by force of SEC regulation, will do plenty to ensure the latter.&lt;/p&gt;
-&lt;iframe width='420' height='315' src='http://www.youtube.com/embed/HGVeJ7w4R6U' allowfullscreen='allowfullscreen' frameborder='0' /&gt;</content>
+&lt;iframe width='420' src='http://www.youtube.com/embed/HGVeJ7w4R6U' height='315' allowfullscreen='allowfullscreen' frameborder='0' /&gt;</content>
  </entry>
  
  <entry>
@@ -549,7 +591,7 @@ PokedexView.render();&lt;/code&gt;&lt;/pre&gt;
    <updated>2012-01-28T00:00:00-08:00</updated>
    <id>hhttp://jayraj.net/links/2012/01/28/WIRT</id>
    <content type="html">&lt;h3 id='youre_not_you_when_youre_being_paid_by_someone_else'&gt;You&amp;#8217;re Not You When You&amp;#8217;re Being Paid By Someone Else&lt;/h3&gt;
-&lt;blockquote class='twitter-tweet tw-align-center'&gt;&lt;p&gt;You’re not you when you’re hungry @&lt;a href='https://twitter.com/snickersUk'&gt;snickersUk&lt;/a&gt;#hungry#spon   &lt;a title='http://lockerz.com/s/177408824' href='http://t.co/PUZnINcl'&gt;lockerz.com/s/177408824&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rio Ferdinand (@rioferdy5) &lt;a data-datetime='2012-01-24T15:57:51+00:00' href='https://twitter.com/rioferdy5/status/161840144628973568'&gt;January 24, 2012&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class='twitter-tweet tw-align-center'&gt;&lt;p&gt;You’re not you when you’re hungry @&lt;a href='https://twitter.com/snickersUk'&gt;snickersUk&lt;/a&gt;#hungry#spon   &lt;a href='http://t.co/PUZnINcl' title='http://lockerz.com/s/177408824'&gt;lockerz.com/s/177408824&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rio Ferdinand (@rioferdy5) &lt;a href='https://twitter.com/rioferdy5/status/161840144628973568' data-datetime='2012-01-24T15:57:51+00:00'&gt;January 24, 2012&lt;/a&gt;&lt;/blockquote&gt;
 &lt;p&gt;Rio Ferdinand of Manchester United (sigh) was responsible for a storm in a tempest (shield your eyes if you expect cliches used correctly) today when he promoted a Snickers bar on his Twitter feed.&lt;/p&gt;
 
 &lt;p&gt;Paul Sawers at &lt;a href='http://thenextweb.com/twitter/2012/01/28/brands-may-be-paying-celebrities-for-tweets-but-whos-paying-twitter/'&gt;The Next Web&lt;/a&gt; wrote that the UK authorities might have a problem with any implied (ie, not explicit) endorsement as being unfair. It&amp;#8217;s safe to say that won&amp;#8217;t happen (as many commenters on the post pointed out), because of the #spon hashtag, coupled with the fact that it was so out of the ordinary for Rio (sample tweet: &amp;#8220;Morning tweeps! Back from training! Wazza in my #pocket. #stayonyourfeet #piershasmoobs&amp;#8221;)&lt;/p&gt;
@@ -692,13 +734,13 @@ PokedexView.render();&lt;/code&gt;&lt;/pre&gt;
    <id>hhttp://jayraj.net/links/2012/01/20/WIRT</id>
    <content type="html">&lt;h3 id='fallout_from_the_megaupload_takedown'&gt;Fallout from the Megaupload takedown&lt;/h3&gt;
 
-&lt;p&gt;At Ars Technica, &lt;a title='Why the feds smashed Megaupload' href='http://arstechnica.com/tech-policy/news/2012/01/why-the-feds-smashed-megaupload.ars'&gt;Nate Anderson&lt;/a&gt;, does a great piece on analyzing the specific timing of the Megaupload crackdown, with his sources implying that it wasn&amp;#8217;t a coincidence that it happened a day after Congress&amp;#8217; SOPA/PIPA debacle. &lt;a title='Kim Dotcom' href='http://en.wikipedia.org/wiki/Kim_Schmitz'&gt;Kim Dotcom&lt;/a&gt; is a great name, it has to be said.&lt;/p&gt;
+&lt;p&gt;At Ars Technica, &lt;a href='http://arstechnica.com/tech-policy/news/2012/01/why-the-feds-smashed-megaupload.ars' title='Why the feds smashed Megaupload'&gt;Nate Anderson&lt;/a&gt;, does a great piece on analyzing the specific timing of the Megaupload crackdown, with his sources implying that it wasn&amp;#8217;t a coincidence that it happened a day after Congress&amp;#8217; SOPA/PIPA debacle. &lt;a href='http://en.wikipedia.org/wiki/Kim_Schmitz' title='Kim Dotcom'&gt;Kim Dotcom&lt;/a&gt; is a great name, it has to be said.&lt;/p&gt;
 
-&lt;p&gt;Over at CNET &lt;a title='Anonymous Megaupload' href='http://news.cnet.com/8301-31322_3-57362437-256/anonymous-goes-nuclear-everybody-loses/'&gt;Molly Wood&lt;/a&gt; criticized Anonymous&amp;#8217; actions in DDoS-ing the Justice Department, MPAA, RIAA, Boy Scouts of America and half a dozen nuns at a mission in Costa Rica. IMHO, no one except Justice Department, MPAA and RIAA employees, and reporters doing research, ever accesses those websites. Despite a scary looking screenshot from &lt;a title='Akamai Internet Monitor' href='http://www.akamai.com/html/technology/dataviz1.html,'&gt;Akamai&amp;#8217;s Internet monitor&lt;/a&gt;, it&amp;#8217;s evident that the US has actually had fewer attacks in the last 24 hours (not sure how Akamai defines an &amp;#8220;attack&amp;#8221;) than parts of the world that have had nothing to do with these events, to wit Brazil, Peru, China, Russia and Taiwan.&lt;/p&gt;
+&lt;p&gt;Over at CNET &lt;a href='http://news.cnet.com/8301-31322_3-57362437-256/anonymous-goes-nuclear-everybody-loses/' title='Anonymous Megaupload'&gt;Molly Wood&lt;/a&gt; criticized Anonymous&amp;#8217; actions in DDoS-ing the Justice Department, MPAA, RIAA, Boy Scouts of America and half a dozen nuns at a mission in Costa Rica. IMHO, no one except Justice Department, MPAA and RIAA employees, and reporters doing research, ever accesses those websites. Despite a scary looking screenshot from &lt;a href='http://www.akamai.com/html/technology/dataviz1.html,' title='Akamai Internet Monitor'&gt;Akamai&amp;#8217;s Internet monitor&lt;/a&gt;, it&amp;#8217;s evident that the US has actually had fewer attacks in the last 24 hours (not sure how Akamai defines an &amp;#8220;attack&amp;#8221;) than parts of the world that have had nothing to do with these events, to wit Brazil, Peru, China, Russia and Taiwan.&lt;/p&gt;
 
 &lt;h3 id='googleappleadobe_poaching_antitrust_lawsuit'&gt;Google-Apple-Adobe Poaching Antitrust Lawsuit&lt;/h3&gt;
 
-&lt;p&gt;&lt;a title='Google Apple Poaching' href='http://techcrunch.com/2012/01/19/damning-evidence-emerges-in-google-apple-no-poach-antitrust-lawsuit/'&gt;Techcrunch&lt;/a&gt; reported that the Department of Justice found documentary evidence of &amp;#8220;no-poaching&amp;#8221; agreements between some of the Valley&amp;#8217;s highest-profile companies, among them Google, Apple, Adobe, Intuit, Lucasfilm, Pixar and Intel.&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://techcrunch.com/2012/01/19/damning-evidence-emerges-in-google-apple-no-poach-antitrust-lawsuit/' title='Google Apple Poaching'&gt;Techcrunch&lt;/a&gt; reported that the Department of Justice found documentary evidence of &amp;#8220;no-poaching&amp;#8221; agreements between some of the Valley&amp;#8217;s highest-profile companies, among them Google, Apple, Adobe, Intuit, Lucasfilm, Pixar and Intel.&lt;/p&gt;
 
 &lt;p&gt;The companies agreed not only to not steal each others&amp;#8217; employees but even notify an applicant&amp;#8217;s current employers, a move one would associate with the likes of Foxconn or Soviet Russia. Presumably, the offending employees are then sent off to gulags/iPhone-assembly factories with n-hexane.&lt;/p&gt;
 
@@ -726,7 +768,7 @@ PokedexView.render();&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id='julian_assange_on_rolling_stone_magazine'&gt;Julian Assange on Rolling Stone magazine&lt;/h3&gt;
 
-&lt;p&gt;&lt;a title='Assange on Rolling Stone' href='http://www.rollingstone.com/politics/news/julian-assange-the-rolling-stone-interview-20120118'&gt;Julian Assange&lt;/a&gt;, founder of Wikileaks, international hacker and possesor of the coolest white hair around, spoke to Rolling Stones magazine. Some of what he says is sensible: &amp;#8220;people determined to be in a democracy, to be their own governments, must have the power that knowledge will bring&amp;#8221;. Some of it is exactly the kind of thing that a rumoured egomaniac would say: &amp;#8220;I don&amp;#8217;t think I have a massive ego&amp;#8221;. Great interview.&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://www.rollingstone.com/politics/news/julian-assange-the-rolling-stone-interview-20120118' title='Assange on Rolling Stone'&gt;Julian Assange&lt;/a&gt;, founder of Wikileaks, international hacker and possesor of the coolest white hair around, spoke to Rolling Stones magazine. Some of what he says is sensible: &amp;#8220;people determined to be in a democracy, to be their own governments, must have the power that knowledge will bring&amp;#8221;. Some of it is exactly the kind of thing that a rumoured egomaniac would say: &amp;#8220;I don&amp;#8217;t think I have a massive ego&amp;#8221;. Great interview.&lt;/p&gt;
 
 &lt;h3 id='instagram_on_wp7_before_android'&gt;Instagram on WP7 before Android?&lt;/h3&gt;
 
@@ -735,7 +777,7 @@ PokedexView.render();&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id='better_than_the_real_sport_video_of_the_day'&gt;&amp;#8220;Better than the real sport&amp;#8221; video of the day&lt;/h3&gt;
 
 &lt;p&gt;Zorbing is fun. Football is fun. Obviously you have to put them together. Right?&lt;/p&gt;
-&lt;iframe width='560' height='315' src='http://www.youtube.com/embed/xIl45f6i1PU' allowfullscreen='allowfullscreen' frameborder='0' /&gt;</content>
+&lt;iframe width='560' src='http://www.youtube.com/embed/xIl45f6i1PU' height='315' allowfullscreen='allowfullscreen' frameborder='0' /&gt;</content>
  </entry>
  
  

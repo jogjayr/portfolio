@@ -3,10 +3,12 @@ http://jayraj.net/archive.html
 http://jayraj.net/atom.xml
 http://jayraj.net/blog/index.html
 http://jayraj.net/categories.html
+http://jayraj.net/hashing-for-crimefighting-privacy.html
 http://jayraj.net/pages.html
 http://jayraj.net/sitemap.txt
 http://jayraj.net/tags.html
 
+http://jayraj.net/2013/06/03/backbone-view-collection-part-3
 http://jayraj.net/2013/05/22/backbone-view-collection-part-2
 http://jayraj.net/2013/05/19/backbone-view-collection-part-1
 http://jayraj.net/links/2012/05/05/WIRT

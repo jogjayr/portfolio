@@ -4,13 +4,69 @@
  <title>Today I Read</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2014-02-05T08:51:58-08:00</updated>
+ <updated>2014-02-06T19:21:28-08:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
    <email>jog@jayraj.net</email>
  </author>
 
+ 
+ <entry>
+   <title>Becoming a better engineer</title>
+   <link href="http://jayraj.net/Becoming-a-better-engineer"/>
+   <updated>2014-02-06T19:21:11-08:00</updated>
+   <id>hhttp://jayraj.net/Becoming-a-better-engineer</id>
+   <content type="html">&lt;p&gt;For those of us who love coding and technology, there’s nothing quite like the thrill of getting better. There are many great coders out there and they offer a variety of advice for improving. This is what I put into action last year.&lt;/p&gt;
+
+&lt;h2 id=&quot;learn_to_type&quot;&gt;Learn to Type&lt;/h2&gt;
+
+&lt;h3 id=&quot;why&quot;&gt;Why?&lt;/h3&gt;
+
+&lt;p&gt;This tip comes from Steve Yegge. Known for his opinionated, wall-of-text, entertaining blog rants, Steve Yegge puts great stock in being able to type well and type fast. Yegge’s typing speed is probably the main reason he is able to write his massive blog posts without getting bored or exhausted.&lt;/p&gt;
+
+&lt;h3 id=&quot;implementing_it&quot;&gt;Implementing it&lt;/h3&gt;
+
+&lt;p&gt;Before June 2013, I could type all the letters on my keyboard without needing to look down, but I didn’t use all my fingers. I was never able to break 55 wpm in typing tests because of this. I had been typing like that since I got my first computer at age 11.&lt;/p&gt;
+
+&lt;p&gt;I used Typing Web’s excellent online typing tutor software. It starts you off placing the fingers on the home row, typing letters at first, then words and finally sentences. Numbers and punctuation come later.&lt;/p&gt;
+
+&lt;h3 id=&quot;the_result&quot;&gt;The result&lt;/h3&gt;
+
+&lt;p&gt;It was really hard in the beginning, especially at work (had to work late a few times the first couple of weeks, just to get stuff done), but I kept at it. Seven months later, I am back to my old 55-60 wpm speed, but now I use all my fingers. I’m sure I will get faster. It takes time to break 15 years of habit.&lt;/p&gt;
+
+&lt;h2 id=&quot;learn_a_lisp&quot;&gt;Learn (a) Lisp&lt;/h2&gt;
+
+&lt;h3 id=&quot;why_2&quot;&gt;Why?&lt;/h3&gt;
+
+&lt;p&gt;This is actually from a number of different sources. Paul Graham is a big one, since he’s probably the most prominently successful (in business terms) Lisp-er out there. There’s also Eric Raymond, xkcd and Steve Yegge (again). Every serious Lisp-er has nothing but praise for the language and says it will change the way you think and be almost like a religious experience.&lt;/p&gt;
+
+&lt;h3 id=&quot;implementing_it_2&quot;&gt;Implementing it&lt;/h3&gt;
+
+&lt;p&gt;Lisp isn’t as prominent (or relevant) in the industry as in hacker circles/academia. While I fully support learning for its own sake, it still seemed better to learn a Lisp that I might be able to use at a job someday. Clojure, with its practical design outlook and JVM-ness, seemed ideal. It’s got real traction. I had seen it action a couple of years ago at grad school, where one of my colleagues used it with Processing to make cool looking sketches.&lt;/p&gt;
+
+&lt;p&gt;I actually had previous history with Lisp. Training for new recruits at TCS followed (and as far as I know, still does), the beginner level programming course at MIT, which uses Scheme. At the time, fresh out of college, my previous programming education treated the different styles of programming (functional, object-oriented etc.) the way that old-school Darwinist biologists treated evolution. Every new form was an improvement over the previous, eventually leading to the ideal form: human beings/OOP. Coming from that background, Scheme was a giant WTF. “What imbecile would use functions to act like classes?”, I thought, and left it at that. No, the instructors at TCS didn’t tell us why we were using Scheme either; I doubt they themselves knew.&lt;/p&gt;
+
+&lt;p&gt;The hardest part about getting started with Clojure, was learning the syntax. I started trying to learn in May 2013, but it wasn’t till about July or August till I found the right resources. The koan-style problem website &lt;a href=&quot;http://4clojure.com&quot;&gt;4clojure.com&lt;/a&gt; is perfect for learning the syntax. Another project, &lt;a href=&quot;https://github.com/functional-koans/clojure-koans&quot;&gt;clojure-koans&lt;/a&gt;, and some &lt;a href=&quot;http://aphyr.com/posts/306-clojure-from-the-ground-up-state&quot;&gt;essays&lt;/a&gt; written by bloggers got me started. In December, I wrote a small &lt;a href=&quot;https://github.com/jogjayr/ttt&quot;&gt;tic-tac-toe&lt;/a&gt; game in Clojure.&lt;/p&gt;
+
+&lt;h3 id=&quot;the_result_2&quot;&gt;The result&lt;/h3&gt;
+
+&lt;p&gt;I love it. I’m still barely a beginner, I don’t even fully grasp macros yet (according to Paul Graham, the most powerful feature of Lisp), and it’s still amazing. Lisp code looks…beautiful. Concise. Elegant. There’s nothing else like it. And now, having been exposed to this style of programming, I find it bleeding over into the way I write JavaScript (currently my main language).&lt;/p&gt;
+
+&lt;h2 id=&quot;really_understand_cs_theory&quot;&gt;&lt;em&gt;Really&lt;/em&gt; understand CS theory&lt;/h2&gt;
+
+&lt;h3 id=&quot;why_3&quot;&gt;Why?&lt;/h3&gt;
+
+&lt;p&gt;I didn’t have a great teacher for Automata Theory, in college. I also had a lot going on at the time and slacked off. I got good marks in the exam by last-minute cramming, but I’ve never understood the whole deal with Turing machines and the rest of that. It felt like something was missing.&lt;/p&gt;
+
+&lt;h3 id=&quot;implementing_it_3&quot;&gt;Implementing it&lt;/h3&gt;
+
+&lt;p&gt;I signed up for the Automata Theory course on Coursera. Did most of the lectures and assignments, except the last couple of weeks.&lt;/p&gt;
+
+&lt;h3 id=&quot;the_result_3&quot;&gt;The result&lt;/h3&gt;
+
+&lt;p&gt;This one is a bit of a mixed bag. I definitely understand computer science theory a lot more now. I was lax in doing the proofs in the course, so maybe I didn’t get as much out of it as I could have.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Poor Little Rich Kid</title>

@@ -7,6 +7,7 @@ http://jayraj.net/pages.html
 http://jayraj.net/sitemap.txt
 http://jayraj.net/tags.html
 
+http://jayraj.net/Becoming-a-better-engineer
 http://jayraj.net/Poor-Little-Rich-Kid
 http://jayraj.net/Farewell-Forbes
 http://jayraj.net/How-to-Meet-Deadlines

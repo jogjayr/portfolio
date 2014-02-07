@@ -10,8 +10,8 @@ var:
   rss_path: /atom.xml
 
 production_url : http://jayraj.net # or your custom domain name
-title : Today I Read
-tagline : Tech links, comments, updates and more
+title : Weekly Typed
+tagline :
 
 author :
   name : Jayraj Jog

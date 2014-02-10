@@ -1,8 +1,8 @@
 ---
 layout: post
 category: links
-title: Becoming a better engineer
-teaser: 
+title: 5 Ways to Become a Better Engineer
+teaser: 5 things I did in 2013 to level up
 tags: 
 ---
 
@@ -12,7 +12,7 @@ For those of us who love coding and technology, there's nothing quite like the t
 
 
 ###Why?
-This tip comes from Steve Yegge. Known for his opinionated, wall-of-text, entertaining blog rants, Steve Yegge puts great stock in being able to type well and type fast. Yegge's typing speed is probably the main reason he is able to write his massive blog posts without getting bored or exhausted.
+This tip comes from [Steve Yegge](http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html). Known for his opinionated, wall-of-text, entertaining blog rants, Steve Yegge puts great stock in being able to type well and type fast. Yegge's typing speed is probably the main reason he is able to write his massive blog posts without getting bored or exhausted.
 
 ###Implementing it
 Before June 2013, I could type all the letters on my keyboard without needing to look down, but I didn't use all my fingers. I was never able to break 55 wpm in typing tests because of this. I had been typing like that since I got my first computer at age 11.
@@ -27,7 +27,7 @@ It was really hard in the beginning, especially at work (had to work late a few 
 
 
 ###Why?
-This is actually from a number of different sources. Paul Graham is a big one, since he's probably the most prominently successful (in business terms) Lisp-er out there. There's also Eric Raymond, xkcd and Steve Yegge (again). Every serious Lisp-er has nothing but praise for the language and says it will change the way you think and be almost like a religious experience.
+This is actually from a number of different sources. [Paul Graham](http://www.paulgraham.com/avg.html) is a big one, since he's probably the most prominently successful (in business terms) Lisp-er out there. There's also [Eric Raymond](http://www.catb.org/esr/faqs/hacker-howto.html), [xkcd](https://xkcd.com/224/) and [Steve Yegge](https://sites.google.com/site/steveyegge2/scheming-is-believing) (again). Every serious Lisp-er has nothing but praise for the language and says it will change the way you think and be almost like a religious experience.
 
 ###Implementing it
 Lisp isn't as prominent (or relevant) in the industry as in hacker circles/academia. While I fully support learning for its own sake, it still seemed better to learn a Lisp that I might be able to use at a job someday. Clojure, with its practical design outlook and JVM-ness, seemed ideal. It's got real traction. I had seen it action a couple of years ago at grad school, where one of my colleagues used it with Processing to make cool looking sketches.
@@ -50,3 +50,26 @@ I signed up for the Automata Theory course on Coursera. Did most of the lectures
 ###The result
 This one is a bit of a mixed bag. I definitely understand computer science theory a lot more now. I was lax in doing the proofs in the course, so maybe I didn't get as much out of it as I could have.
 
+##Get to know your tools
+
+###Why?
+I've read this in a couple of places too, but really, it's just common sense. If you better learn the tools you use every day and use features that you haven't used before, it can take you less time to do the same work.
+
+###Implementing it
+I use many tools. Sublime Text 2 is a major one; I do almost all my typing in it (haven't tried upgrading to ST3 yet). There is a huge ecosystem of plugins and snippets and packages for it. The ones I found most useful: [Emmet](http://emmet.io/), [JSHint](http://www.jshint.com/install/), and [Sidebar](https://github.com/titoBouzout/SideBarEnhancements). I also learned keyboard shortcuts for selecting text in different ways: column select, word select, selection within quotes, within tags and within the current (bracket) scope.
+
+Among the other tools I use: I switched from bash to the [fish shell](http://fishshell.com/). I switched from the default OS X terminal to iTerm. And I also added [Alfred](http://www.alfredapp.com/) to my workflow, to automate my work  (the jury is still out on this one, because I've also become better at shell scripting) and help me look up documentation more quickly.
+
+###The result
+Faster work, less RSI, less boredom. Every minute I've spent studying keyboard shortcuts and other features has paid off many times over.
+
+##<a name='git'></a>Get better at Git
+
+###Why?
+If you're still using SVN or CVS or other non-distributed source control system, you're a sucker, [according to a very smart person](#git). When I say "Git", I don't mean just Git, but that's the distributed source control system I know best. Git obviously has a lot of momentum, and the sheer power that if offers over SVN makes you an order of magnitude more productive. Branching and merging, doing releases, working with other team members, hunting down bugs, creating clean histories, doing experimental work; everything is easier and faster with Git.
+
+###Implementing it
+I have been using Git for personal projects since 2011, but 2013 was the first time I got to use it in the workplace. Working with Git wizards and my team using the [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/) model has contributed a great deal to my understanding of it. I discovered the magical tool that is `git rebase` and how to use it to clean up development histories and make your merges go more smoothly. I learned how [`git bisect`](http://git-scm.com/book/en/Git-Tools-Debugging-with-Git) could save me a lot of manual work in figuring out where a bug was introduced.
+
+###The result
+Git is fucking awesome. Even at my advanced beginner level of understanding of the software, I can feel its power, compared to SVN. Creating branches for each feature and fix, code reviews before merges and frequent small commits now all feel like the right way to do write software.

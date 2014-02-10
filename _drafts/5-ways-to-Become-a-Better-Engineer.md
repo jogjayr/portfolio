@@ -8,7 +8,7 @@ tags:
 
 For those of us who love coding and technology, there's nothing quite like the thrill of getting better. There are many great coders out there and they offer a variety of advice for improving. This is what I put into action last year.
 
-##Learn to Type
+##1) Learn to Type
 
 
 ###Why?
@@ -23,7 +23,7 @@ I used Typing Web's excellent online typing tutor software. It starts you off pl
 It was really hard in the beginning, especially at work (had to work late a few times the first couple of weeks, just to get stuff done), but I kept at it. Seven months later, I am back to my old 55-60 wpm speed, but now I use all my fingers. I'm sure I will get faster. It takes time to break 15 years of habit.
 
 
-##Learn (a) Lisp
+##2) Learn (a) Lisp
 
 
 ###Why?
@@ -39,7 +39,7 @@ The hardest part about getting started with Clojure, was learning the syntax. I 
 ###The result
 I love it. I'm still barely a beginner, I don't even fully grasp macros yet (according to Paul Graham, the most powerful feature of Lisp), and it's still amazing. Lisp code looks...beautiful. Concise. Elegant. There's nothing else like it. And now, having been exposed to this style of programming, I find it bleeding over into the way I write JavaScript (currently my main language).
 
-##*Really* understand CS theory
+##3) *Really* understand CS theory
 
 ###Why?
 I didn't have a great teacher for Automata Theory, in college. I also had a lot going on at the time and slacked off. I got good marks in the exam by last-minute cramming, but I've never understood the whole deal with Turing machines and the rest of that. It felt like something was missing.
@@ -50,7 +50,7 @@ I signed up for the Automata Theory course on Coursera. Did most of the lectures
 ###The result
 This one is a bit of a mixed bag. I definitely understand computer science theory a lot more now. I was lax in doing the proofs in the course, so maybe I didn't get as much out of it as I could have.
 
-##Get to know your tools
+##4) Get to know your tools
 
 ###Why?
 I've read this in a couple of places too, but really, it's just common sense. If you better learn the tools you use every day and use features that you haven't used before, it can take you less time to do the same work.
@@ -63,7 +63,7 @@ Among the other tools I use: I switched from bash to the [fish shell](http://fis
 ###The result
 Faster work, less RSI, less boredom. Every minute I've spent studying keyboard shortcuts and other features has paid off many times over.
 
-##<a name='git'></a>Get better at Git
+##5) <a name='git'></a>Get better at Git
 
 ###Why?
 If you're still using SVN or CVS or other non-distributed source control system, you're a sucker, [according to a very smart person](#git). When I say "Git", I don't mean just Git, but that's the distributed source control system I know best. Git obviously has a lot of momentum, and the sheer power that if offers over SVN makes you an order of magnitude more productive. Branching and merging, doing releases, working with other team members, hunting down bugs, creating clean histories, doing experimental work; everything is easier and faster with Git.

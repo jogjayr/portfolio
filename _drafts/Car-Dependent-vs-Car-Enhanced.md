@@ -2,7 +2,7 @@
 layout: post
 category: links
 title: Car Dependent vs Car Enhanced
-teaser: 
+teaser: I prefer to have a car-enhanced lifestyle
 tags: 
 ---
 

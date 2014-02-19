@@ -19,7 +19,7 @@ Before June 2013, I could type all the letters on my keyboard without needing to
 I used Typing Web's excellent [typing tutor](http://www.typingweb.com/tutor/) app. It starts you off placing the fingers on the home row, typing letters at first, then words and finally sentences. Numbers and punctuation come later.
 
 ####The result
-It was really hard in the beginning, especially at work, where I had to work late a few times the first couple of weeks, just to get stuff done. I kept at it and seven months later, I am back to my old 55-60 wpm speed. But now I use all my fingers. I'm sure I will get faster. It takes time to break 15 years of habit.
+It was really hard in the beginning, especially at work. I had to stay late a few times the first few weeks, to get work done on time. I kept at it and seven months later, I am back to my old 55-60 wpm speed. But now I use all my fingers. I'm sure I will get faster. It takes time to break 15 years of habit.
 
 
 ###2) Learn (a) Lisp
@@ -68,8 +68,8 @@ Faster work, less RSI, less boredom. Every minute I've spent studying keyboard s
 
 When I say "Git", I don't mean just Git, but that's the distributed source control system I know best. Git obviously has a lot of momentum, and the sheer power that if offers over SVN makes you an order of magnitude more productive. Branching and merging, doing releases, working with other team members, hunting down bugs, creating clean histories, doing experimental work; everything is easier and faster with Git.
 
-###Implementing it
+####Implementing it
 I have been using Git for personal projects since 2011, but 2013 was the first time I got to use it in the workplace. I work with many Git wizards. My team uses the [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/) model for releases. I discovered the magical tool that is `git rebase` (especially in interactive mode) and how to use it to clean up development histories and make your merges go more smoothly. I learned how [`git bisect`](http://git-scm.com/book/en/Git-Tools-Debugging-with-Git) could save me a lot of manual work in figuring out where a bug was introduced. `git cherry-pick` came in handy recently when I had to include some work from a branch without merging the whole branch in.
 
-###The result
+####The result
 Git is fucking awesome. Even at my advanced beginner level of understanding it seems lightyears ahead of SVN. Creating branches for each feature and fix, code reviews before merges and frequent small commits now all feel like the right way to do write software.

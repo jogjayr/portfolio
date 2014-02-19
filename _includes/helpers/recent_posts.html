@@ -1,4 +1,5 @@
-{% comment %}<!--
+{% comment %}
+<!--
 Recent posts display helper
 
 Intended for landing page of my blog
@@ -7,34 +8,33 @@ Will display four most recent posts, a snippet of the first paragraph,
 an image (if the post has any), and a link to the real thing
 	
 
--->{% endcomment %}
-<ul class='unstyled'>
-{% for post in posts_collate limit:4 %}
-  {% if forloop.index == 1 %}
-  <h2>{{ post.title }}</h2>
-  <span class='post_date'>
-	&raquo; Posted {{ post.date | date: "%B %e, %Y" }}
-  </span> 
-  <div>
-	{{ post.content }}
+-->{% endcomment %} {% for post in posts_collate limit:4 %} {% if forloop.index == 1 %}
+<div class="row">
+  <div class="page-header col-lg-10">
+    <h1 class='h2'>{{ post.title }}</h1>
+    <h5 class="date">{{ post.date | date: "%B %e, %Y" }}</h5>
   </div>
-  <h2>Recent Posts</h2>
-  {% else %}
-  <li>
-	  <p class='post_title'>
-		  <a href="{{ post.url }}">{{ post.title }}</a>
-	  </p>
-	  <p>
-		  <span class='post_date'>
-			  &raquo; {{ post.date | date: "%B %e, %Y" }}
-		  </span> 
-	  </p>
-	  <p class='teaser'>
-		  {{ post.teaser }}<a href="{{ post.url }}"> Read more...</a>
-	  </p>
-	</li>
-  {% endif %}
-  
-{% endfor %}
+</div>
+<div class='col-lg-10 row'>
+    {{ post.content }}
+</div>
+
+<ul class='unstyled row col-lg-10'>
+	<h3>Recent Posts</h3>
+    {% else %}
+    <li>
+        <p class='post_title'>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </p>
+        <p>
+            <span class='post_date'>
+                &raquo; {{ post.date | date: "%B %e, %Y" }}
+            </span>
+        </p>
+        <p class='teaser'>
+            {{ post.teaser }} <a href="{{ post.url }}"> Read more...</a>
+        </p>
+    </li>
+    {% endif %} {% endfor %}
 </ul>
 {% assign posts_collate = null %}

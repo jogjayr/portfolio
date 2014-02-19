@@ -63,7 +63,9 @@ Faster work, less RSI, less boredom. Every minute I've spent studying keyboard s
 ###5) <a name='git' class='hidden_link'>Get better at Git</a>
 
 -------------------------------------------------------------------------------
-> "If you're still using SVN or CVS or other non-distributed source control system, you're a sucker" - [Some smart person](http://jayraj.net)
+> "If you're still using SVN or CVS, you're a sucker" - 
+> 
+>[Some smart person](http://jayraj.net)
 -------------------------------------------------------------------------------
 
 When I say "Git", I don't mean just Git, but that's the distributed source control system I know best. Git obviously has a lot of momentum, and the sheer power that if offers over SVN makes you an order of magnitude more productive. Branching and merging, doing releases, working with other team members, hunting down bugs, creating clean histories, doing experimental work; everything is easier and faster with Git.

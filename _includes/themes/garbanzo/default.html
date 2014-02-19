@@ -34,15 +34,15 @@
 <body>
     <div class="container">
         <div class="col-lg-2">
-          <a class="brand" href="/blog">{{ site.title }}</a>
+          <h1 class='site_title h2'>
+              <a class="brand" href="/blog">{{ site.title }}</a>
+          </h1>
         </div>
-        <div class="col-lg-10">
+        <div class="col-lg-8">
             <div class="content">
                 {{ content }}
             </div>
-            <ul class="nav">
-              {% assign pages_list = site.pages %} {% assign group = 'navigation' %} {% include helpers/pages_list.html %}
-            </ul>
+            
         </div>
     </div>
     <div class="topbar">
@@ -57,8 +57,8 @@
 
 
 
-    <footer class='container'>
-        <p>&copy; {{ site.author.name }} 2014 (Uses <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap)</a>
+    <footer class='container blog_footer'>
+        <p class='col-lg-6 col-lg-push-2'>&copy; {{ site.author.name }} 2014 (Uses <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap)</a>
         </p>
     </footer>
 

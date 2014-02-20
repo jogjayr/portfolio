@@ -1,5 +1,18 @@
+.site_brand_img {
+	width: 80px;
+	float:left;
+}
+.site_brand_text {
+	float:left;
+	clear:right;
+	width: 50px;
+	margin-left: 10px;
+}
 .site_title {
 	margin-top: 58px;
+}
+.site_side_nav {
+	clear:both;
 }
 .blog_footer {
 	margin-top: 20px;

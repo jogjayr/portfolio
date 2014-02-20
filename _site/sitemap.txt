@@ -1,7 +1,7 @@
 
-http://jayraj.net/about.html
-http://jayraj.net/archive.html
 http://jayraj.net/atom.xml
+http://jayraj.net/blog/about.html
+http://jayraj.net/blog/archive.html
 http://jayraj.net/blog/index.html
 http://jayraj.net/categories.html
 http://jayraj.net/hashing-for-crimefighting-privacy.html

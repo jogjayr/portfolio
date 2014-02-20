@@ -9,6 +9,7 @@ http://jayraj.net/pages.html
 http://jayraj.net/sitemap.txt
 http://jayraj.net/tags.html
 
+http://jayraj.net/Hashing-DNA-Crimefighting
 http://jayraj.net/backbone-view-collection-part-3
 http://jayraj.net/backbone-view-collection-part-2
 http://jayraj.net/backbone-view-collection-part-1

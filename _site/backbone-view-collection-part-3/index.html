@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Backbone View Collection - Part 3</title>
+    
+    <meta name="author" content="Jayraj Jog">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Including Google Fonts stylesheets -->
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round|Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Le styles -->
+    <link href="/assets/themes/garbanzo/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/garbanzo/css/garbanzo.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-lg-2">
+          <h1 class='site_title h2'>
+              <a class="brand" href="/blog">Weekly Typed</a>
+          </h1>
+          <ul class="nav list-unstyled">
+              <li><a href="/archive.html">Archive</a></li>
+              <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8">
+            <div class="content">
+                <div class="row">
+  <div class="page-header col-lg-10">
+    <h1 class='h2'>Backbone View Collection - Part 3</h1>
+    <h5 class="date">03 June 2013</h5>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-lg-10">
+    <p>In this series of posts on how I wrote a collection class for Backbone views, I covered the objectives of the enterprise in <a href="http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1">part 1</a>. In <a href="http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-2">part 2</a> the Backbone ViewCollection accomplished its first goal: create a lot of child views of a specified type, off of a collection passed to it.</p>
+
+<p>This post will discuss how I event handling works with so many child views. I saw numerous blog posts and StackOverflow questions related to event binding when <code>empty</code> is called on a jQuery object. For me, the most important bit of knowledge was that when you do the following <a href="http://jsfiddle.net/jogjayr/3QfLc/1/">JSFiddle</a>:</p>
+
+<pre><code>var $child_el = $(&quot;#my_div&quot;).on(&quot;click&quot;, function() {
+    console.log(&quot;clicked me&quot;);
+})
+$(&quot;#parent_elem&quot;).html($child_el); //Clicking on the child will do nothing</code></pre>
+
+<p>The CHILD VIEW’S EVENTS ARE LOST! I suppose this is general knowledge among those familiar with the DOM’s secrets, but it was a revelation to me.</p>
+
+<p>Second revelation (in fact, as I started writing this blog post), is that the child views’ events actually need to delegate to the parent. Previously, I used to do the following:</p>
+
+<pre><code>var Backbone.ViewCollection = Backbone.View.extend({
+	//other View Collection methods here
+
+	//delegateEvents not only re-attaches the collections&#39;s events
+	//it also re-attaches childEvents without calling them individually
+	delegateEvents: function() {
+		Backbone.View.prototype.delegateEvents.call(this);
+		_(this.childViews).each(function(view, index, childViews) {
+			view.delegateEvents();
+		});
+	}
+});</code></pre>
+
+<p>Thanks to <a href="http://lostechies.com/derickbailey/2011/10/11/backbone-js-getting-the-model-for-a-clicked-element/">this blog post</a> by the inestimable Derick Bailey of KendoUI and MarionetteJS fame, I have realized that this my existing approach is COMPLETELY MORONIC. I will have to go back to the projects that inspired this library and fix it, but I will do it first here.</p>
+
+<p>The reason it’s so stupid is because when you attach an event to each individual child event:</p>
+
+<ol>
+<li>Your application uses a lot more memory. Each event listener is extra overhead.</li>
+
+<li>The clue was in the method name <code>delegateEvent</code>. I should be using the time-tested <a href="http://davidwalsh.name/event-delegate">event delegation pattern</a></li>
+</ol>
+    <hr>
+      <ul class='pagination'>
+      
+        <li class="prev"><a href="/backbone-view-collection-part-2" title="Backbone View Collection - Part 2">&larr; Previous</a></li>
+      
+      
+        <li class="next disabled"><a>Next &rarr;</a>
+      
+      </ul>
+  </div>
+  
+  <div class="col-lg-4">
+
+    
+  </div>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'tirjogjayr'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+            </div>
+            
+        </div>
+    </div>
+    <div class="topbar">
+        <div class="fill">
+            <div class="container">
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class='container blog_footer'>
+        <p class='col-lg-6 col-lg-push-2'>&copy; Jayraj Jog 2014 (Uses <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap)</a>
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

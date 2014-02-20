@@ -1,9 +1,7 @@
 ---
-layout: default
-title: Today I Read
+layout: page
+title:
 ---
-
-
 
 {% assign posts_collate = site.posts %}
 {% include helpers/recent_posts.html %}

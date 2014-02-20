@@ -1,0 +1,35 @@
+---
+layout: post
+category: links
+title: Apple Destroys American middle-class
+teaser: Apple is single-handedly responsible for the destruction of the American Dream, and the MPAA can actually be tactful.
+tags: [link, summary, tech]
+---
+
+###New York Times Blames Apple for America's Manufacturing Woes
+
+Maverick stuff from the [New York Times](http://www.nytimes.com/2012/01/22/business/apple-america-and-a-squeezed-middle-class.html?pagewanted=all) today, as they laid out a narrative of America falling from its industrial greatness due to the flight of high-tech manufacturing to Asia. And leading the exodus, according to this narrative, was the world's most valuable technology company Apple (Designed in California&trade;). They acknowledge that Apple kept production in the family till as recently as 2002, but efficiencies and labor shortages drove them to the Orient.
+
+The Times painted a terrifying picture of thousands of Chinese workers roused from their dorms at midnight by shouting, grey-uniformed, jackbooted Germans to accommodate Herr Jobs' newest demands. Many commenters described it as "slave labor" ignoring that the definition of slavery is involuntary servitude. IMO the term is appropriate for child prostitutes in Thailand or Cambodia, but over the top for workers at Foxconn; they are only slightly less fortunate than Wal-Mart workers in America. 
+
+It's also unfair to target Apple or even the computer electronics industry. It wasn't the first industry to do it. General Electric, 
+that stalwart of American manufacturing and symbol of American ingenuity,  started the obsession with "shareholder value" 
+and began to offshore manufacturing in the late 70s and early 80s. For various reasons, the home appliances  industry, machine tools, 
+steel, shipbuilding and countless others began the march out of the US long before Americans had heard  of the Internet. 
+And even when there are opportunities for high-tech manufacturing in new industries, like solar power, the US has (cliches ahoy!) 
+managed to shoot itself in the foot and hand the initiative to other countries. Yes, China has terrible labor protections, 
+but that hasn't stopped Germany or Japan competing with them to be the shopfloor of the world.
+
+###MPAA Threatens to Stop Paying for Senators' Private Jets, Mistresses and Ponies
+
+------------------------------------------------------------------------------------------------------------------------
+> Those who count on quote 'Hollywood' for support need to understand that this industry is watching very carefully who's going to
+> stand up for them when their job is at stake. Don't ask me to write a check for you when you think your job is at risk and then 
+> don't pay any attention to me when my job is at stake
+------------------------------------------------------------------------------------------------------------------------
+
+So spake former Senator, now MPAA mouthpiece, Chris Dodd. Threatening the vengeance of Thor, Iron-Man and the Punisher on all Congressmen who dared defy the MPAA's edicts to pass SOPA/PIPA into law, Dodd (curiously, in another life, co-sponsor of legislation that [protected consumers from big bully banks](http://en.wikipedia.org/wiki/Dodd%E2%80%93Frank_Wall_Street_Reform_and_Consumer_Protection_Act#Overview)) singlehandedly dragged the MPAA's previously squeaky clean name through mud. 
+
+I only wish lobbyists in India were this explicit. 
+
+

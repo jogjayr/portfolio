@@ -1,9 +1,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Today I Read</title>
+    <title></title>
     
     <meta name="author" content="Jayraj Jog">
 
@@ -11,93 +12,46 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-	
-	<!-- Including Google Fonts stylesheets -->
-	<link href='http://fonts.googleapis.com/css?family=Crete+Round|Open+Sans' rel='stylesheet' type='text/css'>
-	
+
+    <!-- Including Google Fonts stylesheets -->
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round|Open+Sans' rel='stylesheet' type='text/css'>
+
     <!-- Le styles -->
-    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
-    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-	
-	
+    <link href="/assets/themes/garbanzo/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/garbanzo/css/garbanzo.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+
     <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <!-- Update these with your own images -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
-  <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-28662451-1']);
-  _gaq.push(['_trackPageview']);
+</head>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-  </head>
-
-  <body>
-
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="/">Today I Read</a>
-          <ul class="nav">
-            
-            
-            
-
-
-
-  
-  
-  	
-  	<li><a href="/archive.html">Archive</a></li>
-  	
- 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-
-
-
+<body>
+    <div class="container">
+        <div class="col-lg-2">
+          <h1 class='site_title h2'>
+              <a class="brand" href="/blog">Weekly Typed</a>
+          </h1>
+          <ul class="nav list-unstyled">
+              <li><a href="/archive.html">Archive</a></li>
+              <li><a href="/about.html">About</a></li>
           </ul>
         </div>
-      </div>
-    </div>
-
-    <div class="container">
-
-      <div class="content">
-        <ul class='unstyled'>
-
-  
-  <h2>Backbone View Collection - Part 3</h2>
-  <span class='post_date'>
-	&raquo; Posted June  3, 2013
-  </span> 
-  <div>
-	<p>In this series of posts on how I wrote a collection class for Backbone views, I covered the objectives of the enterprise in <a href='http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1'>part 1</a>. In <a href='http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-2'>part 2</a> the Backbone ViewCollection accomplished its first goal: create a lot of child views of a specified type, off of a collection passed to it.</p>
+        <div class="col-lg-8">
+            <div class="content">
+                
+<div class='row'>
+  <div class='page-header col-lg-10'>
+    <h1 class='h2'>Backbone View Collection - Part 3</h1>
+    <h5 class='date'>June  3, 2013</h5>
+  </div>
+</div><div class='col-lg-10 row'>
+    <p>In this series of posts on how I wrote a collection class for Backbone views, I covered the objectives of the enterprise in <a href='http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1'>part 1</a>. In <a href='http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-2'>part 2</a> the Backbone ViewCollection accomplished its first goal: create a lot of child views of a specified type, off of a collection passed to it.</p>
 
 <p>This post will discuss how I event handling works with so many child views. I saw numerous blog posts and StackOverflow questions related to event binding when <code>empty</code> is called on a jQuery object. For me, the most important bit of knowledge was that when you do the following <a href='http://jsfiddle.net/jogjayr/3QfLc/1/'>JSFiddle</a>:</p>
 
@@ -106,9 +60,9 @@
 })
 $(&quot;#parent_elem&quot;).html($child_el); //Clicking on the child will do nothing</code></pre>
 
-<p>The CHILD VIEW&#8217;S EVENTS ARE LOST! I suppose this is general knowledge among those familiar with the DOM&#8217;s secrets, but it was a revelation to me.</p>
+<p>The CHILD VIEW’S EVENTS ARE LOST! I suppose this is general knowledge among those familiar with the DOM’s secrets, but it was a revelation to me.</p>
 
-<p>Second revelation (in fact, as I started writing this blog post), is that the child views&#8217; events actually need to delegate to the parent. Previously, I used to do the following:</p>
+<p>Second revelation (in fact, as I started writing this blog post), is that the child views’ events actually need to delegate to the parent. Previously, I used to do the following:</p>
 
 <pre><code>var Backbone.ViewCollection = Backbone.View.extend({
 	//other View Collection methods here
@@ -125,81 +79,83 @@ $(&quot;#parent_elem&quot;).html($child_el); //Clicking on the child will do not
 
 <p>Thanks to <a href='http://lostechies.com/derickbailey/2011/10/11/backbone-js-getting-the-model-for-a-clicked-element/'>this blog post</a> by the inestimable Derick Bailey of KendoUI and MarionetteJS fame, I have realized that this my existing approach is COMPLETELY MORONIC. I will have to go back to the projects that inspired this library and fix it, but I will do it first here.</p>
 
-<p>The reason it&#8217;s so stupid is because when you attach an event to each individual child event:</p>
+<p>The reason it’s so stupid is because when you attach an event to each individual child event:</p>
 
 <ol>
 <li>Your application uses a lot more memory. Each event listener is extra overhead.</li>
 
 <li>The clue was in the method name <code>delegateEvent</code>. I should be using the time-tested <a href='http://davidwalsh.name/event-delegate'>event delegation pattern</a></li>
 </ol>
-  </div>
-  <h2>Recent Posts</h2>
-  
-  
-
-  
-  <li>
-	  <p class='post_title'>
-		  <a href='/2013/05/22/backbone-view-collection-part-2'>Backbone View Collection - Part 2</a>
-	  </p>
-	  <p>
-		  <span class='post_date'>
-			  &raquo; May 22, 2013
-		  </span> 
-	  </p>
-	  <p class='teaser'>
-		  <a href='/2013/05/22/backbone-view-collection-part-2'> Read more...</a>
-	  </p>
-	</li>
-  
-  
-
-  
-  <li>
-	  <p class='post_title'>
-		  <a href='/2013/05/19/backbone-view-collection-part-1'>Backbone View Collection - Part 1</a>
-	  </p>
-	  <p>
-		  <span class='post_date'>
-			  &raquo; May 19, 2013
-		  </span> 
-	  </p>
-	  <p class='teaser'>
-		  <a href='/2013/05/19/backbone-view-collection-part-1'> Read more...</a>
-	  </p>
-	</li>
-  
-  
-
-  
-  <li>
-	  <p class='post_title'>
-		  <a href='/links/2012/05/05/WIRT'>Poor Little Rich Kid</a>
-	  </p>
-	  <p>
-		  <span class='post_date'>
-			  &raquo; May  5, 2012
-		  </span> 
-	  </p>
-	  <p class='teaser'>
-		  How to piss off your customers whilst doing your job<a href='/links/2012/05/05/WIRT'> Read more...</a>
-	  </p>
-	</li>
-  
-  
-
-</ul>
-      </div>
-
-      <footer>
-        <p>&copy; Jayraj Jog 2012 
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+</div><ul class='unstyled row col-lg-10'>
+	<h3>Recent Posts</h3>
+      
+    <li>
+        <p class='post_title'>
+            <a href='/backbone-view-collection-part-2'>Backbone View Collection - Part 2</a>
         </p>
-      </footer>
+        <p>
+            <span class='post_date'>
+                &raquo; May 22, 2013
+            </span>
+        </p>
+        <p class='teaser'>
+             <a href='/backbone-view-collection-part-2'> Read more...</a>
+        </p>
+    </li>
+      
+    <li>
+        <p class='post_title'>
+            <a href='/backbone-view-collection-part-1'>Backbone View Collection - Part 1</a>
+        </p>
+        <p>
+            <span class='post_date'>
+                &raquo; May 19, 2013
+            </span>
+        </p>
+        <p class='teaser'>
+             <a href='/backbone-view-collection-part-1'> Read more...</a>
+        </p>
+    </li>
+      
+    <li>
+        <p class='post_title'>
+            <a href='/Poor-Little-Rich-Kid'>Poor Little Rich Kid</a>
+        </p>
+        <p>
+            <span class='post_date'>
+                &raquo; May  5, 2012
+            </span>
+        </p>
+        <p class='teaser'>
+            How to piss off your customers whilst doing your job <a href='/Poor-Little-Rich-Kid'> Read more...</a>
+        </p>
+    </li>
+     
+</ul>
 
-    </div> <!-- /container -->
 
-  </body>
+            </div>
+            
+        </div>
+    </div>
+    <div class="topbar">
+        <div class="fill">
+            <div class="container">
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class='container blog_footer'>
+        <p class='col-lg-6 col-lg-push-2'>&copy; Jayraj Jog 2014 (Uses <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap)</a>
+        </p>
+    </footer>
+
+
+</body>
+
 </html>
-

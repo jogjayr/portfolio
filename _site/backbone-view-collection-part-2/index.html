@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Backbone View Collection - Part 2</title>
+    
+    <meta name="author" content="Jayraj Jog">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Including Google Fonts stylesheets -->
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round|Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Le styles -->
+    <link href="/assets/themes/garbanzo/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/garbanzo/css/garbanzo.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-lg-2">
+          <h1 class='site_title h2'>
+              <a class="brand" href="/blog">Weekly Typed</a>
+          </h1>
+          <ul class="nav list-unstyled">
+              <li><a href="/archive.html">Archive</a></li>
+              <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8">
+            <div class="content">
+                <div class="row">
+  <div class="page-header col-lg-10">
+    <h1 class='h2'>Backbone View Collection - Part 2</h1>
+    <h5 class="date">22 May 2013</h5>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-lg-10">
+    <p>In <a href="http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1">part 1</a> of this series, I explained what I wanted from a Backbone View Collection. The first and foremost thing was a common render method:</p>
+
+<pre><code>Backbone.ViewCollection = Backbone.View.extend({
+  childViews: [],
+  render: function() {
+
+    //The Backbone view class passed in that is 
+    //used to generate child views
+    var ItemViewClass = this.options.ItemView || Backbone.View;
+
+    var me = this;
+    _(me.collection).each(function(model, index, collection) {
+
+    //for every model in the collection, create a new view
+    var new_item_view = new ItemViewClass({model: model});
+
+    //add it to the list of child views the collection holds
+    me.childViews.push(new_item_view);
+
+    //also add it to the view collection&#39;s own HTML element
+    me.$el.append(new_item_view.$el);
+   });
+  }
+});</code></pre>
+
+<p>This approach carries a couple of issues. The first one I faced was actually quite silly; setting <code>childViews</code> to an empty array in the class definition results in <strong>every</strong> instance of that class pointing to the same array. This is quite disastrous; all the child items of every instance of ViewCollection are added to the same array. We have to fix this, and it’s quite simple:</p>
+
+<pre><code>Backbone.ViewCollection = Backbone.View.extend({
+  render: function() {
+  //all the stuff we wrote above...
+  },
+  initialize: function() {
+    //this ensures every instance of ViewCollection has a fresh array of childViews
+    this.childViews = [];
+  }
+});</code></pre>
+
+<p>There’s also another problem, and it has to do with how we pass <code>ItemView</code> to ViewCollection. If we were to create a new ViewCollection like so:</p>
+
+<pre><code>var PokedexView = new Backbone.ViewCollection({
+  collection: Pokedex,
+  ItemView: PokemonView 
+});</code></pre>
+
+<p>then the line:</p>
+
+<pre><code>var ItemViewClass = this.options.ItemView || Backbone.View;</code></pre>
+
+<p>works perfectly. The <code>options</code> attribute of a Backbone view is composed of the object you pass into the constructor. But what if you don’t call the constructor directly? Consider the following:</p>
+
+<pre><code>var PokedexView = Backbone.ViewCollection.extend({
+  collection: Pokedex
+});
+//a specific type of Pokedex that uses a grid layout
+var PokemonGridItemView = Backbone.View.extend({});
+var PokedexGridView = PokedexView.extend({
+  ItemView: PokemonGridItemView
+});</code></pre>
+
+<p>Now, <code>this.options.ItemView</code> is <code>undefined</code>. This does not bode well for being able to build complex class hierarchies with ViewCollection, so we have to modify what we wrote just a little bit:</p>
+
+<pre><code>//Either `this` is an instance of ViewCollection, in which case ItemView is an `option`
+//or `this` is an instance of a another type derived from ViewCollection
+//or use the plain-old Backbone.View class
+var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;</code></pre>
+
+<p>Same thing applies for collection. So</p>
+
+<pre><code>_(me.collection).each(...)</code></pre>
+
+<p>won’t work every time.</p>
+
+<p>Having learned all this, here’s ViewCollection now:</p>
+
+<pre><code>Backbone.ViewCollection = Backbone.View.extend({
+  render: function() {
+
+    //The Backbone view class passed in that is 
+    //used to generate child views
+    var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
+    var collection = this.options.collection || this.collection;
+    var me = this;
+    _(collection).each(function(model, index, collection) {
+
+      //for every model in the collection, create a new view
+      var new_item_view = new ItemViewClass({model: model});
+
+      //add it to the list of child views the collection holds
+      me.childViews.push(new_item_view);
+
+      //also add it to the view collection&#39;s own HTML element
+      me.$el.append(new_item_view.$el);
+    });
+  },
+  initialize: function() {
+    this.childViews = [];
+  }
+});</code></pre>
+
+<p>To be continued</p>
+    <hr>
+      <ul class='pagination'>
+      
+        <li class="prev"><a href="/backbone-view-collection-part-1" title="Backbone View Collection - Part 1">&larr; Previous</a></li>
+      
+      
+        <li class="next"><a href="/backbone-view-collection-part-3" title="Backbone View Collection - Part 3">Next &rarr;</a></li>
+      
+      </ul>
+  </div>
+  
+  <div class="col-lg-4">
+
+    
+  </div>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'tirjogjayr'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+            </div>
+            
+        </div>
+    </div>
+    <div class="topbar">
+        <div class="fill">
+            <div class="container">
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class='container blog_footer'>
+        <p class='col-lg-6 col-lg-push-2'>&copy; Jayraj Jog 2014 (Uses <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap)</a>
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

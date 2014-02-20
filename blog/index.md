@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Weekly Typed
+layout: page
+title:
 ---
 
 {% assign posts_collate = site.posts %}

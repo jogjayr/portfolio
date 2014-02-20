@@ -1,4 +1,5 @@
 
+http://jayraj.net/about.html
 http://jayraj.net/archive.html
 http://jayraj.net/atom.xml
 http://jayraj.net/blog/index.html

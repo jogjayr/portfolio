@@ -2,8 +2,7 @@
 if test $1 = '--publish'; then
 	pubfilename=$2
 	newfilename=_posts/$(date "+%Y-%m-%d")-$pubfilename
-	touch $newfilename
-	cat _drafts/$pubfilename >> $newfilename
+	mv _drafts/$pubfilename $newfilename
 	echo 'Published: ' $newfilename
 else
 	filename=_drafts/$1.md

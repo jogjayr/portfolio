@@ -4,13 +4,65 @@
  <title>Weekly Typed</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2014-02-20T09:06:46-08:00</updated>
+ <updated>2014-02-20T17:52:19-08:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
    <email>jog@jayraj.net</email>
  </author>
 
+ 
+ <entry>
+   <title>5 Reasons to Improve your Vim-Fu</title>
+   <link href="http://jayraj.net/5-Reasons-to-Improve-your-Vim-Fu"/>
+   <updated>2014-02-20T00:00:00-08:00</updated>
+   <id>hhttp://jayraj.net/5-Reasons-to-Improve-your-Vim-Fu</id>
+   <content type="html">&lt;p&gt;Yes, it’s 2014. No, logically, we shouldn’t be using text editors written in the fucking 1970s. I mean, seriously, how many other things made in the 70s are we still using now?&lt;/p&gt;
+
+&lt;p&gt;Because there were no funny cat videos on the Web in those days, the (largely) bearded gurus of computing’s early days mostly read and wrote text. So they made tools that were exceptionally good for writing text.&lt;/p&gt;
+
+&lt;p&gt;Vim is something every Mac and Git-using programmer will encounter because it is the default editor for typing Git commit messages. We all know &lt;code&gt;i&lt;/code&gt;, &lt;code&gt;:q&lt;/code&gt; and &lt;code&gt;:w&lt;/code&gt;. Realistically, that’s all you need to write commit messages in Vim for the rest of your career. Congratulations, we’re done here! You can go.&lt;/p&gt;
+
+&lt;p&gt;Or…read on. Because if you care to get even slightly better at Vim, there are so many rewards.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;No GUI dependence - Vim, Emacs and other editors from the Unix golden-age (a term I pulled out of my ass), were developed in an era with no (or limited) availability of mice, monitors and so on. The bad - this means using a mouse can be odd (although I hear it’s better in Emacs than in Vim). The good - if you get good at Vim-ing, you never need to use a mouse again to manipulate text; and that is a &lt;em&gt;very good thing&lt;/em&gt; for your speed.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Default Editor for Git - Vim is. So if you want to go beyond just typing commit messages, like re-ordering and squashing your commits using interactive rebase, you can either: a) do it slowly and laboriously, using only &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;Esc&lt;/code&gt; b) (what I do) copy all the commit lines into Sublime, re-order and edit and paste them back in c) Become a Vim badass and do it really fast in the terminal&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Expressiveness - Before Sublime, my editors of choice, in chronological order, were Notepad, Gedit, Notepad++, Aptana and Geany). Compared to those, Sublime’s multi-cursor selection, snippet support and shortcuts were like Arnold Schwarznegger in &lt;em&gt;Terminator&lt;/em&gt;: an unimaginably powerful weapon from the future. So imagine when I got to reading about Vim’s capabilities (using &lt;code&gt;vimtutor&lt;/code&gt;) and was confronted with &lt;code&gt;d2w&lt;/code&gt;. Delete 2 words and put the cursor at the beginning of the third words. And this was lesson 2. What. The. Fuck. “But what good is that”, you might say, “I’m never giving up Sublime, because it has so much that I like”. Well&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Vintage Mode for Sublime - It’s Sublime made better with Vim. That’s like welding Batman’s Utility Belt to the best Swiss Army knife in the world. I think; I’m still trying it out and I will let you know in a future blog post&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Vim is everywhere - You can’t always control your environment. If you SSH to an EC2 instance where you have to modify environment files or code, you can’t use Sublime easily. Meanwhile, &lt;code&gt;vim&lt;/code&gt; is right there, just waiting for you to use it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Convinced? Here’s how to get started:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The key to understanding Vim (and this is not an original insight from me) is realizing that there are two modes: a mode where you enter commands, and a mode where you type in text (yes, those are their &lt;em&gt;actual&lt;/em&gt; names). The advantage of this is you can both type text and execute commands without having to use too many modifier keys.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Use &lt;code&gt;vimtutor&lt;/code&gt; - Usually comes with Vim on Mac OS X. Run it in the terminal and go through an approximately 30 minute tutorial that takes in a lot of the basics. Vim basics, that is; crazy ways to insert and delete text, undo and redo and so much more. I might write a separate post just about vimtutor&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Start up vim (just run &lt;code&gt;vim&lt;/code&gt;), then type &lt;code&gt;:help&lt;/code&gt; to see more ways to learn. It has an extensive help section with clickable table of contents that cover everything in Vim.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content>
+ </entry>
  
  <entry>
    <title>Hashed DNA Database</title>
@@ -681,30 +733,6 @@ PokedexView.render();&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Then he trots out this revolutionary idea that anyone of average talent and skill is doomed to dim professional prospects. Now there’s some sound career advice kids. And it’s not like &lt;a href=&quot;http://www.businessinsider.com/if-youre-an-average-worker-in-this-forever-recession-youre-going-straight-to-the-bottom-2012-1&quot;&gt;Business Insider reported Seth Godin saying the exact same thing&lt;/a&gt; a week ago. Wait&lt;/p&gt;
 
 &lt;p&gt;Additionally, as a commenter on the column points out, it’s mathematically impossible for EVERYONE to be above average. That means that a significant portion of the population are going to be stuck in menial jobs forever. In fairness to Friedman, he may have meant “above average” when considering the entire world’s population. Getting a degree in English from the Southern Arkansas University (no offense) may not make you above average in the US (or even Arkansas), but still puts you pretty high up the chain when considering the entire world’s workforce. Now if only graduates of the Southern Arkansas University could move to China&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Should Everyone Else Just Give Up?</title>
-   <link href="http://jayraj.net/WIRT"/>
-   <updated>2012-01-24T00:00:00-08:00</updated>
-   <id>hhttp://jayraj.net/WIRT</id>
-   <content type="html">&lt;h3 id=&quot;apple_makes_a_fckload_of_money&quot;&gt;Apple Makes a F*ckload of Money&lt;/h3&gt;
-
-&lt;p&gt;Noted blogger, venture capitalist and Apple (Designed in California™) fanboy MG Siegler called Apple’s first quarter 2012 results &lt;a href=&quot;http://parislemon.com/post/16424622119/a-holy-fucking-shit-quarter&quot;&gt;“A ‘Holy Fucking Shit’ Quarter”&lt;/a&gt;. The numbers are impressive indeed; $13 billion profits on $46 billion sales. Or in other words, more money than God.&lt;/p&gt;
-
-&lt;p&gt;They now have close to a $100 billion in the bank. It might not be a bad idea for the EU to ask them for a bailout. Or help other poor people. C’mon people. You can re-open the charity department again. And give someone else a chance to win.&lt;/p&gt;
-
-&lt;h3 id=&quot;i_for_one_welcome_our_new_robot_drivers&quot;&gt;I, for one, welcome our new robot drivers&lt;/h3&gt;
-
-&lt;p&gt;A &lt;a href=&quot;http://www.wired.com/magazine/2012/01/ff_autonomouscars/all/1&quot;&gt;great&lt;/a&gt; &lt;a href=&quot;http://www.nytimes.com/2012/01/24/technology/googles-autonomous-vehicles-draw-skepticism-at-legal-symposium.html&quot;&gt;deal&lt;/a&gt; of &lt;a href=&quot;http://www.thestar.com/article/1120427--bmw-creates-robot-car-that-can-drive-itself&quot;&gt;press&lt;/a&gt; recently has made it clear that autonomous cars are just around the corner. The NYT covered a symposium dedicated to the legal implications of this new technology. The benefits are clear: safety, fuel and time efficiency, greater car-sharing and privacy for sexy times in the backseat without having to rent a limo.&lt;/p&gt;
-
-&lt;p&gt;It’s safe to say that this technology is at least 6 years away from even narrow-spread adoption. Nevada is the only state, so far, to legalize autonomously driven cars. Other state legislatures will begin to consider the issue over the next couple of years.&lt;/p&gt;
-
-&lt;p&gt;I think that all the other issues: insurance, police stops, deer on the road and even the Chinese restaurant/stop sign problem (I don’t know if they’re the same thing, but have superficial similarities in that sharing access to a resource leads to a starvation condition and indefinite waiting), will work themselves out eventually. What I’m curious about is the process used to certify or give a “driver’s license” to these programs. Will they be held to the same standards that human beings are? Is it really possible to verify that a driving program has no bugs and will perform perfectly under all conditions? Or will it just be “good enough” if the program is better than the “average driver”?&lt;/p&gt;
-
-&lt;p&gt;Here we get into thorny territory. Google have claimed that their car has driven 200,000 miles without accidents, but that’s not really statistically significant (unless they have more data they haven’t released yet). In &lt;a href=&quot;http://www.motorists.org/other/crash-data&quot;&gt;1995&lt;/a&gt; (yes, I know, old as hell, but I’m lazy), the US had 1.5 fatal accidents per 100 million vehicle miles. If anyone wants to do more detailed analysis, they are welcome to, but 200k is hardly conclusive that the program is safe. Unless&lt;/p&gt;
-
-&lt;p&gt;More speculation here: I’m no computer vision expert; is it possible to train such a system on video data? If it is, then Google must have a wealth of such data, thanks to StreetView. And in that case, the system may only have driven 200,000 real world miles but tested on many many more.&lt;/p&gt;</content>
  </entry>
  
  <entry>

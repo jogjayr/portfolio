@@ -1,12 +1,12 @@
 .site_brand_img {
+	padding:0;
+}
+.site_brand_img img {
 	width: 80px;
-	float:left;
 }
 .site_brand_text {
-	float:left;
-	clear:right;
-	width: 50px;
 	margin-left: 10px;
+	padding:0;
 }
 .site_title {
 	margin-top: 58px;

@@ -9,6 +9,7 @@ http://jayraj.net/pages.html
 http://jayraj.net/sitemap.txt
 http://jayraj.net/tags.html
 
+http://jayraj.net/5-Reasons-to-Improve-your-Vim-Fu
 http://jayraj.net/Hashing-DNA-Crimefighting
 http://jayraj.net/backbone-view-collection-part-3
 http://jayraj.net/backbone-view-collection-part-2
@@ -35,7 +36,6 @@ http://jayraj.net/The-Safest-Job-in-the-World
 http://jayraj.net/Its-Not-Even-OK-for-AB-Testing
 http://jayraj.net/%24167-year-raises-are-newsworthy
 http://jayraj.net/Everyone-should-be-above-average
-http://jayraj.net/WIRT
 http://jayraj.net/Should-Everyone-Else-Just-Give-Up
 http://jayraj.net/RIMs-Dear-Leader
 http://jayraj.net/Apple-Destroys-American-middle-class

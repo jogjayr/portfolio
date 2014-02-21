@@ -1,14 +1,14 @@
 ---
 layout: post
 category: links
-title: 5 Reasons to Improve your Vim Fu
+title: 5 Reasons to Improve your Vim-Fu
 teaser: Why you should get better at Vim, even if you use Sublime or other "modern" text editor right now
 tags: 
 ---
 
 Yes, it's 2014. No, logically, we shouldn't be using text editors written in the fucking 1970s. I mean, seriously, how many other things made in the 70s are we still using now?
 
-You have to admit though, those bell-bottommed, (often) bearded geniuses made some exceptionally timeless and durable pieces of software. Because there were no funny cat videos on the Web in those days, they mostly read and wrote text. And they made tools that were exceptionally good for writing text.
+Because there were no funny cat videos on the Web in those days, the (largely) bearded gurus of computing's early days mostly read and wrote text. So they made tools that were exceptionally good for writing text.
 
 Vim is something every Mac and Git-using programmer will encounter because it is the default editor for typing Git commit messages. We all know `i`, `:q` and `:w`. Realistically, that's all you need to write commit messages in Vim for the rest of your career. Congratulations, we're done here! You can go. 
 

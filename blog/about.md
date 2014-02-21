@@ -11,4 +11,4 @@ This blog is my way of passing time on the train to and from work. It's a way of
 
 This blog uses [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
 
-Typewriter icon designed by [Simon Child](http://thenounproject.com/Simon%20Child)
+Typewriter icon designed by [Simon Child](http://thenounproject.com/Simon%20Child), licensed under [Creative Commons – Attribution (CC BY 3.0) ](http://creativecommons.org/licenses/by/3.0/us/)

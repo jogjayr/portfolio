@@ -13,21 +13,11 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Including Google Fonts stylesheets -->
-    <link href='http://fonts.googleapis.com/css?family=Crete+Round|Open+Sans' rel='stylesheet' type='text/css'>
-
-    <!-- Le styles -->
     <link href="{{ theme_asset_path }}/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ theme_asset_path }}/css/garbanzo.css?body=1" rel="stylesheet" type="text/css" media="all">
 
 
-    <!-- Le fav and touch icons -->
-    <!-- Update these with your own images -->
     <link rel="shortcut icon" href="/favicon.ico">
-    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
 
 </head>
 
@@ -61,6 +51,7 @@
         <p class='col-lg-6 col-lg-push-3'>&copy; {{ site.author.name }} 2014</p>
     </footer>
 
+    {% include production/analytics.html %}
 
 </body>
 

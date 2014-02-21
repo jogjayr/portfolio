@@ -13,21 +13,11 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Including Google Fonts stylesheets -->
-    <link href='http://fonts.googleapis.com/css?family=Crete+Round|Open+Sans' rel='stylesheet' type='text/css'>
-
-    <!-- Le styles -->
     <link href="/assets/themes/garbanzo/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/themes/garbanzo/css/garbanzo.css?body=1" rel="stylesheet" type="text/css" media="all">
 
 
-    <!-- Le fav and touch icons -->
-    <!-- Update these with your own images -->
     <link rel="shortcut icon" href="/favicon.ico">
-    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
 
 </head>
 
@@ -137,6 +127,25 @@ var disqus_shortname = 'tirjogjayr'; // required: replace example with your foru
     <footer class='container blog_footer'>
         <p class='col-lg-6 col-lg-push-3'>&copy; Jayraj Jog 2014</p>
     </footer>
+
+    <!-- 
+ Drop your analytics in here.
+ This will only be included when published to GitHub.
+ We use "site.safe" variable which is true on GitHub.
+-->
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28662451-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 
 </body>

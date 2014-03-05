@@ -4,13 +4,97 @@
  <title>Weekly Typed</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2014-02-20T20:02:42-08:00</updated>
+ <updated>2014-03-04T18:15:04-08:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
    <email>jog@jayraj.net</email>
  </author>
 
+ 
+ <entry>
+   <title>5 Ways to Become a Better Programmer</title>
+   <link href="http://jayraj.net/5-ways-to-Become-a-Better-Programmer"/>
+   <updated>2014-03-04T00:00:00-08:00</updated>
+   <id>hhttp://jayraj.net/5-ways-to-Become-a-Better-Programmer</id>
+   <content type="html">&lt;p&gt;For those of us who love coding and technology, there’s nothing quite like the thrill of getting better. There are many great coders out there and they offer a variety of advice for improving. This is what I put into action last year.&lt;/p&gt;
+
+&lt;h3 id=&quot;1_learn_to_type&quot;&gt;1) Learn to Type&lt;/h3&gt;
+
+&lt;p&gt;This tip comes from &lt;a href=&quot;http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html&quot;&gt;Steve Yegge&lt;/a&gt;. Known for his opinionated, wall-of-text, entertaining blog rants, Steve Yegge puts great stock in being able to type well and type fast. Yegge’s typing speed is probably the main reason he is able to write his massive blog posts without getting bored or exhausted.&lt;/p&gt;
+
+&lt;h4 id=&quot;implementing_it&quot;&gt;Implementing it&lt;/h4&gt;
+
+&lt;p&gt;Before June 2013, I could type all the letters on my keyboard without needing to look down, but I didn’t use all my fingers. I was never able to break 55 wpm in typing tests because of this. I had been typing like that since I got my first computer at age 11.&lt;/p&gt;
+
+&lt;p&gt;I used Typing Web’s excellent &lt;a href=&quot;http://www.typingweb.com/tutor/&quot;&gt;typing tutor&lt;/a&gt; app. It starts you off placing the fingers on the home row, typing letters at first, then words and finally sentences. Numbers and punctuation come later.&lt;/p&gt;
+
+&lt;h4 id=&quot;the_result&quot;&gt;The result&lt;/h4&gt;
+
+&lt;p&gt;It was really hard in the beginning, especially at work. I had to stay late a few times the first few weeks, to get work done on time. I kept at it and seven months later, I am back to my old 55-60 wpm speed. But now I use all my fingers. I’m sure I will get faster. It takes time to break 15 years of habit.&lt;/p&gt;
+
+&lt;h3 id=&quot;2_learn_a_lisp&quot;&gt;2) Learn (a) Lisp&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.paulgraham.com/avg.html&quot;&gt;Paul Graham&lt;/a&gt;, &lt;a href=&quot;http://www.catb.org/esr/faqs/hacker-howto.html&quot;&gt;Eric Raymond&lt;/a&gt;, &lt;a href=&quot;https://xkcd.com/224/&quot;&gt;xkcd&lt;/a&gt; and &lt;a href=&quot;https://sites.google.com/site/steveyegge2/scheming-is-believing&quot;&gt;Steve Yegge&lt;/a&gt; (again) and many, many others say that learning Lisp will change you as a programmer. You will see everything differently.&lt;/p&gt;
+
+&lt;h4 id=&quot;implementing_it_2&quot;&gt;Implementing it&lt;/h4&gt;
+
+&lt;p&gt;While I fully support learning for its own sake, it might be hard to ever be at a job where I need to use something like Common Lisp. Clojure, with its practical design outlook and JVM-ness, seemed an ideal compromise. It’s got real traction. I had seen it action a couple of years ago at grad school, where one of my colleagues used it with Processing to make cool looking sketches.&lt;/p&gt;
+
+&lt;p&gt;I actually had previous history with Lisp. Training for new recruits at TCS followed (and as far as I know, still does), the beginner level programming course at MIT, which uses Scheme. At the time, fresh out of college, my previous programming education treated the different styles of programming (functional, object-oriented etc.) the way that old-school Darwinist biologists treated evolution. Every new form was an improvement over the previous, eventually leading to the ideal form: human beings/OOP. Coming from that background, Scheme was a giant WTF. “Why would anyone use functions to act like classes?”, I thought, and left it at that. I doubt the instructors at TCS knew the answer to that either; they just taught it because they were told to.&lt;/p&gt;
+
+&lt;p&gt;According to Tim Ferriss, when learning something new, having the right material can make the difference between learning it well and giving up in frustration after a few tries. The koan-style problem website &lt;a href=&quot;http://4clojure.com&quot;&gt;4clojure.com&lt;/a&gt; is perfect for learning Clojure syntax. Another project, &lt;a href=&quot;https://github.com/functional-koans/clojure-koans&quot;&gt;clojure-koans&lt;/a&gt;, and some &lt;a href=&quot;http://aphyr.com/posts/306-clojure-from-the-ground-up-state&quot;&gt;essays&lt;/a&gt; written by bloggers got me started. In December, I wrote a small &lt;a href=&quot;https://github.com/jogjayr/ttt&quot;&gt;tic-tac-toe&lt;/a&gt; game in Clojure.&lt;/p&gt;
+
+&lt;h4 id=&quot;the_result_2&quot;&gt;The result&lt;/h4&gt;
+
+&lt;p&gt;I love it. I’m still barely a beginner, I don’t even fully grasp macros yet (according to Paul Graham, the most powerful feature of Lisp), and it’s still amazing. Lisp code looks…beautiful. Concise. Elegant. There’s nothing else like it. And now, having been exposed to this style of programming, I find it bleeding over into the way I write JavaScript (currently my main language).&lt;/p&gt;
+
+&lt;h3 id=&quot;3_really_understand_cs_theory&quot;&gt;3) &lt;em&gt;Really&lt;/em&gt; understand CS theory&lt;/h3&gt;
+
+&lt;p&gt;I didn’t have a great teacher for Automata Theory, in college. I also had a lot going on at the time and slacked off. I got good marks in the exam by last-minute cramming, but I’ve never understood the whole deal with Turing machines and the rest of that. It felt like something was missing.&lt;/p&gt;
+
+&lt;p&gt;Knowing Automata Theory and Computer may not immediately help you with your work but you will be changed forever by the knowledge. Computers, and why we know they work, won’t be a mystery anymore. In a way, it’s like knowing how to build a house, then going back and studying Newtonian physics.&lt;/p&gt;
+
+&lt;h4 id=&quot;implementing_it_3&quot;&gt;Implementing it&lt;/h4&gt;
+
+&lt;p&gt;I signed up for the Automata Theory course on Coursera. Did most of the lectures and assignments, except the last couple of weeks.&lt;/p&gt;
+
+&lt;h4 id=&quot;the_result_3&quot;&gt;The result&lt;/h4&gt;
+
+&lt;p&gt;This one is a bit of a mixed bag. I definitely understand computer science theory a lot more now. I was lax in doing the proofs in the course, so maybe I didn’t get as much out of it as I could have.&lt;/p&gt;
+
+&lt;h3 id=&quot;4_get_to_know_your_tools&quot;&gt;4) Get to know your tools&lt;/h3&gt;
+
+&lt;p&gt;This one is just common sense. If you become more proficient with your everyday tools, and use features that you haven’t used before, it can take you less time to do the same work. Take a few minutes every weekend, and find a new feature in your daily tools that you never used before.&lt;/p&gt;
+
+&lt;h4 id=&quot;implementing_it_4&quot;&gt;Implementing it&lt;/h4&gt;
+
+&lt;p&gt;I use many tools. Sublime Text 2 is a major one; I do almost all my typing in it (haven’t tried upgrading to ST3 yet). There is a huge ecosystem of plugins and snippets and packages for it. The ones I found most useful: &lt;a href=&quot;http://emmet.io/&quot;&gt;Emmet&lt;/a&gt;, &lt;a href=&quot;http://www.jshint.com/install/&quot;&gt;JSHint&lt;/a&gt;, and &lt;a href=&quot;https://github.com/titoBouzout/SideBarEnhancements&quot;&gt;Sidebar&lt;/a&gt;. I also learned keyboard shortcuts for selecting text in different ways: column select, word select, selection within quotes, within tags and within the current (bracket) scope.&lt;/p&gt;
+
+&lt;p&gt;Among the other tools I use: I switched from bash to the &lt;a href=&quot;http://fishshell.com/&quot;&gt;fish shell&lt;/a&gt;. I switched from the default OS X terminal to iTerm. And I also added &lt;a href=&quot;http://www.alfredapp.com/&quot;&gt;Alfred&lt;/a&gt; to my workflow, to automate my work (the jury is still out on this one, because I’ve also become better at shell scripting) and help me look up documentation more quickly.&lt;/p&gt;
+
+&lt;h3 id=&quot;the_result_4&quot;&gt;The result&lt;/h3&gt;
+
+&lt;p&gt;Faster work, less RSI, less boredom. Every minute I’ve spent studying keyboard shortcuts and other features has paid off many times over.&lt;/p&gt;
+
+&lt;h3 id=&quot;5_&quot;&gt;5) &lt;a class=&#39;hidden_link&#39; name=&#39;git&#39;&gt;Get better at Git&lt;/a&gt;&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“If you’re still using SVN or CVS, you’re a sucker” -&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jayraj.net&quot;&gt;Some smart person&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;When I say “Git”, I don’t mean just Git, but that’s the distributed source control system I know best. Git obviously has a lot of momentum, and the sheer power that if offers over SVN makes you an order of magnitude more productive. Branching and merging, doing releases, working with other team members, hunting down bugs, creating clean histories, doing experimental work; everything is easier and faster with Git.&lt;/p&gt;
+
+&lt;h4 id=&quot;implementing_it_5&quot;&gt;Implementing it&lt;/h4&gt;
+
+&lt;p&gt;I have been using Git for personal projects since 2011, but 2013 was the first time I got to use it in the workplace. I work with many Git wizards. My team uses the &lt;a href=&quot;http://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;Gitflow&lt;/a&gt; model for releases. I discovered the magical tool that is &lt;code&gt;git rebase&lt;/code&gt; (especially in interactive mode) and how to use it to clean up development histories and make your merges go more smoothly. I learned how &lt;a href=&quot;http://git-scm.com/book/en/Git-Tools-Debugging-with-Git&quot;&gt;&lt;code&gt;git bisect&lt;/code&gt;&lt;/a&gt; could save me a lot of manual work in figuring out where a bug was introduced. &lt;code&gt;git cherry-pick&lt;/code&gt; came in handy recently when I had to include some work from a branch without merging the whole branch in.&lt;/p&gt;
+
+&lt;h4 id=&quot;the_result_5&quot;&gt;The result&lt;/h4&gt;
+
+&lt;p&gt;Git is fucking awesome. Even at my advanced beginner level of understanding it seems lightyears ahead of SVN. Creating branches for each feature and fix, code reviews before merges and frequent small commits now all feel like the right way to do write software.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>5 Reasons to Improve your Vim-Fu</title>

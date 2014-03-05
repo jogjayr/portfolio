@@ -9,6 +9,7 @@ http://jayraj.net/pages.html
 http://jayraj.net/sitemap.txt
 http://jayraj.net/tags.html
 
+http://jayraj.net/5-ways-to-Become-a-Better-Programmer
 http://jayraj.net/5-Reasons-to-Improve-your-Vim-Fu
 http://jayraj.net/Hashing-DNA-Crimefighting
 http://jayraj.net/backbone-view-collection-part-3

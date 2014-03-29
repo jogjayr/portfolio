@@ -3,6 +3,7 @@ http://jayraj.net/atom.xml
 http://jayraj.net/blog/about.html
 http://jayraj.net/blog/archive.html
 http://jayraj.net/blog/index.html
+http://jayraj.net/blog/reading_list.html
 http://jayraj.net/categories.html
 http://jayraj.net/hashing-for-crimefighting-privacy.html
 http://jayraj.net/pages.html

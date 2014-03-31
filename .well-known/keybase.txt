@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/jayraj
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://jayraj.net
+    * I am jayraj (https://keybase.io/jayraj) on keybase.
+      * I have a public key with fingerprint D14D E674 AD6F 7B6D 7F03  2786 4296 9C66 5272 BEC0
+
+      To claim this, I am signing this object:
+
+      {
+          "body": {
+                  "key": {
+                              "fingerprint": "d14de674ad6f7b6d7f03278642969c665272bec0",
+                                          "host": "keybase.io",
+                                                      "key_id": "42969C665272BEC0",
+                                                                  "uid": "959e70bcb2e2acf5b4ad50303c461a00",
+                                                                              "username": "jayraj"
+                                                                                      },
+                                                                                              "service": {
+                                                                                                          "hostname": "jayraj.net",
+                                                                                                                      "protocol": "http:"
+                                                                                                                              },
+                                                                                                                                      "type": "web_service_binding",
+                                                                                                                                              "version": 1
+                                                                                                                                                  },
+                                                                                                                                                      "ctime": 1396292876,
+                                                                                                                                                          "expire_in": 157680000,
+                                                                                                                                                              "prev": null,
+                                                                                                                                                                  "seqno": 1,
+                                                                                                                                                                      "tag": "signature"
+                                                                                                                                                                      }
+
+                                                                                                                                                                      with the aforementioned key, yielding the PGP signature:
+
+                                                                                                                                                                      -----BEGIN PGP MESSAGE-----
+                                                                                                                                                                      Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+                                                                                                                                                                      Comment: GPGTools - https://gpgtools.org
+
+                                                                                                                                                                      owGbwMvMwMU411Rj333p1HmMpw+sT2IIttwrWq2UlJ9SqWRVrZSdCqbSMvPSU4sK
+                                                                                                                                                                      ijLzSpSslFIMTVJSzcxNElPM0syTzFLM0wyMjcwtzEyMLM0sk83MTI3MjZJSkw2U
+                                                                                                                                                                      dJQy8otBOoDGJCUWp+pl5gPFgJz4zBSgKFi9M0S9k6szSH0pWMLS1DLV3CApOcko
+                                                                                                                                                                      1SgxOc00CWiVqYGxgXGyiZlhogFYYXFqUV5ibipQdVZiZVFillKtjhJQrCwzORXk
+                                                                                                                                                                      YpDFKPJ6eaklQH0FRfkl+cn5OUDxjJKSAiuQtpLKApC68tSkeKgJ8UmZeSlAPwM1
+                                                                                                                                                                      lKUWFWfm5ylZGQJVJpdkgow0NLY0M7I0sjA301FKrSjILEqNzwSpMDU3szAAApA1
+                                                                                                                                                                      qWVKVnmlOTkgVxXm5QNlgRYlpgPtKc5Mz0ssKS1KVartZJJhYWDkYmBjZQKFOwMX
+                                                                                                                                                                      pwAsNvaWCjAs1NnYGPzqJdsHPuv7TWVM8U0vhTPPvtbS379z8SlBR3m+LQu0t947
+                                                                                                                                                                      fCsl0LL/U/hyhUcS0+I/H8np4e/cduFmFUfZ5b0CRfXH2YTf/VMseXMx/P1bz028
+                                                                                                                                                                      fG2JBX9LxLitDv7qfPb0i5hz5JKWLX9tLz9WW3Zf/4N2HremOdfp3vJdN/2iM8V+
+                                                                                                                                                                      6QZE8bZtcM3a/UrHS+Woe8fV+/ZfVzHkSG+MXlmqJlE58cOjHdPWes/gzDyVdP1W
+                                                                                                                                                                      0z2n6XLMfV/F/QwTVF+fX6v8YUbJk5o+ng+RR79fUP6ZP5O7YLtjbf6MVb7abYfY
+                                                                                                                                                                      VpYl3IubGfVXelOP12aB+z8ffdm+8dyRrunSuanqzya3/ko6ZLntX1mT7J9PX1x4
+                                                                                                                                                                      ZNRX9xnPK10hFzmdhXGG3JllDyfEmTherl0ZuuuAzsfFKrH7TgU0PfvUoLhu6Q8F
+                                                                                                                                                                      Fu8O3+bIBD1ZKfF3wdqHXs6x95q6uqLv6o7/bZPt1QwXNJR2nzdevHJPkHnuuXkm
+                                                                                                                                                                      gbFh66smGO67p+27+qfnpiDHY++/rima7/vc6xlTtV3SXM5H57RT26c3rTqlfZvj
+                                                                                                                                                                      F/OJ+C/eTetL/bZr91Uu8iuKW7qpPvjD2Skrj4pKpoQVFvN/XMzOc3fKn5zlHfwB
+                                                                                                                                                                      Tfu3LlJ7rvpaaNGe5wG/l9z+sv2A/IJPd5e8rqmOn/7yJvuPuy8WHy4v2300VEtR
+                                                                                                                                                                      62Ga0+tSC9H3Qou7a/e6mL3vXRTQBgA=
+                                                                                                                                                                      =Qnjw
+                                                                                                                                                                      -----END PGP MESSAGE-----
+
+                                                                                                                                                                      And finally, I am proving ownership of this host by posting or
+                                                                                                                                                                      appending to this document.
+
+                                                                                                                                                                      View my publicly-auditable identity here: https://keybase.io/jayraj
+
+                                                                                                                                                                      ==================================================================
+

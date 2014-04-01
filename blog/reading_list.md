@@ -9,20 +9,21 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 
 ###Non-fiction (non-technical)
 
-* <strike>On Writing: A Memoir of the Craft - Steven King</strike> (March 31, 2014)
+* <strike>On Writing: A Memoir of the Craft - Stephen King</strike> (31/3/2014)
 * Debt: The First 5000 Years - Daniel Graeber
 * Economix: How our Economy Works (and Doesn't Work) - Michael Goodwin, David Bach, Joel Bakan, Dan Burr
 * <strike>Moneyball - Michael Lewis</strike>
+* Stone Age Economics - Marshall Sahlins
 * The Audacity of Hope - Barack Obama
 * The Revolution - Ron Paul
 * Starting Strength - Mark Rippetoe
-* Arnold's Bodybuilding for Men - Arnold Schwarzenegger (almost spelled it correctly without looking it up)
+* Arnold's Bodybuilding for Men - Arnold Schwarzenegger
 
 
 ###Non-fiction (technical)
 
-* Code Complete
-* Programming Pearls
+* Code Complete - Steve McConnell
+* Programming Pearls - Jon Bentley
 
 
 ###Fiction
@@ -33,6 +34,7 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * The Stand - Stephen King
 * A Song of Fire and Ice series - George R R Martin
 * Flowers for Algernon - Daniel Keyes
+* World War Z - Max Brooks
 * V for Vendetta - Alan Moore
 * Sin City - Frank Miller
 * 300 - Frank Miller

@@ -1,7 +1,10 @@
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:title
-# auto: true
+markdown: redcarpet
+redcarpet:
+  extensions: ["strikethrough"]
+
 pygments: true
 var:
   archive_path: /archive.html

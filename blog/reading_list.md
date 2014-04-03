@@ -11,6 +11,7 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 
 * <strike>On Writing: A Memoir of the Craft - Stephen King</strike> (31/3/2014)
 * Debt: The First 5000 Years - Daniel Graeber
+* The World Without Us - Alan Weisman
 * Economix: How our Economy Works (and Doesn't Work) - Michael Goodwin, David Bach, Joel Bakan, Dan Burr
 * <strike>Moneyball - Michael Lewis</strike>
 * Stone Age Economics - Marshall Sahlins

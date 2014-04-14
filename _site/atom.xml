@@ -4,13 +4,30 @@
  <title>Weekly Typed</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2014-04-02T20:55:02-07:00</updated>
+ <updated>2014-04-13T20:34:53-07:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
    <email>jog@jayraj.net</email>
  </author>
 
+ 
+ <entry>
+   <title>Reading List</title>
+   <link href="http://jayraj.net/Reading-List"/>
+   <updated>2014-04-13T00:00:00-07:00</updated>
+   <id>hhttp://jayraj.net/Reading-List</id>
+   <content type="html">&lt;p&gt;I now have a &lt;a href=&quot;/blog/reading_list.html&quot;&gt;reading list&lt;/a&gt; on my blog.&lt;/p&gt;
+
+&lt;p&gt;As you can see, it&amp;#39;s divided into fiction and non-fiction, with non-fiction further divided into technical and non-technical books. &lt;/p&gt;
+
+&lt;p&gt;I have a mental list of books that I want to read, but always draw a blank when I&amp;#39;m actually at the library. This list will help with that. &lt;/p&gt;
+
+&lt;p&gt;The first book I read on the list was &lt;i&gt;On Writing&lt;/i&gt; by Stephen King. I&amp;#39;ve read plenty of fiction by Stephen King. Some good (&lt;i&gt;Everything&amp;#39;s Eventual&lt;/i&gt;, &lt;i&gt;The Dead Zone&lt;/i&gt;, &lt;i&gt;The Running Man&lt;/i&gt;, the sometimes sappy &lt;i&gt;Hearts in Atlantis&lt;/i&gt;), and some very forgettable (&lt;i&gt;The Regulators&lt;/i&gt;, &lt;i&gt;The Girl Who Loved Tom Gordon&lt;/i&gt;). So I&amp;#39;ve been meaning to hear the great man talk about his craft. He did not disappoint me. But now, in his classification of writers (great, good, competent, bad), I worry that I am one of the bad ones. The ones who he says can never become competent.&lt;/p&gt;
+
+&lt;p&gt;The reading list page also has Amazon.com referral links. I don&amp;#39;t really need the money; it&amp;#39;s just a way of keeping score. I will donate any cash I make from the page to the &lt;a href=&quot;http://eff.com&quot;&gt;EFF&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Fixing my TV</title>

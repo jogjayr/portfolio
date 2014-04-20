@@ -10,7 +10,7 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 ###Non-fiction (non-technical)
 
 * ~~[On Writing: A Memoir of the Craft](http://www.amazon.com/gp/product/B009BDVD2Q/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B009BDVD2Q&linkCode=as2&tag=jayrajnet-20) - Stephen King~~ (31/3/2014)
-* [Debt: The First 5000 Years](http://www.amazon.com/gp/product/1612191290/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1612191290&linkCode=as2&tag=jayrajnet-20) - Daniel Graeber
+* ~~[Debt: The First 5000 Years](http://www.amazon.com/gp/product/1612191290/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1612191290&linkCode=as2&tag=jayrajnet-20) - David Graeber~~ (18/4/2014)
 * [The World Without Us](http://www.amazon.com/gp/product/0312427905/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0312427905&linkCode=as2&tag=jayrajnet-20) - Alan Weisman
 * [Economix: How our Economy Works (and Doesn't Work)](http://www.amazon.com/gp/product/0810988399/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0810988399&linkCode=as2&tag=jayrajnet-20) - Michael Goodwin, David Bach, Joel Bakan, Dan Burr
 * ~~[Moneyball](http://www.amazon.com/gp/product/0393324818/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393324818&linkCode=as2&tag=jayrajnet-20) - Michael Lewis~~

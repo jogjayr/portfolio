@@ -10,6 +10,7 @@ http://jayraj.net/pages.html
 http://jayraj.net/sitemap.txt
 http://jayraj.net/tags.html
 
+http://jayraj.net/Learning-to-Juggle
 http://jayraj.net/Reading-List
 http://jayraj.net/Fixing-my-TV
 http://jayraj.net/Car-Dependent-vs-Car-Enhanced

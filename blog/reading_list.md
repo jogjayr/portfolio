@@ -13,7 +13,7 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * ~~[Debt: The First 5000 Years](http://www.amazon.com/gp/product/1612191290/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1612191290&linkCode=as2&tag=jayrajnet-20) - David Graeber~~ (18/4/2014)
 * [The World Without Us](http://www.amazon.com/gp/product/0312427905/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0312427905&linkCode=as2&tag=jayrajnet-20) - Alan Weisman
 * [Economix: How our Economy Works (and Doesn't Work)](http://www.amazon.com/gp/product/0810988399/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0810988399&linkCode=as2&tag=jayrajnet-20) - Michael Goodwin, David Bach, Joel Bakan, Dan Burr
-* Understanding Comics: The Invisible Art - Scott McCloud\* 
+* Understanding Comics: The Invisible Art - Scott McCloud 
 * ~~[Moneyball](http://www.amazon.com/gp/product/0393324818/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393324818&linkCode=as2&tag=jayrajnet-20) - Michael Lewis~~
 * [Stone Age Economics](http://www.amazon.com/gp/product/0202010996/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0202010996&linkCode=as2&tag=jayrajnet-20) - Marshall Sahlins
 * [The Audacity of Hope](http://www.amazon.com/gp/product/0307455874/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0307455874&linkCode=as2&tag=jayrajnet-20) - Barack Obama
@@ -30,6 +30,7 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 
 ###Fiction
 
+* Pebble in the Sky - Isaac Asimov\*
 * ~~[Neuromancer](http://www.amazon.com/gp/product/0441569595/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0441569595&linkCode=as2&tag=jayrajnet-20) - William Gibson~~ (03/05/2014)
 * ~~[Ender's Game](http://www.amazon.com/gp/product/0812550706/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0812550706&linkCode=as2&tag=jayrajnet-20) - Orson Scott Card~~
 * [Speaker for the Dead](http://www.amazon.com/gp/product/0812550757/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0812550757&linkCode=as2&tag=jayrajnet-20) - Orson Scott Card

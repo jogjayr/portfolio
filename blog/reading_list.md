@@ -13,7 +13,7 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * ~~[Debt: The First 5000 Years](http://www.amazon.com/gp/product/1612191290/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1612191290&linkCode=as2&tag=jayrajnet-20) - David Graeber~~ (18/4/2014)
 * [The World Without Us](http://www.amazon.com/gp/product/0312427905/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0312427905&linkCode=as2&tag=jayrajnet-20) - Alan Weisman
 * [Economix: How our Economy Works (and Doesn't Work)](http://www.amazon.com/gp/product/0810988399/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0810988399&linkCode=as2&tag=jayrajnet-20) - Michael Goodwin, David Bach, Joel Bakan, Dan Burr
-* Understanding Comics: The Invisible Art - Scott McCloud\*
+* Understanding Comics: The Invisible Art - Scott McCloud
 * ~~[Moneyball](http://www.amazon.com/gp/product/0393324818/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393324818&linkCode=as2&tag=jayrajnet-20) - Michael Lewis~~
 * [Stone Age Economics](http://www.amazon.com/gp/product/0202010996/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0202010996&linkCode=as2&tag=jayrajnet-20) - Marshall Sahlins
 * [The Audacity of Hope](http://www.amazon.com/gp/product/0307455874/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0307455874&linkCode=as2&tag=jayrajnet-20) - Barack Obama
@@ -35,7 +35,8 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * ~~[Ender's Game](http://www.amazon.com/gp/product/0812550706/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0812550706&linkCode=as2&tag=jayrajnet-20) - Orson Scott Card~~
 * [Speaker for the Dead](http://www.amazon.com/gp/product/0812550757/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0812550757&linkCode=as2&tag=jayrajnet-20) - Orson Scott Card
 * [The Stand](http://www.amazon.com/gp/product/0307947300/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0307947300&linkCode=as2&tag=jayrajnet-20) - Stephen King
-* A Song of Fire and Ice series - George R R Martin
+* A Song of Fire and Ice series
+  * ~~A Game of Thrones\* - George R R Martin~~ (21/5/2014)
 * [Flowers for Algernon](http://www.amazon.com/gp/product/0156030306/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0156030306&linkCode=as2&tag=jayrajnet-20) - Daniel Keyes
 * ~~[World War Z](http://www.amazon.com/gp/product/B000JMKQX0/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000JMKQX0&linkCode=as2&tag=jayrajnet-20) - Max Brooks~~ (25/04/2014)
 * [V for Vendetta](http://www.amazon.com/gp/product/140120841X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=140120841X&linkCode=as2&tag=jayrajnet-20) - Alan Moore

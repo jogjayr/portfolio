@@ -20,6 +20,8 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * [The Revolution](http://www.amazon.com/gp/product/0446537519/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0446537519&linkCode=as2&tag=jayrajnet-20) - Ron Paul
 * [Starting Strength](http://www.amazon.com/gp/product/B006XJR5ZA/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B006XJR5ZA&linkCode=as2&tag=jayrajnet-20) - Mark Rippetoe
 * [Arnold's Bodybuilding for Men](http://www.amazon.com/gp/product/0671531638/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0671531638&linkCode=as2&tag=jayrajnet-20) - Arnold Schwarzenegger
+* A Random Walk Down Wall Street - Burton G. Malkiel
+* The Intelligent Asset Allocator - William J. Bernstein 
 
 
 ###Non-fiction (technical)
@@ -35,8 +37,12 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * ~~[Ender's Game](http://www.amazon.com/gp/product/0812550706/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0812550706&linkCode=as2&tag=jayrajnet-20) - Orson Scott Card~~
 * [Speaker for the Dead](http://www.amazon.com/gp/product/0812550757/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0812550757&linkCode=as2&tag=jayrajnet-20) - Orson Scott Card
 * [The Stand](http://www.amazon.com/gp/product/0307947300/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0307947300&linkCode=as2&tag=jayrajnet-20) - Stephen King
-* A Song of Fire and Ice series
-  * ~~A Game of Thrones - George R R Martin~~ (21/5/2014)
+* A Song of Fire and Ice series - George R R Martin
+  * ~~A Game of Thrones~~ (21/5/2014)
+  * ~~A Clash of Kings~~ (29/7/2014)
+  * A Storm of Swords
+  * A Feast for Crows
+  * A Dance with Dragons
 * [Flowers for Algernon](http://www.amazon.com/gp/product/0156030306/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0156030306&linkCode=as2&tag=jayrajnet-20) - Daniel Keyes
 * ~~[World War Z](http://www.amazon.com/gp/product/B000JMKQX0/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000JMKQX0&linkCode=as2&tag=jayrajnet-20) - Max Brooks~~ (25/04/2014)
 * [V for Vendetta](http://www.amazon.com/gp/product/140120841X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=140120841X&linkCode=as2&tag=jayrajnet-20) - Alan Moore

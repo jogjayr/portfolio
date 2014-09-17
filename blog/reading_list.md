@@ -19,8 +19,9 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * The Audacity of Hope - Barack Obama
 * The Revolution - Ron Paul
 * Starting Strength - Mark Rippetoe
+* The 4-Hour Body - Tim Ferriss *
 * Arnold's Bodybuilding for Men - Arnold Schwarzenegger
-* A Random Walk Down Wall Street - Burton G. Malkiel *
+* ~~A Random Walk Down Wall Street - Burton G. Malkiel~~ (15/9/2014)
 * The Intelligent Asset Allocator - William J. Bernstein 
 
 
@@ -40,7 +41,7 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * A Song of Fire and Ice series - George R R Martin
   * ~~A Game of Thrones~~ (21/5/2014)
   * ~~A Clash of Kings~~ (29/7/2014)
-  * A Storm of Swords *
+  * ~~A Storm of Swords~~ (27/8/2014)
   * A Feast for Crows
   * A Dance with Dragons
 * Flowers for Algernon - Daniel Keyes

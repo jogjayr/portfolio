@@ -43,7 +43,7 @@ This is a list of books that I plan to read. I will strike them out as I finish 
   * ~~A Game of Thrones~~ (21/5/2014)
   * ~~A Clash of Kings~~ (29/7/2014)
   * ~~A Storm of Swords~~ (27/8/2014)
-  * A Feast for Crows *
+  * ~~A Feast for Crows~~ (2/10/2014)
   * A Dance with Dragons
 * Flowers for Algernon - Daniel Keyes
 * ~~World War Z - Max Brooks~~ (25/04/2014)

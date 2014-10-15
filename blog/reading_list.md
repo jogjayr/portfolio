@@ -20,7 +20,7 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * The Revolution - Ron Paul
 * Starting Strength - Mark Rippetoe
 * The 4-Hour Body - Tim Ferriss *
-* The Numbers Game: Why Everything You Know About Soccer is Wrong - Chris Anderson, David Sally *
+* ~~The Numbers Game: Why Everything You Know About Soccer is Wrong - Chris Anderson, David Sally~~ (17/10/2014)
 * Arnold's Bodybuilding for Men - Arnold Schwarzenegger
 * ~~A Random Walk Down Wall Street - Burton G. Malkiel~~ (15/9/2014)
 * The Intelligent Asset Allocator - William J. Bernstein 

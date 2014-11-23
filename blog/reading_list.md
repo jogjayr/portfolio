@@ -11,6 +11,7 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 
 * ~~On Writing: A Memoir of the Craft - Stephen King~~ (31/3/2014)
 * ~~Debt: The First 5000 Years - David Graeber~~ (18/4/2014)
+* ~~A Slice of Cake - Cupcake Brown~~ (11/5/2014)
 * The World Without Us - Alan Weisman
 * Economix: How our Economy Works (and Doesn't Work) - Michael Goodwin, David Bach, Joel Bakan, Dan Burr
 * Understanding Comics: The Invisible Art - Scott McCloud

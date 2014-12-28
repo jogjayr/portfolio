@@ -6,7 +6,7 @@ teaser:
 tags: 
 ---
 
-I was out playing football (glorified jogging with a football) at the park near my place. After I was done, a kid (probably a teenager) who had been riding a bike and sitting on the swings nearby came over and asked me if I could record him doing some tricks on his bike. 
+I was out playing football (glorified jogging with a football) at the park near my place about an hour ago. After I was done, a kid (probably a teenager) who had been riding a bike and sitting on the swings nearby came over and asked me if I could record him doing some tricks on his bike. 
 
 "Because I'm looking for sponsorship something something." 
 

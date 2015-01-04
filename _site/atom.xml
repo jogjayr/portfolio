@@ -4,13 +4,42 @@
  <title>Weekly Typed</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2015-01-01T15:51:25-08:00</updated>
+ <updated>2015-01-04T14:57:48-08:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
    <email>jog@jayraj.net</email>
  </author>
 
+ 
+ <entry>
+   <title>Goals for 2015</title>
+   <link href="http://jayraj.net/Goals-2015"/>
+   <updated>2015-01-04T00:00:00-08:00</updated>
+   <id>hhttp://jayraj.net/Goals-2015</id>
+   <content type="html">&lt;p&gt;For the first time ever, I&amp;#39;ve decided to set some goals for the year for myself. Like most people, consciously committing to something is the best way to get it done. Here we go:&lt;/p&gt;
+
+&lt;h3&gt;Personal&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Learn to do at least 5 keepie-uppies with both feet and thighs&lt;/li&gt;
+&lt;li&gt;Squat at least my own bodyweight (ie a bar loaded with as much as I weigh)&lt;/li&gt;
+&lt;li&gt;Go on at least 5 day hikes over 10 miles&lt;/li&gt;
+&lt;li&gt;Go camping at least 5 times&lt;/li&gt;
+&lt;li&gt;Read at &lt;a href=&quot;/blog/reading_list.html&quot;&gt;least 20 books&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Get to level 16 in Duolingo French&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Technical&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Write a simple HTTP server in any one of: Python, JavaScript, Clojure&lt;/li&gt;
+&lt;li&gt;Solve at least 75 exercises on HackerRank&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Happy 2015 to everyone!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Home row arrow keys</title>

@@ -9,22 +9,16 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 
 ###Non-fiction (non-technical)
 
-* ~~On Writing: A Memoir of the Craft - Stephen King~~ (31/3/2014)
-* ~~Debt: The First 5000 Years - David Graeber~~ (18/4/2014)
-* ~~A Piece of Cake: A Memoir - Cupcake Brown~~ (11/5/2014)
 * The World Without Us - Alan Weisman
 * Economix: How our Economy Works (and Doesn't Work) - Michael Goodwin, David Bach, Joel Bakan, Dan Burr
 * Understanding Comics: The Invisible Art - Scott McCloud
-* ~~Moneyball - Michael Lewis~~
 * Stone Age Economics - Marshall Sahlins
 * The Audacity of Hope - Barack Obama
 * The Revolution - Ron Paul
 * Starting Strength - Mark Rippetoe *
 * The 4-Hour Body - Tim Ferriss 
 * Man's Search for Meaning - Victor E. Frankl
-* ~~The Numbers Game: Why Everything You Know About Soccer is Wrong - Chris Anderson, David Sally~~ (17/10/2014)
 * Arnold's Bodybuilding for Men - Arnold Schwarzenegger
-* ~~A Random Walk Down Wall Street - Burton G. Malkiel~~ (15/9/2014)
 * The Intelligent Asset Allocator - William J. Bernstein 
 * One Summer: America 1927 - Bill Bryson
 
@@ -37,19 +31,11 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 
 ###Fiction
 
-* ~~Pebble in the Sky - Isaac Asimov~~ (09/05/2014)
-* ~~Neuromancer - William Gibson~~ (03/05/2014)
-* ~~Ender's Game - Orson Scott Card~~
 * Speaker for the Dead - Orson Scott Card
 * The Stand - Stephen King
 * A Song of Ice and Fire series - George R R Martin
-  * ~~A Game of Thrones~~ (21/5/2014)
-  * ~~A Clash of Kings~~ (29/7/2014)
-  * ~~A Storm of Swords~~ (27/8/2014)
-  * ~~A Feast for Crows~~ (2/10/2014)
   * A Dance with Dragons
 * Flowers for Algernon - Daniel Keyes
-* ~~World War Z - Max Brooks~~ (25/04/2014)
 * V for Vendetta - Alan Moore
 * Sin City - Frank Miller
 * 300 - Frank Miller
@@ -60,5 +46,24 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * Tinker, Tailor, Soldier, Spy - John Le Carré
 * Ulysses - James Joyce
  
+###Finished in 2014
+* ~~A Random Walk Down Wall Street - Burton G. Malkiel~~ (15/9/2014)
+* ~~Moneyball - Michael Lewis~~
+* ~~The Numbers Game: Why Everything You Know About Soccer is Wrong - Chris Anderson, David Sally~~ (17/10/2014)
+* ~~On Writing: A Memoir of the Craft - Stephen King~~ (31/3/2014)
+* ~~Debt: The First 5000 Years - David Graeber~~ (18/4/2014)
+* ~~A Piece of Cake: A Memoir - Cupcake Brown~~ (11/5/2014)
+
+* ~~World War Z - Max Brooks~~ (25/04/2014)
+* A Song of Ice and Fire series - George R R Martin
+  * ~~A Game of Thrones~~ (21/5/2014)
+  * ~~A Clash of Kings~~ (29/7/2014)
+  * ~~A Storm of Swords~~ (27/8/2014)
+  * ~~A Feast for Crows~~ (2/10/2014)
+* ~~Pebble in the Sky - Isaac Asimov~~ (09/05/2014)
+* ~~Neuromancer - William Gibson~~ (03/05/2014)
+* ~~Ender's Game - Orson Scott Card~~
+
+
 \* - Currently reading
 

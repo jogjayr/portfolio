@@ -4,7 +4,7 @@
  <title>Weekly Typed</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2015-01-04T14:57:48-08:00</updated>
+ <updated>2015-01-21T21:39:54-08:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
@@ -46,7 +46,13 @@
    <link href="http://jayraj.net/Home-row-arrow-keys"/>
    <updated>2014-11-09T00:00:00-08:00</updated>
    <id>hhttp://jayraj.net/Home-row-arrow-keys</id>
-   <content type="html">&lt;p&gt;I didn&amp;#39;t even know it, but I was tired of taking my hands off home row to use the arrow keys. Inspired by &lt;a href=&quot;http://duartes.org/gustavo/blog/post/home-row-computing/&quot;&gt;this post&lt;/a&gt;, I decided to set up my MacBook Pro to use Caps Lock + IJKL instead of arrow keys. Here&amp;#39;s how I did it:&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.coolaj86.com&quot;&gt;AJ ONeal&lt;/a&gt;, author of &lt;a href=&quot;http://dear.desi&quot;&gt;Desi&lt;/a&gt;, wrote up &lt;a href=&quot;http://blog.coolaj86.com/articles/home-row-arrow-keys-on-os-x-with-karabiner.html&quot;&gt;another way to do it&lt;/a&gt;. My own way to do it is based on &lt;a href=&quot;http://msol.io/blog/tech/2014/03/10/work-more-efficiently-on-your-mac-for-developers/&quot;&gt;this blog post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;..Continued&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I didn&amp;#39;t even know it, but I was tired of taking my hands off home row to use the arrow keys. Inspired by &lt;a href=&quot;http://duartes.org/gustavo/blog/post/home-row-computing/&quot;&gt;this post&lt;/a&gt;, I decided to set up my MacBook Pro to use Caps Lock + IJKL instead of arrow keys. Here&amp;#39;s how I did it:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Download and install &lt;a href=&quot;https://pqrs.org/osx/karabiner/&quot;&gt;Karabiner&lt;/a&gt; and &lt;a href=&quot;https://pqrs.org/osx/karabiner/seil.html.en&quot;&gt;Seil&lt;/a&gt;. Seil helps you remap the Caps Lock key and Karabiner helps you remap everything else. At this point, I&amp;#39;m unclear why you need two separate apps to do this though&lt;/li&gt;

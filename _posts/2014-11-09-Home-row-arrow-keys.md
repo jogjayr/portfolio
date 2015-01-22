@@ -6,6 +6,12 @@ teaser:
 tags: 
 ---
 
+**UPDATE**
+
+[AJ ONeal](http://blog.coolaj86.com), author of [Desi](http://dear.desi), wrote up [another way to do it](http://blog.coolaj86.com/articles/home-row-arrow-keys-on-os-x-with-karabiner.html). My own way to do it is based on [this blog post](http://msol.io/blog/tech/2014/03/10/work-more-efficiently-on-your-mac-for-developers/).
+
+**..Continued**
+
 I didn't even know it, but I was tired of taking my hands off home row to use the arrow keys. Inspired by [this post](http://duartes.org/gustavo/blog/post/home-row-computing/), I decided to set up my MacBook Pro to use Caps Lock + IJKL instead of arrow keys. Here's how I did it:
 
 1. Download and install [Karabiner](https://pqrs.org/osx/karabiner/) and [Seil](https://pqrs.org/osx/karabiner/seil.html.en). Seil helps you remap the Caps Lock key and Karabiner helps you remap everything else. At this point, I'm unclear why you need two separate apps to do this though

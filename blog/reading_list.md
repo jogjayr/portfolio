@@ -15,12 +15,14 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * Stone Age Economics - Marshall Sahlins
 * The Audacity of Hope - Barack Obama
 * The Revolution - Ron Paul
-* Starting Strength - Mark Rippetoe *
+* ~~Starting Strength 2nd Edition - Mark Rippetoe~~ (5/1/2015)
+* Starting Strength: Basic Barbell Training 3rd Edition - Mark Rippetoe *
 * The 4-Hour Body - Tim Ferriss 
 * Man's Search for Meaning - Victor E. Frankl
 * Arnold's Bodybuilding for Men - Arnold Schwarzenegger
 * The Intelligent Asset Allocator - William J. Bernstein 
 * One Summer: America 1927 - Bill Bryson
+* ~~How to Work a Room - Susan RoAne~~ (27/1/2015)
 
 
 ###Non-fiction (technical)
@@ -32,9 +34,11 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 ###Fiction
 
 * Speaker for the Dead - Orson Scott Card
+* River of Gods - Ian McDonald
 * The Stand - Stephen King
 * A Song of Ice and Fire series - George R R Martin
-  * A Dance with Dragons
+  * ~~A Dance with Dragons~~ (14/2/2015)
+* Parable of the Sower - Octavia E. Butler
 * Flowers for Algernon - Daniel Keyes
 * V for Vendetta - Alan Moore
 * Sin City - Frank Miller

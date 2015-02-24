@@ -23,6 +23,7 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * The Intelligent Asset Allocator - William J. Bernstein 
 * One Summer: America 1927 - Bill Bryson
 * ~~How to Work a Room - Susan RoAne~~ (27/1/2015)
+* Inverting the Pyramid - Jonathan Wilson
 
 
 ###Non-fiction (technical)
@@ -43,6 +44,7 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 * V for Vendetta - Alan Moore
 * Sin City - Frank Miller
 * 300 - Frank Miller
+* Discworld Series - Terry Pratchett
 * Sixteenth Annual Collection: The Year's Best Science Fiction - Various
 * Love in the Time of Cholera - Gabriel Garcia Marquez
 * The Road - Cormac McCarthy

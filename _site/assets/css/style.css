@@ -191,13 +191,15 @@ header h1, header h2, h1, h2, .project_title {
     overflow:auto;
 }
 #pic {
-	float: left;
-	width: 30%;
+    display:inline-block;
+	width: 37%;
+    margin-top: 30px;
 }
 #body-text {
-	float: left;
+    display: inline-block;
 	margin-left: 1em;
     width: 50%;
+    vertical-align: top;
 }
 #nav {
 	background: #f0b7a1; /* Old browsers */

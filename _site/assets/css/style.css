@@ -272,6 +272,9 @@ header h1, header h2, h1, h2, .project_title {
 	box-shadow: 0px 2px 10px black;
 	overflow-y: auto;
 }
+.no-top {
+    margin-top: 0;
+}
 /**
  * End index.html
  */

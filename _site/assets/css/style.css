@@ -215,6 +215,7 @@ header h1, header h2, h1, h2, .project_title {
 	position: relative;
 	z-index: 6;
     width: 1140px;
+    margin:auto;
 }
 #name {
 	font-size: 20px;

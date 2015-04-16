@@ -188,6 +188,7 @@ header h1, header h2, h1, h2, .project_title {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
+    overflow:auto;
 }
 #pic {
 	float: left;
@@ -196,6 +197,7 @@ header h1, header h2, h1, h2, .project_title {
 #body-text {
 	float: left;
 	margin-left: 1em;
+    width: 50%;
 }
 #nav {
 	background: #f0b7a1; /* Old browsers */

@@ -57,7 +57,7 @@
             <div id='content'>
                 <header>
                     <h1>
-                        <span class="print_only">Jayraj Jog's </span>Resume
+                        <span class="print_only">Jayraj Jog's </span>Resume <a href="#" id='print' class='screen_only'>(Print)</a>
                     </h1>
                     <span class="print_only print_right">jog@jayraj.net | http://jayraj.net</span>
                 </header>
@@ -69,29 +69,47 @@
                 </header>
                 <div class='resume_section' id='work'>
                     <ul class='resume_list'>
-                        <li>October 2013 - present - Front-end engineer at <a href="http://bittorrent.com">BitTorrent</a>
-                            <ul></ul>
+                        <li>
+                            <span class="bold">Front-end engineer</span> at <a href="http://bittorrent.com">BitTorrent</a> (October 2013 - present)
+                            <ul>
+                                <li>Developed a JavaScript library for building Windows application installers</li>
+                                <li>Worked on internal ad delivery, creation and reporting tools</li>
+                                <li>Created a service to run and monitor <a href="https://github.com/yelp/mrjob">MRJob</a> jobs, to provide ad analytics to the sales and business teams</li>
+                            </ul>
                         </li>
                         <li>
-                            April 2012 to October 2013 - Front-end engineer at <a href="http://wyse.com">Dell Wyse</a> (formerly Wyse Technologies) for <a href="http://my.pocketcloud.com">PocketCloud Web</a>.
+                            <span class="bold">Front-end engineer</span> at <a href="http://wyse.com">Dell Wyse</a> (April 2012 - October 2013)
+                            <ul>
+                                <li>Improved load time of <a href="http://my.pocketcloud.com">PocketCloud Web</a> by 25%. Sole UI dev for most of my time there.</li>
+                                <li>Worked on Project Freezer (an unreleased HTML5 RDP client)</li>
+                            </ul>
                         </li>
                         <li>
-                            June 2011 to April 2014 - Co-founder and managing member at <a href='http://jajavy.com'>Jajavy, LLC</a>
+                            <span class="bold">Co-founder and managing member</span> at <a href='http://jajavy.com'>Jajavy, LLC</a> (June 2011 - April 2014)
+                            <ul>
+                                <li>Developed the company's two main products: Kanjus (a mobile punchcard-sharing app) and Corporate Web Identity Package (helped small businesses establish an online presence quickly)</li>
+                            </ul>
                         </li>
                         <li>
-                            August 2011 to present - Part-time web developer at <a href='http://www.ic.gatech.edu'>Georgia Tech</a>
+                            <span class="bold">Part-time web developer</span> at <a href='http://www.ic.gatech.edu'>Georgia Tech</a> (August 2011 - April 2012)
                         </li>
                         <li>
-                            August 2010 to August 2011 - Graduate research assistant at <a href='http://intel.gatech.edu'>Georgia Tech</a>
+                            <span class="bold">Graduate research assistant</span> at <a href='http://intel.gatech.edu'>Georgia Tech</a> (August 2010 - August 2011)
+                            <ul>
+                                <li>Java developer on the <a href="https://github.com/jogjayr/InTEL-Project">InTEL project</a></li>
+                            </ul>
                         </li>
                         <li>
-                            May 2010 to August 2010 - Summer intern at <a href='http://www.usa.siemens.com/en/about_us/research/home.htm'>Siemens Corporate Research</a>, Princeton
+                            <span class="bold">Summer intern</span> at <a href='http://www.usa.siemens.com/en/about_us/research/home.htm'>Siemens Corporate Research</a>, Princeton (May 2010 - August 2010)
+                            <ul>
+                                <li>Designed and developed a <a href="https://secondlife.com/">Second Life</a> based knowledge sharing system</li>
+                            </ul>
                         </li>
                         <li>
-                            September 2009 to May 2010 - Graduate research assistant at <a href='http://iac.gatech.edu'>Georgia Tech</a>
+                            <span class="bold">Graduate research assistant</span> at <a href='http://iac.gatech.edu'>Georgia Tech</a> (September 2009 - May 2010)
                         </li>
                         <li>
-                            November 2008 to July 2009 - Assistant Systems Engineer, Trainee at <a href='http://www.tcs.com'>Tata Consultancy Services</a>
+                             <span class="bold">Assistant Systems Engineer, Trainee</span> at <a href='http://www.tcs.com'>Tata Consultancy Services</a> (November 2008 - July 2009)
                         </li>
                     </ul>
                 </div>
@@ -101,7 +119,7 @@
                     </h2>
                 </header>
                 <div class='resume_section'>
-                    JavaScript, HTML/CSS, Python, Clojure, PHP, Java, MySQL
+                    JavaScript (jQuery, Backbone, Angular), HTML/CSS, Python, Clojure, PHP, Java, MySQL
                 </div>
                 <header>
                     <h2>
@@ -153,7 +171,14 @@
     <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
-
+    <script>
+        window.onload = function() {
+            var printLink = document.querySelector('#print');
+            printLink.addEventListener('click', function() {
+                window.print();
+            });
+        };
+    </script>
 </body>
 
 </html>

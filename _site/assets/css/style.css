@@ -127,30 +127,6 @@ svg:not(:root) { overflow: hidden; }
  * 3. Define consistent vertical alignment display in all browsers
  */
 
-button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
-
-/*
- * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
- */
-
-button, input { line-height: normal; }
-
-/*
- * 1. Display hand cursor for clickable form elements
- * 2. Allow styling of clickable form elements in iOS
- * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
- */
-
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
-
-/* =============================================================================
-   Tables
-   ========================================================================== */
-
-table { border-collapse: collapse; border-spacing: 0; }
-td { vertical-align: top; }
-
-
 /* ==|== primary styles =====================================================
    Author: Jayraj Jog
    ========================================================================== */
@@ -262,9 +238,8 @@ header h1, header h2, h1, h2, .project_title {
 }
 #content {
 	width: 980px;
-	/*min-height: 1000px;*/
 	margin: auto;
-	padding: 2em;
+	padding: 3em;
 	background: white;
 	position: relative;
 	z-index: 0;
@@ -319,6 +294,9 @@ header.project_header {
 /**
  * Start resume.html
  */
+ #print {
+    font-size: 14px;
+ }
 .resume_list{
 	list-style: none;
 	margin: 0;
@@ -327,6 +305,9 @@ header.project_header {
 
 .resume_list li {
 	margin-bottom: 10px;
+}
+.bold {
+    font-weight: bold;
 }
 /**
  * End resume.html
@@ -433,5 +414,8 @@ header.project_header {
   #content {
       overflow: visible;
       font-size: 14px;
-      }
+  }
+  .screen_only {
+    display: none;
+  }
 }

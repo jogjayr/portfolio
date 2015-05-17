@@ -21,7 +21,7 @@ tags:
 
 Sometimes I forget that I'm an engineer. No, this isn't a story of how I wonder in amazement how laypeople can't "do the simplest things with computers". I try to catch myself when I think like that. No, this story is the opposite of that.
 
-I've started dusting off my personal laptop again. For a long time, I've been playing with little bits and pieces of code on my work laptop, mostly because I didn't care about ownership issues. But now I'm starting up a project that I might come to care about, so I need my personal laptop development-ready.
+I've started dusting off my personal laptop again. For a long time, I've been playing with little bits and pieces of code on my work laptop, mostly because it was convenient and I didn't care about ownership issues. But now I'm starting up a project that I might come to care about, so I need my personal laptop development-ready.
 
 It had gathered a little dust, metaphorically speaking. No `git` installed; Homebrew _and_ Macports (what was I thinking?), no Seil or Karabiner for [Home Row Arrow Keys](/Home-row-arrow-keys/). And of course, Citrix Receiver installed and in the top bar on startup. Wait, what? When did this happen?
 

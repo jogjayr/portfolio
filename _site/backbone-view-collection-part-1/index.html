@@ -48,15 +48,15 @@
 
 
 <div class="col-lg-9">
-    <p>I love <a href="http://backbonejs.org">Backbone.js</a> for many reasons: it&#39;s lightweight, small (it&#39;s the first open-source library whose code I&#39;ve actually completely read), super simple to get started with and has a very active community.</p>
+    <p>I love <a href="http://backbonejs.org">Backbone.js</a> for many reasons: it’s lightweight, small (it’s the first open-source library whose code I’ve actually completely read), super simple to get started with and has a very active community.</p>
 
-<p>Backbone Views leave a bit to be desired because they do very little. As the <a href="http://backbonejs.org/#View">documentation</a> itself says &quot;Backbone views are almost more convention than they are code&quot;. </p>
+<p>Backbone Views leave a bit to be desired because they do very little. As the <a href="http://backbonejs.org/#View">documentation</a> itself says “Backbone views are almost more convention than they are code”.</p>
 
-<p>One particular pain point I&#39;ve had is the inability to manage collections of views. There already exist a <a href="http://marionettejs.com/">number</a> of <a href="http://chaplinjs.org/">solutions</a> that provide you a nice way to build applications with more structure that what Backbone alone will give you. I decided to write Backbone ViewCollection for 2 reasons:</p>
+<p>One particular pain point I’ve had is the inability to manage collections of views. There already exist a <a href="http://marionettejs.com/">number</a> of <a href="http://chaplinjs.org/">solutions</a> that provide you a nice way to build applications with more structure that what Backbone alone will give you. I decided to write Backbone ViewCollection for 2 reasons:</p>
 
 <ol>
-<li>I wanted to write it myself, to learn how</li>
-<li>A Backbone ViewCollection provides a better way of managing Backbone views while still keeping the application pure Backbone</li>
+  <li>I wanted to write it myself, to learn how</li>
+  <li>A Backbone ViewCollection provides a better way of managing Backbone views while still keeping the application pure Backbone</li>
 </ol>
 
 <p><strong><em>What should a View Collection Do?</em></strong></p>
@@ -64,32 +64,35 @@
 <p>These are the things I wanted from a View Collection class:</p>
 
 <ol>
-<li>Renders a Backbone Collection into a Backbone View that is composed of further, child views. Each model in the collection corresponds to a child view</li>
-<li>A <code>render</code> method that calls <code>render</code> on all its child elements</li>
-<li>Handles <code>delegateEvent</code> and all the other crap associated with it</li>
-<li>Manages child view creation and destruction and prevents memory leaks or zombie views</li>
-<li>Child views can be anything - as long as they are nodes of the parent view</li>
+  <li>Renders a Backbone Collection into a Backbone View that is composed of further, child views. Each model in the collection corresponds to a child view</li>
+  <li>A <code>render</code> method that calls <code>render</code> on all its child elements</li>
+  <li>Handles <code>delegateEvent</code> and all the other crap associated with it</li>
+  <li>Manages child view creation and destruction and prevents memory leaks or zombie views</li>
+  <li>Child views can be anything - as long as they are nodes of the parent view</li>
 </ol>
 
 <p>Here is an example of what such a class would do:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">var Pokemon = Backbone.Model.extend({});
+
+<pre><code>var Pokemon = Backbone.Model.extend({});
 var Pokedex = new Backbone.Collection({
-    model: Pokemon;
-});
-var PokemonView = Backbone.View.extend({
-    render: function() {
-        //some code to render a Pokemon&#39;s info
-    }
-});
-var PokedexView = new Backbone.ViewCollection({
-    childView: PokemonView,
-    collection: Pokedex
-});
-//This will create an instance of PokemonView for each model in
-//the Pokedex collection and call its render() method
-PokedexView.render();
-</code></pre></div>
+	model: Pokemon;
+ 	});
+ 	var PokemonView = Backbone.View.extend({
+	render: function() {
+		//some code to render a Pokemon's info
+	}
+ 	});
+ 	var PokedexView = new Backbone.ViewCollection({
+	childView: PokemonView,
+	collection: Pokedex
+ 	});
+ 	//This will create an instance of PokemonView for each model in
+ 	//the Pokedex collection and call its render() method
+ 	PokedexView.render();
+</code></pre>
+
 <p>In the coming blog posts, I will describe how I made my ViewCollection.</p>
+
 
     <hr>
     <ul class='pagination'>

@@ -1,0 +1,70 @@
+<blockquote>
+  <p>‘Well, hurry up, I can’t breathe!’ Harry gasped, wrestling it as it curled around his chest.</p>
+</blockquote>
+
+<blockquote>
+  <p>‘Devil’s Snare, Devil’s Snare… what did Professor Sprout say? - it likes the dark and the damp -‘</p>
+</blockquote>
+
+<blockquote>
+  <p>‘So light a fire!’ Harry choked.</p>
+</blockquote>
+
+<blockquote>
+  <p>‘Yes- of course- but there’s no wood!’ Hermione cried, wringing her hands.</p>
+</blockquote>
+
+<blockquote>
+  <p>‘HAVE YOU GONE MAD?’ Ron bellowed. ‘ARE YOU A WITCH OR NOT?’</p>
+</blockquote>
+
+<blockquote>
+  <p>- <em>Harry Potter and the Chamber of Secrets</em></p>
+</blockquote>
+
+<p>That I’m an engineer. Sometimes I forget that I know more than most people about computers. No, this isn’t a story of how I wonder in amazement how laypeople can’t “do the simplest things with computers”. Quite the opposite.</p>
+
+<p>I’ve started dusting off my personal laptop again. For a long time, I’ve been playing with little bits and pieces of code on my work laptop, mostly because I didn’t care about ownership issues. But now I’m starting up a project that I might come to care about, so I need my personal laptop development-ready.</p>
+
+<p>It had gathered a little dust, metaphorically speaking. No <code>git</code> installed; Homebrew <em>and</em> Macports (what was I thinking?), no Seil or Karabiner for <a href="/Home-row-arrow-keys/">Home Row Arrow Keys</a>. And of course, Citrix Receiver installed and in the top bar on startup. Wait, what? When did this happen?</p>
+
+<p><img src="/assets/img/topbar.png" alt="Citrix Receiver in top bar" title="Citrix receiver icon in top bar" /></p>
+
+<p>Looked for “Citrix” in Spotlight, looked for it in “System Preferences -&gt; Accounts -&gt; Startup Items”. Nada. Where is this danged thing?</p>
+
+<p>“Uninstall Citrix Receiver Mac” -&gt; Google. That gave me an uninstaller application from Citrix. What the hell, it’s Saturday morning. Who needs a brain? Let’s just run the “uninstaller”, like a Windows-using schmuck. But I restart and there’s the little icon staring at me again, smugly.</p>
+
+<p><img src="/assets/img/topbar.png" alt="Citrix Receiver in top bar" title="Citrix receiver icon in top bar" /></p>
+
+<p>What now? Was I doomed to seeing this thing forever? Would I have to reset my Mac to factory settings? This things’s 7 years old; that would surely be the deathblow.</p>
+
+<p>Almost at <a href="/Lessons-from-Jajavy/">“give-up-ness”</a>, I was reminded of one of my favorite quotes from <em>Harry Potter and the Chamber of Secrets</em>.</p>
+
+<p>Of course I have other options!</p>
+
+<pre><code>ps -ef | grep citrix
+</code></pre>
+
+<p>Nothing. <em>Scratches chin</em></p>
+
+<pre><code>ps -ef
+</code></pre>
+
+<p>I don’t see anything named “Citrix”. Until…</p>
+
+<p><img src="/assets/img/psoutput.png" alt="Citrix Receiver in ps -ef output" title="Citrix receiver in ps -ef output" /></p>
+
+<p>Triumph! I know where the binary is! I can kill the process too! Only to have it come back, like an Inferi.</p>
+
+<p><img src="/assets/img/stilllives.png" alt="Citrix Receiver in still lives" title="Citrix receiver still lives" /></p>
+
+<p>Who is doing this? The <code>ppid</code> says it’s <code>launchd</code>. Mystery solved. <code>launchd</code>’s daemons live in various places. Per the man page:</p>
+
+<pre><code>~/Library/LaunchAgents         Per-user agents provided by the user.
+/Library/LaunchAgents          Per-user agents provided by the administrator.
+/Library/LaunchDaemons         System-wide daemons provided by the administrator.
+/System/Library/LaunchAgents   Per-user agents provided by Mac OS X.
+/System/Library/LaunchDaemons  System-wide daemons provided by Mac OS X.
+</code></pre>
+
+<p>Conclusion: I need to challenge my brain more.</p>

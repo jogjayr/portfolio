@@ -51,35 +51,40 @@
     <p>In this series of posts on how I wrote a collection class for Backbone views, I covered the objectives of the enterprise in <a href="http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1">part 1</a>. In <a href="http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-2">part 2</a> the Backbone ViewCollection accomplished its first goal: create a lot of child views of a specified type, off of a collection passed to it.</p>
 
 <p>This post will discuss how I event handling works with so many child views. I saw numerous blog posts and StackOverflow questions related to event binding when <code>empty</code> is called on a jQuery object. For me, the most important bit of knowledge was that when you do the following <a href="http://jsfiddle.net/jogjayr/3QfLc/1/">JSFiddle</a>:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">var $child_el = $(&quot;#my_div&quot;).on(&quot;click&quot;, function() {
-    console.log(&quot;clicked me&quot;);
+
+<pre><code>var $child_el = $("#my_div").on("click", function() {
+    console.log("clicked me");
 })
-$(&quot;#parent_elem&quot;).html($child_el); //Clicking on the child will do nothing
-</code></pre></div>
-<p>The CHILD VIEW&#39;S EVENTS ARE LOST! I suppose this is general knowledge among those familiar with the DOM&#39;s secrets, but it was a revelation to me.</p>
+$("#parent_elem").html($child_el); //Clicking on the child will do nothing
+</code></pre>
 
-<p>Second revelation (in fact, as I started writing this blog post), is that the child views&#39; events actually need to delegate to the parent. Previously, I used to do the following:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">var Backbone.ViewCollection = Backbone.View.extend({
-    //other View Collection methods here
+<p>The CHILD VIEW’S EVENTS ARE LOST! I suppose this is general knowledge among those familiar with the DOM’s secrets, but it was a revelation to me.</p>
 
-    //delegateEvents not only re-attaches the collections&#39;s events
-    //it also re-attaches childEvents without calling them individually
-    delegateEvents: function() {
-        Backbone.View.prototype.delegateEvents.call(this);
-        _(this.childViews).each(function(view, index, childViews) {
-            view.delegateEvents();
-        });
-    }
+<p>Second revelation (in fact, as I started writing this blog post), is that the child views’ events actually need to delegate to the parent. Previously, I used to do the following:</p>
+
+<pre><code>var Backbone.ViewCollection = Backbone.View.extend({
+	//other View Collection methods here
+
+	//delegateEvents not only re-attaches the collections's events
+	//it also re-attaches childEvents without calling them individually
+	delegateEvents: function() {
+		Backbone.View.prototype.delegateEvents.call(this);
+		_(this.childViews).each(function(view, index, childViews) {
+			view.delegateEvents();
+		});
+	}
 });
-</code></pre></div>
+</code></pre>
+
 <p>Thanks to <a href="http://lostechies.com/derickbailey/2011/10/11/backbone-js-getting-the-model-for-a-clicked-element/">this blog post</a> by the inestimable Derick Bailey of KendoUI and MarionetteJS fame, I have realized that this my existing approach is COMPLETELY MORONIC. I will have to go back to the projects that inspired this library and fix it, but I will do it first here.</p>
 
-<p>The reason it&#39;s so stupid is because when you attach an event to each individual child event:</p>
+<p>The reason it’s so stupid is because when you attach an event to each individual child event:</p>
 
 <ol>
-<li>Your application uses a lot more memory. Each event listener is extra overhead.</li>
-<li>The clue was in the method name <code>delegateEvent</code>. I should be using the time-tested <a href="http://davidwalsh.name/event-delegate">event delegation pattern</a></li>
+  <li>Your application uses a lot more memory. Each event listener is extra overhead.</li>
+  <li>The clue was in the method name <code>delegateEvent</code>. I should be using the time-tested <a href="http://davidwalsh.name/event-delegate">event delegation pattern</a></li>
 </ol>
+
 
     <hr>
     <ul class='pagination'>

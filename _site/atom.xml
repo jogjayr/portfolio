@@ -4,7 +4,7 @@
  <title>Weekly Typed</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2015-05-16T17:16:35-07:00</updated>
+ <updated>2015-05-17T11:43:53-07:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
@@ -13,63 +13,79 @@
 
  
  <entry>
-   <title>I Need to Remind Myself Sometimes</title>
-   <link href="http://jayraj.net/Need-to-Remind-Myself"/>
+   <title>Sometimes I Forget</title>
+   <link href="http://jayraj.net/Sometimes-I-Forget"/>
    <updated>2015-05-16T00:00:00-07:00</updated>
-   <id>hhttp://jayraj.net/Need-to-Remind-Myself</id>
+   <id>hhttp://jayraj.net/Sometimes-I-Forget</id>
    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;&amp;#39;Well, hurry up, I can&amp;#39;t breathe!&amp;#39; Harry gasped, wrestling it as it curled around his chest.&lt;/p&gt;
-
-&lt;p&gt;&amp;#39;Devil&amp;#39;s Snare, Devil&amp;#39;s Snare... what did Professor Sprout say? - it likes the dark and the damp -&amp;#39; &lt;/p&gt;
-
-&lt;p&gt;&amp;#39;So light a fire!&amp;#39; Harry choked.&lt;/p&gt;
-
-&lt;p&gt;&amp;#39;Yes- of course- but there&amp;#39;s no wood!&amp;#39; Hermione cried, wringing her hands.&lt;/p&gt;
-
-&lt;p&gt;&amp;#39;HAVE YOU GONE MAD?&amp;#39; Ron bellowed. &amp;#39;ARE YOU A WITCH OR NOT?&amp;#39; &lt;/p&gt;
-
-&lt;p&gt;- &lt;em&gt;Harry Potter and the Chamber of Secrets&lt;/em&gt;&lt;/p&gt;
+  &lt;p&gt;‘Well, hurry up, I can’t breathe!’ Harry gasped, wrestling it as it curled around his chest.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;That I&amp;#39;m an engineer. Sometimes I forget that I know more than most people about computers. No, this isn&amp;#39;t a story of how I wonder in amazement how laypeople can&amp;#39;t &amp;quot;do the simplest things with computers&amp;quot;. Quite the opposite.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;‘Devil’s Snare, Devil’s Snare… what did Professor Sprout say? - it likes the dark and the damp -‘&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;I&amp;#39;ve started dusting off my personal laptop again. For a long time, I&amp;#39;ve been playing with little bits and pieces of code on my work laptop, mostly because I didn&amp;#39;t care about ownership issues. But now I&amp;#39;m starting up a project that I might come to care about, so I need my personal laptop development-ready.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;‘So light a fire!’ Harry choked.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘Yes- of course- but there’s no wood!’ Hermione cried, wringing her hands.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘HAVE YOU GONE MAD?’ Ron bellowed. ‘ARE YOU A WITCH OR NOT?’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;- &lt;em&gt;Harry Potter and the Chamber of Secrets&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sometimes I forget that I’m an engineer. No, this isn’t a story of how I wonder in amazement how laypeople can’t “do the simplest things with computers”. I try to catch myself when I think like that. No, this story is the opposite of that.&lt;/p&gt;
+
+&lt;p&gt;I’ve started dusting off my personal laptop again. For a long time, I’ve been playing with little bits and pieces of code on my work laptop, mostly because I didn’t care about ownership issues. But now I’m starting up a project that I might come to care about, so I need my personal laptop development-ready.&lt;/p&gt;
 
 &lt;p&gt;It had gathered a little dust, metaphorically speaking. No &lt;code&gt;git&lt;/code&gt; installed; Homebrew &lt;em&gt;and&lt;/em&gt; Macports (what was I thinking?), no Seil or Karabiner for &lt;a href=&quot;/Home-row-arrow-keys/&quot;&gt;Home Row Arrow Keys&lt;/a&gt;. And of course, Citrix Receiver installed and in the top bar on startup. Wait, what? When did this happen?&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/topbar.png&quot; alt=&quot;Citrix Receiver in top bar&quot; title=&quot;Citrix receiver icon in top bar&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/topbar.png&quot; alt=&quot;Citrix Receiver in top bar&quot; title=&quot;Citrix receiver icon in top bar&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Looked for &amp;quot;Citrix&amp;quot; in Spotlight, looked for it in &amp;quot;System Preferences -&amp;gt; Accounts -&amp;gt; Startup Items&amp;quot;. Nada. Where is this danged thing?&lt;/p&gt;
+&lt;p&gt;Looked for “Citrix” in Spotlight, looked for it in “System Preferences -&amp;gt; Accounts -&amp;gt; Startup Items”. Nada. Where is this danged thing?&lt;/p&gt;
 
-&lt;p&gt;&amp;quot;Uninstall Citrix Receiver Mac&amp;quot; -&amp;gt; Google. That gave me an uninstaller application from Citrix. What the hell, it&amp;#39;s Saturday morning. Who needs a brain? Let&amp;#39;s just run the &amp;quot;uninstaller&amp;quot;, like a Windows-using schmuck. But I restart and there&amp;#39;s the little icon staring at me again, smugly.&lt;/p&gt;
+&lt;p&gt;“Uninstall Citrix Receiver Mac” -&amp;gt; Google. That gave me an uninstaller application from Citrix. What the hell, it’s Saturday morning. Who needs a brain? Let’s just run the “uninstaller”, like a Windows-using schmuck. But I restart and there’s the little icon staring at me again, smugly.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/topbar.png&quot; alt=&quot;Citrix Receiver in top bar&quot; title=&quot;Citrix receiver icon in top bar&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/topbar.png&quot; alt=&quot;Citrix Receiver in top bar&quot; title=&quot;Citrix receiver icon in top bar&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;What now? Was I doomed to seeing this thing forever? Would I have to reset my Mac to factory settings? This things&amp;#39;s 7 years old; that would surely be the deathblow.&lt;/p&gt;
+&lt;p&gt;What now? Was I doomed to seeing this thing forever? Would I have to reset my Mac to factory settings? This things’s 7 years old; that would surely be the deathblow.&lt;/p&gt;
 
-&lt;p&gt;Almost at &lt;a href=&quot;/Lessons-from-Jajavy/&quot;&gt;&amp;quot;give-up-ness&amp;quot;&lt;/a&gt;, I was reminded of one of my favorite quotes from &lt;em&gt;Harry Potter and the Chamber of Secrets&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Almost at &lt;a href=&quot;/Lessons-from-Jajavy/&quot;&gt;“give-up-ness”&lt;/a&gt;, I was reminded of one of my favorite quotes from &lt;em&gt;Harry Potter and the Chamber of Secrets&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Of course I have other options!&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ps -ef | grep citrix
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Nothing. &lt;em&gt;Scratches chin&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ps -ef
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;I don&amp;#39;t see anything named &amp;quot;Citrix&amp;quot;. Until...&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/psoutput.png&quot; alt=&quot;Citrix Receiver in ps -ef output&quot; title=&quot;Citrix receiver in ps -ef output&quot;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ps -ef | grep citrix
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nothing. &lt;em&gt;Scratches chin&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ps -ef
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I don’t see anything named “Citrix”. Until…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/psoutput.png&quot; alt=&quot;Citrix Receiver in ps -ef output&quot; title=&quot;Citrix receiver in ps -ef output&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Triumph! I know where the binary is! I can kill the process too! Only to have it come back, like an Inferi.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/stilllives.png&quot; alt=&quot;Citrix Receiver in still lives&quot; title=&quot;Citrix receiver still lives&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/stilllives.png&quot; alt=&quot;Citrix Receiver in still lives&quot; title=&quot;Citrix receiver still lives&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Who is doing this? The &lt;code&gt;ppid&lt;/code&gt; says it&amp;#39;s &lt;code&gt;launchd&lt;/code&gt;. Mystery solved. &lt;code&gt;launchd&lt;/code&gt;&amp;#39;s daemons live in various places. Per the man page:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;~/Library/LaunchAgents         Per-user agents provided by the user.
+&lt;p&gt;Who is doing this? The &lt;code&gt;ppid&lt;/code&gt; says it’s &lt;code&gt;launchd&lt;/code&gt;. Mystery solved. &lt;code&gt;launchd&lt;/code&gt;’s daemons live in various places. Per the man page:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~/Library/LaunchAgents         Per-user agents provided by the user.
 /Library/LaunchAgents          Per-user agents provided by the administrator.
 /Library/LaunchDaemons         System-wide daemons provided by the administrator.
 /System/Library/LaunchAgents   Per-user agents provided by Mac OS X.
 /System/Library/LaunchDaemons  System-wide daemons provided by Mac OS X.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Conclusion: I need to challenge my brain more.&lt;/p&gt;
 </content>
  </entry>
@@ -81,37 +97,37 @@
    <id>hhttp://jayraj.net/Lessons-from-Jajavy</id>
    <content type="html">&lt;p&gt;This year, I filed the final tax return for my now-dead company: Jajavy LLC. It was a good time to reflect on everything that I learned from the experience.&lt;/p&gt;
 
-&lt;h3&gt;History&lt;/h3&gt;
+&lt;h3 id=&quot;history&quot;&gt;History&lt;/h3&gt;
 
-&lt;p&gt;The idea for Jajavy came to me in January 2011. &lt;a href=&quot;http://groupon.com&quot;&gt;Groupon&lt;/a&gt; was the hot new thing at the time; they even had a Superbowl ad, which was my inspiration. My idea was essentially a way for merchants to give out referral bonuses to their customers via the trusty old &amp;quot;punchcard&amp;quot;. If you made the punchcard, traditionally redeemed for a free beverage after 10 visits, digital, it could be shared with friends on Facebook and Twitter. If your friends then visited the same merchant, you got a small cashback if you and all your friends (and their friends) filled up the punchcard.&lt;/p&gt;
+&lt;p&gt;The idea for Jajavy came to me in January 2011. &lt;a href=&quot;http://groupon.com&quot;&gt;Groupon&lt;/a&gt; was the hot new thing at the time; they even had a Superbowl ad, which was my inspiration. My idea was essentially a way for merchants to give out referral bonuses to their customers via the trusty old “punchcard”. If you made the punchcard, traditionally redeemed for a free beverage after 10 visits, digital, it could be shared with friends on Facebook and Twitter. If your friends then visited the same merchant, you got a small cashback if you and all your friends (and their friends) filled up the punchcard.&lt;/p&gt;
 
-&lt;h3&gt;Work Starts&lt;/h3&gt;
+&lt;h3 id=&quot;work-starts&quot;&gt;Work Starts&lt;/h3&gt;
 
 &lt;p&gt;I managed to convince a co-founder (who shall remain un-named till he reads and approves this blog post) to join me on this (mis)adventure. We named the company Jajavy, LLC, after a type of tree that grows in Madagascar. Coding started June 2011.&lt;/p&gt;
 
-&lt;h3&gt;What we did&lt;/h3&gt;
+&lt;h3 id=&quot;what-we-did&quot;&gt;What we did&lt;/h3&gt;
 
 &lt;p&gt;We made two products: Kanjus, the punchcard idea named after the Hindi word for cheap, and Corporate Web Identity Package, the ingenious brainchild of my co-founder. CWIP was a set of Selenium scripts that automated the signup process for a bunch of different social media sites. Why? Because when small business starts up, the owner farms out the social media stuff to their 15-year old niece or nephew. Who might do an incomplete job. Or lose passwords. No more, thanks to CWIP.&lt;/p&gt;
 
-&lt;h3&gt;Work Ends&lt;/h3&gt;
+&lt;h3 id=&quot;work-ends&quot;&gt;Work Ends&lt;/h3&gt;
 
-&lt;p&gt;By April 2012, work on Jajavy, LLC had stopped. In all, it took about 10 months from glorious optimism to &amp;quot;give-up-ness&amp;quot;. What happened?&lt;/p&gt;
+&lt;p&gt;By April 2012, work on Jajavy, LLC had stopped. In all, it took about 10 months from glorious optimism to “give-up-ness”. What happened?&lt;/p&gt;
 
-&lt;h3&gt;Lessons Learned&lt;/h3&gt;
+&lt;h3 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h3&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;em&gt;Two-sided markets are hard&lt;/em&gt; - Our product required us to market and sell to two different groups of people: merchants, and customers of those merchants. Too few customers and merchants wouldn&amp;#39;t see value in signing up with us, too few merchants and customers would forget about our app soon. A product where you&amp;#39;re an intermediary is therefore incredibly hard. It&amp;#39;s far easier when you both make it and sell. How we&amp;#39;d solve this chicken-egg problem was the most common question we heard at angel investor pitches.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Attack 2-sided markets with energy&lt;/em&gt; - If you do have the misfortune of being driven by an idea that&amp;#39;s a 2-sided market, it helps to be a high-energy, hustling personality. You need to talk to as many potential users as possible, pitch your idea over and over, do impromptu demos and other &lt;a href=&quot;http://paulgraham.com/ds.html&quot;&gt;things that don&amp;#39;t scale&lt;/a&gt;. I don&amp;#39;t think we ever sold in this fashion; our attitude was always more &amp;quot;We need to get one more thing right, and then...&amp;quot;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Build an MVP and release fast&lt;/em&gt; - This is the basic lesson that&amp;#39;s hammered into every single person who starts a company. We knew it; we said it; we just didn&amp;#39;t do it. Version 1 took 6 months to build. See the next lesson for more details. It wasn&amp;#39;t well-received; we signed up 3 merchants and less than 50 users. We don&amp;#39;t really know why it wasn&amp;#39;t well-received because...see point 5&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Don&amp;#39;t reinvent anything&lt;/em&gt; - Obviously an exaggeration. If the technology that you&amp;#39;re building is the key differentiator between you and the competition, then &amp;quot;reinventing&amp;quot; is exactly what you&amp;#39;re supposed to do. If you&amp;#39;re building a service that&amp;#39;s technically well-understood, you should not build your own PHP ORM or MVC library. You should certainly never write your own JavaScript framework. We did all those things. You don&amp;#39;t have time for that. Any time spent on doing anything that&amp;#39;s not directly customer-related is a waste. Could we have released version one faster than 6 months if we hadn&amp;#39;t spent all that time on things that turned out to not matter?&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Measure everything&lt;/em&gt; - Again, one of those adages that we knew and never did anything about. Sure we put Google Analytics on our pages. But we never tracked anything that was useful. How many conversions did we have? What point of the signup process did people drop out at? No idea. None. It&amp;#39;s doubly important when you spend so long on a first release.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;People will try to take advantage of you&lt;/em&gt; - We went to networking events and pitches. There were a couple that charged money to pitch; a practice that I&amp;#39;m torn over. Most people we met were nice and helpful. Mad props to Devon Wijesinghe, for instance, for taking the time to talk to us and giving much useful advice. Others are less scrupulous. We fielded more than one sales pitch that started out as &amp;quot;We have this other thing, we can help you, let&amp;#39;s be partners&amp;quot;. I know better now, but I was incredibly naive then.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Have a life&lt;/em&gt; - When I started working on the company, most of my friends had graduated grad school and left town. My co-founder was admirably shouldering both grad school and company work. When you start a company, you are responsible for its success or failure. I felt like I had to work all the time. It was too intense; the pressure, the social isolation, the feeling of not having achieved enough.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Two-sided markets are hard&lt;/em&gt; - Our product required us to market and sell to two different groups of people: merchants, and customers of those merchants. Too few customers and merchants wouldn’t see value in signing up with us, too few merchants and customers would forget about our app soon. A product where you’re an intermediary is therefore incredibly hard. It’s far easier when you both make it and sell. How we’d solve this chicken-egg problem was the most common question we heard at angel investor pitches.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Attack 2-sided markets with energy&lt;/em&gt; - If you do have the misfortune of being driven by an idea that’s a 2-sided market, it helps to be a high-energy, hustling personality. You need to talk to as many potential users as possible, pitch your idea over and over, do impromptu demos and other &lt;a href=&quot;http://paulgraham.com/ds.html&quot;&gt;things that don’t scale&lt;/a&gt;. I don’t think we ever sold in this fashion; our attitude was always more “We need to get one more thing right, and then…”&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Build an MVP and release fast&lt;/em&gt; - This is the basic lesson that’s hammered into every single person who starts a company. We knew it; we said it; we just didn’t do it. Version 1 took 6 months to build. See the next lesson for more details. It wasn’t well-received; we signed up 3 merchants and less than 50 users. We don’t really know why it wasn’t well-received because…see point 5&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Don’t reinvent anything&lt;/em&gt; - Obviously an exaggeration. If the technology that you’re building is the key differentiator between you and the competition, then “reinventing” is exactly what you’re supposed to do. If you’re building a service that’s technically well-understood, you should not build your own PHP ORM or MVC library. You should certainly never write your own JavaScript framework. We did all those things. You don’t have time for that. Any time spent on doing anything that’s not directly customer-related is a waste. Could we have released version one faster than 6 months if we hadn’t spent all that time on things that turned out to not matter?&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Measure everything&lt;/em&gt; - Again, one of those adages that we knew and never did anything about. Sure we put Google Analytics on our pages. But we never tracked anything that was useful. How many conversions did we have? What point of the signup process did people drop out at? No idea. None. It’s doubly important when you spend so long on a first release.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;People will try to take advantage of you&lt;/em&gt; - We went to networking events and pitches. There were a couple that charged money to pitch; a practice that I’m torn over. Most people we met were nice and helpful. Mad props to Devon Wijesinghe, for instance, for taking the time to talk to us and giving much useful advice. Others are less scrupulous. We fielded more than one sales pitch that started out as “We have this other thing, we can help you, let’s be partners”. I know better now, but I was incredibly naive then.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Have a life&lt;/em&gt; - When I started working on the company, most of my friends had graduated grad school and left town. My co-founder was admirably shouldering both grad school and company work. When you start a company, you are responsible for its success or failure. I felt like I had to work all the time. It was too intense; the pressure, the social isolation, the feeling of not having achieved enough.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
-&lt;p&gt;It&amp;#39;s easy to look back at mistakes made 3 years ago and laugh at myself. I knew most of these things back then, but yet somehow, didn&amp;#39;t &lt;em&gt;know&lt;/em&gt; them. These lessons are burned deep into me now.&lt;/p&gt;
+&lt;p&gt;It’s easy to look back at mistakes made 3 years ago and laugh at myself. I knew most of these things back then, but yet somehow, didn’t &lt;em&gt;know&lt;/em&gt; them. These lessons are burned deep into me now.&lt;/p&gt;
 </content>
  </entry>
  
@@ -120,24 +136,24 @@
    <link href="http://jayraj.net/Goals-2015"/>
    <updated>2015-01-04T00:00:00-08:00</updated>
    <id>hhttp://jayraj.net/Goals-2015</id>
-   <content type="html">&lt;p&gt;For the first time ever, I&amp;#39;ve decided to set some goals for the year for myself. Like most people, consciously committing to something is the best way to get it done. Here we go:&lt;/p&gt;
+   <content type="html">&lt;p&gt;For the first time ever, I’ve decided to set some goals for the year for myself. Like most people, consciously committing to something is the best way to get it done. Here we go:&lt;/p&gt;
 
-&lt;h3&gt;Personal&lt;/h3&gt;
+&lt;h3 id=&quot;personal&quot;&gt;Personal&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Learn to do at least 5 keepie-uppies with both feet and thighs&lt;/li&gt;
-&lt;li&gt;Squat at least my own bodyweight (ie a bar loaded with as much as I weigh)&lt;/li&gt;
-&lt;li&gt;Go on at least 5 day hikes over 10 miles&lt;/li&gt;
-&lt;li&gt;Go camping at least 5 times&lt;/li&gt;
-&lt;li&gt;Read at &lt;a href=&quot;/blog/reading_list.html&quot;&gt;least 20 books&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Get to level 16 in Duolingo French&lt;/li&gt;
+  &lt;li&gt;Learn to do at least 5 keepie-uppies with both feet and thighs&lt;/li&gt;
+  &lt;li&gt;Squat at least my own bodyweight (ie a bar loaded with as much as I weigh)&lt;/li&gt;
+  &lt;li&gt;Go on at least 5 day hikes over 10 miles&lt;/li&gt;
+  &lt;li&gt;Go camping at least 5 times&lt;/li&gt;
+  &lt;li&gt;Read at &lt;a href=&quot;/blog/reading_list.html&quot;&gt;least 20 books&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Get to level 16 in Duolingo French&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3&gt;Technical&lt;/h3&gt;
+&lt;h3 id=&quot;technical&quot;&gt;Technical&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Write a simple HTTP server in any one of: Python, JavaScript, Clojure&lt;/li&gt;
-&lt;li&gt;Solve at least 75 exercises on HackerRank&lt;/li&gt;
+  &lt;li&gt;Write a simple HTTP server in any one of: Python, JavaScript, Clojure&lt;/li&gt;
+  &lt;li&gt;Solve at least 75 exercises on HackerRank&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Happy 2015 to everyone!&lt;/p&gt;
@@ -155,56 +171,59 @@
 
 &lt;p&gt;&lt;strong&gt;..Continued&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;I didn&amp;#39;t even know it, but I was tired of taking my hands off home row to use the arrow keys. Inspired by &lt;a href=&quot;http://duartes.org/gustavo/blog/post/home-row-computing/&quot;&gt;this post&lt;/a&gt;, I decided to set up my MacBook Pro to use Caps Lock + IJKL instead of arrow keys. Here&amp;#39;s how I did it:&lt;/p&gt;
+&lt;p&gt;I didn’t even know it, but I was tired of taking my hands off home row to use the arrow keys. Inspired by &lt;a href=&quot;http://duartes.org/gustavo/blog/post/home-row-computing/&quot;&gt;this post&lt;/a&gt;, I decided to set up my MacBook Pro to use Caps Lock + IJKL instead of arrow keys. Here’s how I did it:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Download and install &lt;a href=&quot;https://pqrs.org/osx/karabiner/&quot;&gt;Karabiner&lt;/a&gt; and &lt;a href=&quot;https://pqrs.org/osx/karabiner/seil.html.en&quot;&gt;Seil&lt;/a&gt;. Seil helps you remap the Caps Lock key and Karabiner helps you remap everything else. At this point, I&amp;#39;m unclear why you need two separate apps to do this though&lt;/li&gt;
-&lt;li&gt;Run Seil and remap the Caps Lock key to the Fn key (code 63), as in the screenshot. &lt;img src=&quot;/assets/img/seil.png&quot; alt=&quot;Remapping Caps Lock Key to Fn Key&quot; title=&quot;Seil Remapping Caps Lock key&quot;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Run Karabiner and open &lt;code&gt;private.xml&lt;/code&gt; from &amp;quot;Misc &amp;amp; Uninstall&amp;quot;. &lt;img src=&quot;/assets/img/privatexml.png&quot; alt=&quot;Opening private.xml&quot; title=&quot;Click on Misc &amp;amp; Uninstall and private.xml&quot;&gt; Put your desired mappings in &lt;code&gt;private.xml&lt;/code&gt;. Mine, below, map Fn+IJKL to their respective arrow keys:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;
-&amp;lt;root&amp;gt;
-    &amp;lt;item&amp;gt;
-        &amp;lt;name&amp;gt;Bind CapsLock + J to left arrow&amp;lt;/name&amp;gt;
-        &amp;lt;identifier&amp;gt;private.caps_leftarrow&amp;lt;/identifier&amp;gt;
-        &amp;lt;autogen&amp;gt;
-            __KeyToKey__ 
-            KeyCode::J, ModifierFlag::FN,
-            KeyCode::CURSOR_LEFT
-        &amp;lt;/autogen&amp;gt;
-    &amp;lt;/item&amp;gt;
-    &amp;lt;item&amp;gt;
-        &amp;lt;name&amp;gt;Bind CapsLock + K to down arrow&amp;lt;/name&amp;gt;
-        &amp;lt;identifier&amp;gt;private.caps_downarrow&amp;lt;/identifier&amp;gt;
-        &amp;lt;autogen&amp;gt;
-            __KeyToKey__ 
-            KeyCode::K, ModifierFlag::FN,
-            KeyCode::CURSOR_DOWN
-        &amp;lt;/autogen&amp;gt;
-    &amp;lt;/item&amp;gt;
-    &amp;lt;item&amp;gt;
-        &amp;lt;name&amp;gt;Bind CapsLock + L to right arrow&amp;lt;/name&amp;gt;
-        &amp;lt;identifier&amp;gt;private.caps_rightarrow&amp;lt;/identifier&amp;gt;
-        &amp;lt;autogen&amp;gt;
-            __KeyToKey__ 
-            KeyCode::L, ModifierFlag::FN,
-            KeyCode::CURSOR_RIGHT
-        &amp;lt;/autogen&amp;gt;
-    &amp;lt;/item&amp;gt;
-    &amp;lt;item&amp;gt;
-        &amp;lt;name&amp;gt;Bind CapsLock + I to up arrow&amp;lt;/name&amp;gt;
-        &amp;lt;identifier&amp;gt;private.caps_uparrow&amp;lt;/identifier&amp;gt;
-        &amp;lt;autogen&amp;gt;
-            __KeyToKey__ 
-            KeyCode::I, ModifierFlag::FN,
-            KeyCode::CURSOR_UP
-        &amp;lt;/autogen&amp;gt;
-    &amp;lt;/item&amp;gt;
-&amp;lt;/root&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Click &amp;quot;Reload XML&amp;quot; in &amp;quot;Change Key&amp;quot;. Your new mappings should show up in the list. Activate them by clicking on the check box next to them. &lt;img src=&quot;/assets/img/karabinermappings.png&quot; alt=&quot;Activate remappings&quot; title=&quot;Activate remappings by checking checkboxes&quot;&gt; &lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;Download and install &lt;a href=&quot;https://pqrs.org/osx/karabiner/&quot;&gt;Karabiner&lt;/a&gt; and &lt;a href=&quot;https://pqrs.org/osx/karabiner/seil.html.en&quot;&gt;Seil&lt;/a&gt;. Seil helps you remap the Caps Lock key and Karabiner helps you remap everything else. At this point, I’m unclear why you need two separate apps to do this though&lt;/li&gt;
+  &lt;li&gt;Run Seil and remap the Caps Lock key to the Fn key (code 63), as in the screenshot. &lt;img src=&quot;/assets/img/seil.png&quot; alt=&quot;Remapping Caps Lock Key to Fn Key&quot; title=&quot;Seil Remapping Caps Lock key&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run Karabiner and open &lt;code&gt;private.xml&lt;/code&gt; from “Misc &amp;amp; Uninstall”. &lt;img src=&quot;/assets/img/privatexml.png&quot; alt=&quot;Opening private.xml&quot; title=&quot;Click on Misc &amp;amp; Uninstall and private.xml&quot; /&gt; Put your desired mappings in &lt;code&gt;private.xml&lt;/code&gt;. Mine, below, map Fn+IJKL to their respective arrow keys:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; &amp;lt;?xml version=&quot;1.0&quot;?&amp;gt;
+ &amp;lt;root&amp;gt;
+     &amp;lt;item&amp;gt;
+         &amp;lt;name&amp;gt;Bind CapsLock + J to left arrow&amp;lt;/name&amp;gt;
+         &amp;lt;identifier&amp;gt;private.caps_leftarrow&amp;lt;/identifier&amp;gt;
+         &amp;lt;autogen&amp;gt;
+             __KeyToKey__ 
+             KeyCode::J, ModifierFlag::FN,
+             KeyCode::CURSOR_LEFT
+         &amp;lt;/autogen&amp;gt;
+     &amp;lt;/item&amp;gt;
+     &amp;lt;item&amp;gt;
+         &amp;lt;name&amp;gt;Bind CapsLock + K to down arrow&amp;lt;/name&amp;gt;
+         &amp;lt;identifier&amp;gt;private.caps_downarrow&amp;lt;/identifier&amp;gt;
+         &amp;lt;autogen&amp;gt;
+             __KeyToKey__ 
+             KeyCode::K, ModifierFlag::FN,
+             KeyCode::CURSOR_DOWN
+         &amp;lt;/autogen&amp;gt;
+     &amp;lt;/item&amp;gt;
+     &amp;lt;item&amp;gt;
+         &amp;lt;name&amp;gt;Bind CapsLock + L to right arrow&amp;lt;/name&amp;gt;
+         &amp;lt;identifier&amp;gt;private.caps_rightarrow&amp;lt;/identifier&amp;gt;
+         &amp;lt;autogen&amp;gt;
+             __KeyToKey__ 
+             KeyCode::L, ModifierFlag::FN,
+             KeyCode::CURSOR_RIGHT
+         &amp;lt;/autogen&amp;gt;
+     &amp;lt;/item&amp;gt;
+     &amp;lt;item&amp;gt;
+         &amp;lt;name&amp;gt;Bind CapsLock + I to up arrow&amp;lt;/name&amp;gt;
+         &amp;lt;identifier&amp;gt;private.caps_uparrow&amp;lt;/identifier&amp;gt;
+         &amp;lt;autogen&amp;gt;
+             __KeyToKey__ 
+             KeyCode::I, ModifierFlag::FN,
+             KeyCode::CURSOR_UP
+         &amp;lt;/autogen&amp;gt;
+     &amp;lt;/item&amp;gt;
+ &amp;lt;/root&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Click “Reload XML” in “Change Key”. Your new mappings should show up in the list. Activate them by clicking on the check box next to them. &lt;img src=&quot;/assets/img/karabinermappings.png&quot; alt=&quot;Activate remappings&quot; title=&quot;Activate remappings by checking checkboxes&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;That&amp;#39;s it. You can now enjoy greater productivity :-)&lt;/p&gt;
+&lt;p&gt;That’s it. You can now enjoy greater productivity :-)&lt;/p&gt;
 </content>
  </entry>
  
@@ -215,11 +234,11 @@
    <id>hhttp://jayraj.net/Learning-to-Juggle</id>
    <content type="html">&lt;p&gt;In January of this year, I started learning how to juggle.&lt;/p&gt;
 
-&lt;p&gt;I work at &lt;a href=&quot;http://bittorrent.com&quot;&gt;BitTorrent&lt;/a&gt;, where it appears there&amp;#39;s a bit of a juggling culture. Actually, I don&amp;#39;t know if that&amp;#39;s true, but &lt;strong&gt;everyone&lt;/strong&gt; here seems to juggle. I think it starts from the top; I&amp;#39;ve seen Bram Cohen juggle 5 balls.&lt;/p&gt;
+&lt;p&gt;I work at &lt;a href=&quot;http://bittorrent.com&quot;&gt;BitTorrent&lt;/a&gt;, where it appears there’s a bit of a juggling culture. Actually, I don’t know if that’s true, but &lt;strong&gt;everyone&lt;/strong&gt; here seems to juggle. I think it starts from the top; I’ve seen Bram Cohen juggle 5 balls.&lt;/p&gt;
 
-&lt;p&gt;I always thought I lacked the co-ordination to learn to juggle, but it turns out I&amp;#39;d been doing it wrong. I checked out &lt;a href=&quot;link&quot;&gt;this Youtube video&lt;/a&gt; where the guy explains that the simplest method to learn is the 3-ball cascade. Most beginners try to do a pattern where they pass the ball underhand. Although this seems like the most obvious way to juggle, it&amp;#39;s actually really hard.&lt;/p&gt;
+&lt;p&gt;I always thought I lacked the co-ordination to learn to juggle, but it turns out I’d been doing it wrong. I checked out &lt;a href=&quot;link&quot;&gt;this Youtube video&lt;/a&gt; where the guy explains that the simplest method to learn is the 3-ball cascade. Most beginners try to do a pattern where they pass the ball underhand. Although this seems like the most obvious way to juggle, it’s actually really hard.&lt;/p&gt;
 
-&lt;p&gt;The cascade style is easy to pick up, once you&amp;#39;ve developed the muscle memory. Just do what the guy in the video says and you&amp;#39;ll be juggling within 3 to 4 weeks.&lt;/p&gt;
+&lt;p&gt;The cascade style is easy to pick up, once you’ve developed the muscle memory. Just do what the guy in the video says and you’ll be juggling within 3 to 4 weeks.&lt;/p&gt;
 </content>
  </entry>
  
@@ -230,13 +249,14 @@
    <id>hhttp://jayraj.net/Reading-List</id>
    <content type="html">&lt;p&gt;I now have a &lt;a href=&quot;/blog/reading_list.html&quot;&gt;reading list&lt;/a&gt; on my blog.&lt;/p&gt;
 
-&lt;p&gt;As you can see, it&amp;#39;s divided into fiction and non-fiction, with non-fiction further divided into technical and non-technical books. &lt;/p&gt;
+&lt;p&gt;As you can see, it’s divided into fiction and non-fiction, with non-fiction further divided into technical and non-technical books.&lt;/p&gt;
 
-&lt;p&gt;I have a mental list of books that I want to read, but always draw a blank when I&amp;#39;m actually at the library. This list will help with that. &lt;/p&gt;
+&lt;p&gt;I have a mental list of books that I want to read, but always draw a blank when I’m actually at the library. This list will help with that.&lt;/p&gt;
 
-&lt;p&gt;The first book I read on the list was &lt;i&gt;On Writing&lt;/i&gt; by Stephen King. I&amp;#39;ve read plenty of fiction by Stephen King. Some good (&lt;i&gt;Everything&amp;#39;s Eventual&lt;/i&gt;, &lt;i&gt;The Dead Zone&lt;/i&gt;, &lt;i&gt;The Running Man&lt;/i&gt;, the sometimes sappy &lt;i&gt;Hearts in Atlantis&lt;/i&gt;), and some very forgettable (&lt;i&gt;The Regulators&lt;/i&gt;, &lt;i&gt;The Girl Who Loved Tom Gordon&lt;/i&gt;). So I&amp;#39;ve been meaning to hear the great man talk about his craft. He did not disappoint me. But now, in his classification of writers (great, good, competent, bad), I worry that I am one of the bad ones. The ones who he says can never become competent.&lt;/p&gt;
+&lt;p&gt;The first book I read on the list was &lt;i&gt;On Writing&lt;/i&gt; by Stephen King. I’ve read plenty of fiction by Stephen King. Some good (&lt;i&gt;Everything’s Eventual&lt;/i&gt;, &lt;i&gt;The Dead Zone&lt;/i&gt;, &lt;i&gt;The Running Man&lt;/i&gt;, the sometimes sappy &lt;i&gt;Hearts in Atlantis&lt;/i&gt;), and some very forgettable (&lt;i&gt;The Regulators&lt;/i&gt;, &lt;i&gt;The Girl Who Loved Tom Gordon&lt;/i&gt;). So I’ve been meaning to hear the great man talk about his craft. He did not disappoint me. But now, in his classification of writers (great, good, competent, bad), I worry that I am one of the bad ones. The ones who he says can never become competent.&lt;/p&gt;
 
-&lt;p&gt;The reading list page also has Amazon.com referral links. I don&amp;#39;t really need the money; it&amp;#39;s just a way of keeping score. I will donate any cash I make from the page to the &lt;a href=&quot;http://eff.com&quot;&gt;EFF&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The reading list page also has Amazon.com referral links. I don’t really need the money; it’s just a way of keeping score. I will donate any cash I make from the page to the &lt;a href=&quot;http://eff.com&quot;&gt;EFF&lt;/a&gt;.&lt;/p&gt;
+
 </content>
  </entry>
  
@@ -247,21 +267,21 @@
    <id>hhttp://jayraj.net/Fixing-my-TV</id>
    <content type="html">&lt;p&gt;Last month, I fixed my 56-inch Samsung digital light projection (DLP) TV.&lt;/p&gt;
 
-&lt;p&gt;For 3 months, it made a screaming, buzzing noise when I turned it on. I made it stop by thumping it on the back. We had bought it for $100 off Craigslist; it was just sitting in someone&amp;#39;s garage. At the time, we felt great about it for financial and environmental reasons. And now, this.&lt;/p&gt;
+&lt;p&gt;For 3 months, it made a screaming, buzzing noise when I turned it on. I made it stop by thumping it on the back. We had bought it for $100 off Craigslist; it was just sitting in someone’s garage. At the time, we felt great about it for financial and environmental reasons. And now, this.&lt;/p&gt;
 
-&lt;p&gt;I didn&amp;#39;t bother looking up TV repair services. It would cost more than the TV had cost in the first place. Besides, I would be cheating myself out of a learning opportunity.&lt;/p&gt;
+&lt;p&gt;I didn’t bother looking up TV repair services. It would cost more than the TV had cost in the first place. Besides, I would be cheating myself out of a learning opportunity.&lt;/p&gt;
 
-&lt;p&gt;The actual process turned out to be easy. I found out what the possible problem was by Googling variations of &amp;quot;Samsumg DLP tv noise&amp;quot;. Looked like it might be a bad color wheel. Found out how to tell for sure. Opened up the TV and determined that it was indeed the case. Ordered a new color wheel and followed instructions on Youtube to install it. It took about 2 hours of work spread out over 2 weekends: 1.5 hours to research, open up the TV, find the malfunctioning part and order a replacement, 0.5 to put the part in and sew the patient back up. I learned a lot:&lt;/p&gt;
+&lt;p&gt;The actual process turned out to be easy. I found out what the possible problem was by Googling variations of “Samsumg DLP tv noise”. Looked like it might be a bad color wheel. Found out how to tell for sure. Opened up the TV and determined that it was indeed the case. Ordered a new color wheel and followed instructions on Youtube to install it. It took about 2 hours of work spread out over 2 weekends: 1.5 hours to research, open up the TV, find the malfunctioning part and order a replacement, 0.5 to put the part in and sew the patient back up. I learned a lot:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Take a lot of pictures as you are doing the disassembling. Put the screws in labeled cups or bowls so you don&amp;#39;t lose them or lose track of which one goes where&lt;/li&gt;
-&lt;li&gt;In most cases, watching a video that demos the repair you&amp;#39;re attempting, even if it&amp;#39;s not for the same model, is better than reading instructions for your particular model&lt;/li&gt;
-&lt;li&gt;If you feel stuck, take a break, then re-watch the part of the instructional video you&amp;#39;re having trouble with (or re-read the instructions)&lt;/li&gt;
-&lt;li&gt;It&amp;#39;s always useful to have good tools. I have a Rosewill computer repair toolkit that I bought for $20. It&amp;#39;s been useful on many occasions since&lt;/li&gt;
-&lt;li&gt;Doing basic repairs like this gives you the confidence to tackle more complicated projects&lt;/li&gt;
+  &lt;li&gt;Take a lot of pictures as you are doing the disassembling. Put the screws in labeled cups or bowls so you don’t lose them or lose track of which one goes where&lt;/li&gt;
+  &lt;li&gt;In most cases, watching a video that demos the repair you’re attempting, even if it’s not for the same model, is better than reading instructions for your particular model&lt;/li&gt;
+  &lt;li&gt;If you feel stuck, take a break, then re-watch the part of the instructional video you’re having trouble with (or re-read the instructions)&lt;/li&gt;
+  &lt;li&gt;It’s always useful to have good tools. I have a Rosewill computer repair toolkit that I bought for $20. It’s been useful on many occasions since&lt;/li&gt;
+  &lt;li&gt;Doing basic repairs like this gives you the confidence to tackle more complicated projects&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;I&amp;#39;m a big believer in repairing your electronics. People don&amp;#39;t repair their stuff in the Western world. Having someone repair it can cost more than it would to buy it new. It&amp;#39;s a terrible waste and disastrous for the environment. On the other hand, some entrepreneurial person could probably make a decent living by buying (or getting for free) broken stuff, fixing it and selling it on.&lt;/p&gt;
+&lt;p&gt;I’m a big believer in repairing your electronics. People don’t repair their stuff in the Western world. Having someone repair it can cost more than it would to buy it new. It’s a terrible waste and disastrous for the environment. On the other hand, some entrepreneurial person could probably make a decent living by buying (or getting for free) broken stuff, fixing it and selling it on.&lt;/p&gt;
 </content>
  </entry>
  
@@ -272,17 +292,17 @@
    <id>hhttp://jayraj.net/Car-Dependent-vs-Car-Enhanced</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Warning: This is a non-technical, lifestyle post&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;I consider my life to be &amp;quot;car-enhanced&amp;quot;, not car-dependent.&lt;/p&gt;
+&lt;p&gt;I consider my life to be “car-enhanced”, not car-dependent.&lt;/p&gt;
 
-&lt;p&gt;It all started when I was shopping for new insurance this year. I had to re-familiarize myself with the difference between &amp;quot;Comprehensive Coverage&amp;quot; and &amp;quot;Collision Coverage&amp;quot;, and the quote included something called &amp;quot;Rental reimbursement&amp;quot;. Reading details, I realized it covered the cost of a rental car in case my car was in the shop being repaired after an accident.&lt;/p&gt;
+&lt;p&gt;It all started when I was shopping for new insurance this year. I had to re-familiarize myself with the difference between “Comprehensive Coverage” and “Collision Coverage”, and the quote included something called “Rental reimbursement”. Reading details, I realized it covered the cost of a rental car in case my car was in the shop being repaired after an accident.&lt;/p&gt;
 
-&lt;p&gt;This possibility had never crossed my mind. I always assumed that if my car was in the shop for a few days, I would just be car-less for that duration. Which didn&amp;#39;t sound terrible to me; I just wouldn&amp;#39;t be able to go out of town on a weekend without renting a car.&lt;/p&gt;
+&lt;p&gt;This possibility had never crossed my mind. I always assumed that if my car was in the shop for a few days, I would just be car-less for that duration. Which didn’t sound terrible to me; I just wouldn’t be able to go out of town on a weekend without renting a car.&lt;/p&gt;
 
 &lt;p&gt;Thinking about it further though, if this type of coverage is offered, it means people need it. People prefer to have a rental car and pay money for it while their own car is being worked on. They need it to get to work, pick up kids from school/daycare, buy groceries, whatevs. They are car-dependent; they literally cannot function without an internal combustion engine in their driveway.&lt;/p&gt;
 
-&lt;p&gt;For me and the missus, none of these things apply. I take the train to work, she takes the bus to school. We bike to buy groceries and for most other errands and funtimes within a 2-3 mile radius of our apartment. We have no children. Not having a car would remove the possibility of driving 20 miles away at the drop of a hat, but otherwise, our lifestyle would not be significantly impacted in the short term. Our lifestyle is enhanced by owning a car and having it around to use whenever we need it, but it isn&amp;#39;t dependent on it.&lt;/p&gt;
+&lt;p&gt;For me and the missus, none of these things apply. I take the train to work, she takes the bus to school. We bike to buy groceries and for most other errands and funtimes within a 2-3 mile radius of our apartment. We have no children. Not having a car would remove the possibility of driving 20 miles away at the drop of a hat, but otherwise, our lifestyle would not be significantly impacted in the short term. Our lifestyle is enhanced by owning a car and having it around to use whenever we need it, but it isn’t dependent on it.&lt;/p&gt;
 
-&lt;p&gt;I don&amp;#39;t have rental reimbursement insurance now.&lt;/p&gt;
+&lt;p&gt;I don’t have rental reimbursement insurance now.&lt;/p&gt;
 </content>
  </entry>
  
@@ -291,84 +311,73 @@
    <link href="http://jayraj.net/5-ways-to-Become-a-Better-Programmer"/>
    <updated>2014-03-04T00:00:00-08:00</updated>
    <id>hhttp://jayraj.net/5-ways-to-Become-a-Better-Programmer</id>
-   <content type="html">&lt;p&gt;For those of us who love coding and technology, there&amp;#39;s nothing quite like the thrill of getting better. There are many great coders out there and they offer a variety of advice for improving. This is what I put into action last year.&lt;/p&gt;
+   <content type="html">&lt;p&gt;For those of us who love coding and technology, there’s nothing quite like the thrill of getting better. There are many great coders out there and they offer a variety of advice for improving. This is what I put into action last year.&lt;/p&gt;
 
-&lt;h3&gt;1) Learn to Type&lt;/h3&gt;
+&lt;h3 id=&quot;learn-to-type&quot;&gt;1) Learn to Type&lt;/h3&gt;
 
-&lt;p&gt;This tip comes from &lt;a href=&quot;http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html&quot;&gt;Steve Yegge&lt;/a&gt;. Known for his opinionated, wall-of-text, entertaining blog rants, Steve Yegge puts great stock in being able to type well and type fast. Yegge&amp;#39;s typing speed is probably the main reason he is able to write his massive blog posts without getting bored or exhausted.&lt;/p&gt;
+&lt;p&gt;This tip comes from &lt;a href=&quot;http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html&quot;&gt;Steve Yegge&lt;/a&gt;. Known for his opinionated, wall-of-text, entertaining blog rants, Steve Yegge puts great stock in being able to type well and type fast. Yegge’s typing speed is probably the main reason he is able to write his massive blog posts without getting bored or exhausted.&lt;/p&gt;
 
-&lt;h4&gt;Implementing it&lt;/h4&gt;
+&lt;h4 id=&quot;implementing-it&quot;&gt;Implementing it&lt;/h4&gt;
+&lt;p&gt;Before June 2013, I could type all the letters on my keyboard without needing to look down, but I didn’t use all my fingers. I was never able to break 55 wpm in typing tests because of this. I had been typing like that since I got my first computer at age 11.&lt;/p&gt;
 
-&lt;p&gt;Before June 2013, I could type all the letters on my keyboard without needing to look down, but I didn&amp;#39;t use all my fingers. I was never able to break 55 wpm in typing tests because of this. I had been typing like that since I got my first computer at age 11.&lt;/p&gt;
+&lt;p&gt;I used Typing Web’s excellent &lt;a href=&quot;http://www.typingweb.com/tutor/&quot;&gt;typing tutor&lt;/a&gt; app. It starts you off placing the fingers on the home row, typing letters at first, then words and finally sentences. Numbers and punctuation come later.&lt;/p&gt;
 
-&lt;p&gt;I used Typing Web&amp;#39;s excellent &lt;a href=&quot;http://www.typingweb.com/tutor/&quot;&gt;typing tutor&lt;/a&gt; app. It starts you off placing the fingers on the home row, typing letters at first, then words and finally sentences. Numbers and punctuation come later.&lt;/p&gt;
+&lt;h4 id=&quot;the-result&quot;&gt;The result&lt;/h4&gt;
+&lt;p&gt;It was really hard in the beginning, especially at work. I had to stay late a few times the first few weeks, to get work done on time. I kept at it and seven months later, I am back to my old 55-60 wpm speed. But now I use all my fingers. I’m sure I will get faster. It takes time to break 15 years of habit.&lt;/p&gt;
 
-&lt;h4&gt;The result&lt;/h4&gt;
-
-&lt;p&gt;It was really hard in the beginning, especially at work. I had to stay late a few times the first few weeks, to get work done on time. I kept at it and seven months later, I am back to my old 55-60 wpm speed. But now I use all my fingers. I&amp;#39;m sure I will get faster. It takes time to break 15 years of habit.&lt;/p&gt;
-
-&lt;h3&gt;2) Learn (a) Lisp&lt;/h3&gt;
+&lt;h3 id=&quot;learn-a-lisp&quot;&gt;2) Learn (a) Lisp&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.paulgraham.com/avg.html&quot;&gt;Paul Graham&lt;/a&gt;, &lt;a href=&quot;http://www.catb.org/esr/faqs/hacker-howto.html&quot;&gt;Eric Raymond&lt;/a&gt;, &lt;a href=&quot;https://xkcd.com/224/&quot;&gt;xkcd&lt;/a&gt; and &lt;a href=&quot;https://sites.google.com/site/steveyegge2/scheming-is-believing&quot;&gt;Steve Yegge&lt;/a&gt; (again) and many, many others say that learning Lisp will change you as a programmer. You will see everything differently.&lt;/p&gt;
 
-&lt;h4&gt;Implementing it&lt;/h4&gt;
+&lt;h4 id=&quot;implementing-it-1&quot;&gt;Implementing it&lt;/h4&gt;
+&lt;p&gt;While I fully support learning for its own sake, it might be hard to ever be at a job where I need to use something like Common Lisp. Clojure, with its practical design outlook and JVM-ness, seemed an ideal compromise. It’s got real traction. I had seen it action a couple of years ago at grad school, where one of my colleagues used it with Processing to make cool looking sketches.&lt;/p&gt;
 
-&lt;p&gt;While I fully support learning for its own sake, it might be hard to ever be at a job where I need to use something like Common Lisp. Clojure, with its practical design outlook and JVM-ness, seemed an ideal compromise. It&amp;#39;s got real traction. I had seen it action a couple of years ago at grad school, where one of my colleagues used it with Processing to make cool looking sketches.&lt;/p&gt;
-
-&lt;p&gt;I actually had previous history with Lisp. Training for new recruits at TCS followed (and as far as I know, still does), the beginner level programming course at MIT, which uses Scheme. At the time, fresh out of college, my previous programming education treated the different styles of programming (functional, object-oriented etc.) the way that old-school Darwinist biologists treated evolution. Every new form was an improvement over the previous, eventually leading to the ideal form: human beings/OOP. Coming from that background, Scheme was a giant WTF. &amp;quot;Why would anyone use functions to act like classes?&amp;quot;, I thought, and left it at that. I doubt the instructors at TCS knew the answer to that either; they just taught it because they were told to.&lt;/p&gt;
+&lt;p&gt;I actually had previous history with Lisp. Training for new recruits at TCS followed (and as far as I know, still does), the beginner level programming course at MIT, which uses Scheme. At the time, fresh out of college, my previous programming education treated the different styles of programming (functional, object-oriented etc.) the way that old-school Darwinist biologists treated evolution. Every new form was an improvement over the previous, eventually leading to the ideal form: human beings/OOP. Coming from that background, Scheme was a giant WTF. “Why would anyone use functions to act like classes?”, I thought, and left it at that. I doubt the instructors at TCS knew the answer to that either; they just taught it because they were told to.&lt;/p&gt;
 
 &lt;p&gt;According to Tim Ferriss, when learning something new, having the right material can make the difference between learning it well and giving up in frustration after a few tries. The koan-style problem website &lt;a href=&quot;http://4clojure.com&quot;&gt;4clojure.com&lt;/a&gt; is perfect for learning Clojure syntax. Another project, &lt;a href=&quot;https://github.com/functional-koans/clojure-koans&quot;&gt;clojure-koans&lt;/a&gt;, and some &lt;a href=&quot;http://aphyr.com/posts/306-clojure-from-the-ground-up-state&quot;&gt;essays&lt;/a&gt; written by bloggers got me started. In December, I wrote a small &lt;a href=&quot;https://github.com/jogjayr/ttt&quot;&gt;tic-tac-toe&lt;/a&gt; game in Clojure.&lt;/p&gt;
 
-&lt;h4&gt;The result&lt;/h4&gt;
+&lt;h4 id=&quot;the-result-1&quot;&gt;The result&lt;/h4&gt;
+&lt;p&gt;I love it. I’m still barely a beginner, I don’t even fully grasp macros yet (according to Paul Graham, the most powerful feature of Lisp), and it’s still amazing. Lisp code looks…beautiful. Concise. Elegant. There’s nothing else like it. And now, having been exposed to this style of programming, I find it bleeding over into the way I write JavaScript (currently my main language).&lt;/p&gt;
 
-&lt;p&gt;I love it. I&amp;#39;m still barely a beginner, I don&amp;#39;t even fully grasp macros yet (according to Paul Graham, the most powerful feature of Lisp), and it&amp;#39;s still amazing. Lisp code looks...beautiful. Concise. Elegant. There&amp;#39;s nothing else like it. And now, having been exposed to this style of programming, I find it bleeding over into the way I write JavaScript (currently my main language).&lt;/p&gt;
+&lt;h3 id=&quot;really-understand-cs-theory&quot;&gt;3) &lt;em&gt;Really&lt;/em&gt; understand CS theory&lt;/h3&gt;
 
-&lt;h3&gt;3) &lt;em&gt;Really&lt;/em&gt; understand CS theory&lt;/h3&gt;
+&lt;p&gt;I didn’t have a great teacher for Automata Theory, in college. I also had a lot going on at the time and slacked off. I got good marks in the exam by last-minute cramming, but I’ve never understood the whole deal with Turing machines and the rest of that. It felt like something was missing.&lt;/p&gt;
 
-&lt;p&gt;I didn&amp;#39;t have a great teacher for Automata Theory, in college. I also had a lot going on at the time and slacked off. I got good marks in the exam by last-minute cramming, but I&amp;#39;ve never understood the whole deal with Turing machines and the rest of that. It felt like something was missing. &lt;/p&gt;
+&lt;p&gt;Knowing Automata Theory and Computer may not immediately help you with your work but you will be changed forever by the knowledge. Computers, and why we know they work, won’t be a mystery anymore. In a way, it’s like knowing how to build a house, then going back and studying Newtonian physics.&lt;/p&gt;
 
-&lt;p&gt;Knowing Automata Theory and Computer may not immediately help you with your work but you will be changed forever by the knowledge. Computers, and why we know they work, won&amp;#39;t be a mystery anymore. In a way, it&amp;#39;s like knowing how to build a house, then going back and studying Newtonian physics.&lt;/p&gt;
-
-&lt;h4&gt;Implementing it&lt;/h4&gt;
-
+&lt;h4 id=&quot;implementing-it-2&quot;&gt;Implementing it&lt;/h4&gt;
 &lt;p&gt;I signed up for the Automata Theory course on Coursera. Did most of the lectures and assignments, except the last couple of weeks.&lt;/p&gt;
 
-&lt;h4&gt;The result&lt;/h4&gt;
+&lt;h4 id=&quot;the-result-2&quot;&gt;The result&lt;/h4&gt;
+&lt;p&gt;This one is a bit of a mixed bag. I definitely understand computer science theory a lot more now. I was lax in doing the proofs in the course, so maybe I didn’t get as much out of it as I could have.&lt;/p&gt;
 
-&lt;p&gt;This one is a bit of a mixed bag. I definitely understand computer science theory a lot more now. I was lax in doing the proofs in the course, so maybe I didn&amp;#39;t get as much out of it as I could have.&lt;/p&gt;
+&lt;h3 id=&quot;get-to-know-your-tools&quot;&gt;4) Get to know your tools&lt;/h3&gt;
 
-&lt;h3&gt;4) Get to know your tools&lt;/h3&gt;
+&lt;p&gt;This one is just common sense. If you become more proficient with your everyday tools, and use features that you haven’t used before, it can take you less time to do the same work. Take a few minutes every weekend, and find a new feature in your daily tools that you never used before.&lt;/p&gt;
 
-&lt;p&gt;This one is just common sense. If you become more proficient with your everyday tools, and use features that you haven&amp;#39;t used before, it can take you less time to do the same work. Take a few minutes every weekend, and find a new feature in your daily tools that you never used before. &lt;/p&gt;
+&lt;h4 id=&quot;implementing-it-3&quot;&gt;Implementing it&lt;/h4&gt;
+&lt;p&gt;I use many tools. Sublime Text 2 is a major one; I do almost all my typing in it (haven’t tried upgrading to ST3 yet). There is a huge ecosystem of plugins and snippets and packages for it. The ones I found most useful: &lt;a href=&quot;http://emmet.io/&quot;&gt;Emmet&lt;/a&gt;, &lt;a href=&quot;http://www.jshint.com/install/&quot;&gt;JSHint&lt;/a&gt;, and &lt;a href=&quot;https://github.com/titoBouzout/SideBarEnhancements&quot;&gt;Sidebar&lt;/a&gt;. I also learned keyboard shortcuts for selecting text in different ways: column select, word select, selection within quotes, within tags and within the current (bracket) scope.&lt;/p&gt;
 
-&lt;h4&gt;Implementing it&lt;/h4&gt;
+&lt;p&gt;Among the other tools I use: I switched from bash to the &lt;a href=&quot;http://fishshell.com/&quot;&gt;fish shell&lt;/a&gt;. I switched from the default OS X terminal to iTerm. And I also added &lt;a href=&quot;http://www.alfredapp.com/&quot;&gt;Alfred&lt;/a&gt; to my workflow, to automate my work  (the jury is still out on this one, because I’ve also become better at shell scripting) and help me look up documentation more quickly.&lt;/p&gt;
 
-&lt;p&gt;I use many tools. Sublime Text 2 is a major one; I do almost all my typing in it (haven&amp;#39;t tried upgrading to ST3 yet). There is a huge ecosystem of plugins and snippets and packages for it. The ones I found most useful: &lt;a href=&quot;http://emmet.io/&quot;&gt;Emmet&lt;/a&gt;, &lt;a href=&quot;http://www.jshint.com/install/&quot;&gt;JSHint&lt;/a&gt;, and &lt;a href=&quot;https://github.com/titoBouzout/SideBarEnhancements&quot;&gt;Sidebar&lt;/a&gt;. I also learned keyboard shortcuts for selecting text in different ways: column select, word select, selection within quotes, within tags and within the current (bracket) scope.&lt;/p&gt;
+&lt;h3 id=&quot;the-result-3&quot;&gt;The result&lt;/h3&gt;
+&lt;p&gt;Faster work, less RSI, less boredom. Every minute I’ve spent studying keyboard shortcuts and other features has paid off many times over.&lt;/p&gt;
 
-&lt;p&gt;Among the other tools I use: I switched from bash to the &lt;a href=&quot;http://fishshell.com/&quot;&gt;fish shell&lt;/a&gt;. I switched from the default OS X terminal to iTerm. And I also added &lt;a href=&quot;http://www.alfredapp.com/&quot;&gt;Alfred&lt;/a&gt; to my workflow, to automate my work  (the jury is still out on this one, because I&amp;#39;ve also become better at shell scripting) and help me look up documentation more quickly.&lt;/p&gt;
+&lt;h3 id=&quot;a-namegit-classhiddenlinkget-better-at-gita&quot;&gt;5) &lt;a name=&quot;git&quot; class=&quot;hidden_link&quot;&gt;Get better at Git&lt;/a&gt;&lt;/h3&gt;
 
-&lt;h3&gt;The result&lt;/h3&gt;
-
-&lt;p&gt;Faster work, less RSI, less boredom. Every minute I&amp;#39;ve spent studying keyboard shortcuts and other features has paid off many times over. &lt;/p&gt;
-
-&lt;h3&gt;5) &lt;a name=&#39;git&#39; class=&#39;hidden_link&#39;&gt;Get better at Git&lt;/a&gt;&lt;/h3&gt;
-
-&lt;hr&gt;
-
+&lt;hr /&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;quot;If you&amp;#39;re still using SVN or CVS, you&amp;#39;re a sucker&amp;quot; - &lt;/p&gt;
+  &lt;p&gt;“If you’re still using SVN or CVS, you’re a sucker” -&lt;/p&gt;
 
-&lt;h2&gt;&lt;a href=&quot;http://jayraj.net&quot;&gt;Some smart person&lt;/a&gt;&lt;/h2&gt;
+  &lt;h2 id=&quot;some-smart-personhttpjayrajnet&quot;&gt;&lt;a href=&quot;http://jayraj.net&quot;&gt;Some smart person&lt;/a&gt;&lt;/h2&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;When I say &amp;quot;Git&amp;quot;, I don&amp;#39;t mean just Git, but that&amp;#39;s the distributed source control system I know best. Git obviously has a lot of momentum, and the sheer power that if offers over SVN makes you an order of magnitude more productive. Branching and merging, doing releases, working with other team members, hunting down bugs, creating clean histories, doing experimental work; everything is easier and faster with Git.&lt;/p&gt;
+&lt;p&gt;When I say “Git”, I don’t mean just Git, but that’s the distributed source control system I know best. Git obviously has a lot of momentum, and the sheer power that if offers over SVN makes you an order of magnitude more productive. Branching and merging, doing releases, working with other team members, hunting down bugs, creating clean histories, doing experimental work; everything is easier and faster with Git.&lt;/p&gt;
 
-&lt;h4&gt;Implementing it&lt;/h4&gt;
-
+&lt;h4 id=&quot;implementing-it-4&quot;&gt;Implementing it&lt;/h4&gt;
 &lt;p&gt;I have been using Git for personal projects since 2011, but 2013 was the first time I got to use it in the workplace. I work with many Git wizards. My team uses the &lt;a href=&quot;http://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;Gitflow&lt;/a&gt; model for releases. I discovered the magical tool that is &lt;code&gt;git rebase&lt;/code&gt; (especially in interactive mode) and how to use it to clean up development histories and make your merges go more smoothly. I learned how &lt;a href=&quot;http://git-scm.com/book/en/Git-Tools-Debugging-with-Git&quot;&gt;&lt;code&gt;git bisect&lt;/code&gt;&lt;/a&gt; could save me a lot of manual work in figuring out where a bug was introduced. &lt;code&gt;git cherry-pick&lt;/code&gt; came in handy recently when I had to include some work from a branch without merging the whole branch in.&lt;/p&gt;
 
-&lt;h4&gt;The result&lt;/h4&gt;
-
+&lt;h4 id=&quot;the-result-4&quot;&gt;The result&lt;/h4&gt;
 &lt;p&gt;Git is fucking awesome. Even at my advanced beginner level of understanding it seems lightyears ahead of SVN. Creating branches for each feature and fix, code reviews before merges and frequent small commits now all feel like the right way to do write software.&lt;/p&gt;
 </content>
  </entry>
@@ -378,31 +387,47 @@
    <link href="http://jayraj.net/5-Reasons-to-Improve-your-Vim-Fu"/>
    <updated>2014-02-20T00:00:00-08:00</updated>
    <id>hhttp://jayraj.net/5-Reasons-to-Improve-your-Vim-Fu</id>
-   <content type="html">&lt;p&gt;Yes, it&amp;#39;s 2014. No, logically, we shouldn&amp;#39;t be using text editors written in the fucking 1970s. I mean, seriously, how many other things made in the 70s are we still using now?&lt;/p&gt;
+   <content type="html">&lt;p&gt;Yes, it’s 2014. No, logically, we shouldn’t be using text editors written in the fucking 1970s. I mean, seriously, how many other things made in the 70s are we still using now?&lt;/p&gt;
 
-&lt;p&gt;Because there were no funny cat videos on the Web in those days, the (largely) bearded gurus of computing&amp;#39;s early days mostly read and wrote text. So they made tools that were exceptionally good for writing text.&lt;/p&gt;
+&lt;p&gt;Because there were no funny cat videos on the Web in those days, the (largely) bearded gurus of computing’s early days mostly read and wrote text. So they made tools that were exceptionally good for writing text.&lt;/p&gt;
 
-&lt;p&gt;Vim is something every Mac and Git-using programmer will encounter because it is the default editor for typing Git commit messages. We all know &lt;code&gt;i&lt;/code&gt;, &lt;code&gt;:q&lt;/code&gt; and &lt;code&gt;:w&lt;/code&gt;. Realistically, that&amp;#39;s all you need to write commit messages in Vim for the rest of your career. Congratulations, we&amp;#39;re done here! You can go. &lt;/p&gt;
+&lt;p&gt;Vim is something every Mac and Git-using programmer will encounter because it is the default editor for typing Git commit messages. We all know &lt;code&gt;i&lt;/code&gt;, &lt;code&gt;:q&lt;/code&gt; and &lt;code&gt;:w&lt;/code&gt;. Realistically, that’s all you need to write commit messages in Vim for the rest of your career. Congratulations, we’re done here! You can go.&lt;/p&gt;
 
-&lt;p&gt;Or...read on. Because if you care to get even slightly better at Vim, there are so many rewards.&lt;/p&gt;
+&lt;p&gt;Or…read on. Because if you care to get even slightly better at Vim, there are so many rewards.&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;No GUI dependence - Vim, Emacs and other editors from the Unix golden-age (a term I pulled out of my ass), were developed in an era with no (or limited) availability of mice, monitors and so on. The bad - this means using a mouse can be odd (although I hear it&amp;#39;s better in Emacs than in Vim). The good - if you get good at Vim-ing, you never need to use a mouse again to manipulate text; and that is a &lt;em&gt;very good thing&lt;/em&gt; for your speed.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Default Editor for Git - Vim is. So if you want to go beyond just typing commit messages, like re-ordering and squashing your commits using interactive rebase, you can either:
-a) do it slowly and laboriously, using only &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;Esc&lt;/code&gt;
-b) (what I do) copy all the commit lines into Sublime, re-order and edit and paste them back in
-c) Become a Vim badass and do it really fast in the terminal&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Expressiveness - Before Sublime, my editors of choice, in chronological order, were Notepad, Gedit, Notepad++, Aptana and Geany). Compared to those, Sublime&amp;#39;s multi-cursor selection, snippet support and shortcuts were like Arnold Schwarznegger in &lt;em&gt;Terminator&lt;/em&gt;: an unimaginably powerful weapon from the future. So imagine when I got to reading about Vim&amp;#39;s capabilities (using &lt;code&gt;vimtutor&lt;/code&gt;) and was confronted with &lt;code&gt;d2w&lt;/code&gt;. Delete 2 words and put the cursor at the beginning of the third words. And this was lesson 2. What. The. Fuck. &amp;quot;But what good is that&amp;quot;, you might say, &amp;quot;I&amp;#39;m never giving up Sublime, because it has so much that I like&amp;quot;. Well...&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Vintage Mode for Sublime - It&amp;#39;s Sublime made better with Vim. That&amp;#39;s like welding Batman&amp;#39;s Utility Belt to the best Swiss Army knife in the world. I think; I&amp;#39;m still trying it out and I will let you know in a future blog post&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Vim is everywhere - You can&amp;#39;t always control your environment. If you SSH to an EC2 instance where you have to modify environment files or code, you can&amp;#39;t use Sublime easily. Meanwhile, &lt;code&gt;vim&lt;/code&gt; is right there, just waiting for you to use it.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;No GUI dependence - Vim, Emacs and other editors from the Unix golden-age (a term I pulled out of my ass), were developed in an era with no (or limited) availability of mice, monitors and so on. The bad - this means using a mouse can be odd (although I hear it’s better in Emacs than in Vim). The good - if you get good at Vim-ing, you never need to use a mouse again to manipulate text; and that is a &lt;em&gt;very good thing&lt;/em&gt; for your speed.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Default Editor for Git - Vim is. So if you want to go beyond just typing commit messages, like re-ordering and squashing your commits using interactive rebase, you can either:
+ a) do it slowly and laboriously, using only &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;Esc&lt;/code&gt;
+ b) (what I do) copy all the commit lines into Sublime, re-order and edit and paste them back in
+ c) Become a Vim badass and do it really fast in the terminal&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Expressiveness - Before Sublime, my editors of choice, in chronological order, were Notepad, Gedit, Notepad++, Aptana and Geany). Compared to those, Sublime’s multi-cursor selection, snippet support and shortcuts were like Arnold Schwarznegger in &lt;em&gt;Terminator&lt;/em&gt;: an unimaginably powerful weapon from the future. So imagine when I got to reading about Vim’s capabilities (using &lt;code&gt;vimtutor&lt;/code&gt;) and was confronted with &lt;code&gt;d2w&lt;/code&gt;. Delete 2 words and put the cursor at the beginning of the third words. And this was lesson 2. What. The. Fuck. “But what good is that”, you might say, “I’m never giving up Sublime, because it has so much that I like”. Well…&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Vintage Mode for Sublime - It’s Sublime made better with Vim. That’s like welding Batman’s Utility Belt to the best Swiss Army knife in the world. I think; I’m still trying it out and I will let you know in a future blog post&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Vim is everywhere - You can’t always control your environment. If you SSH to an EC2 instance where you have to modify environment files or code, you can’t use Sublime easily. Meanwhile, &lt;code&gt;vim&lt;/code&gt; is right there, just waiting for you to use it.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Convinced? Here&amp;#39;s how to get started:&lt;/p&gt;
+&lt;p&gt;Convinced? Here’s how to get started:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The key to understanding Vim (and this is not an original insight from me) is realizing that there are two modes: a mode where you enter commands, and a mode where you type in text (yes, those are their &lt;em&gt;actual&lt;/em&gt; names). The advantage of this is you can both type text and execute commands without having to use too many modifier keys.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Use &lt;code&gt;vimtutor&lt;/code&gt; - Usually comes with Vim on Mac OS X. Run it in the terminal and go through an approximately 30 minute tutorial that takes in  a lot of the basics. Vim basics, that is; crazy ways to insert and delete text, undo and redo and so much more. I might write a separate post just about vimtutor&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Start up vim (just run &lt;code&gt;vim&lt;/code&gt;), then type &lt;code&gt;:help&lt;/code&gt; to see more ways to learn. It has an extensive help section with clickable table of contents that cover everything in Vim.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The key to understanding Vim (and this is not an original insight from me) is realizing that there are two modes: a mode where you enter commands, and a mode where you type in text (yes, those are their &lt;em&gt;actual&lt;/em&gt; names). The advantage of this is you can both type text and execute commands without having to use too many modifier keys.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use &lt;code&gt;vimtutor&lt;/code&gt; - Usually comes with Vim on Mac OS X. Run it in the terminal and go through an approximately 30 minute tutorial that takes in  a lot of the basics. Vim basics, that is; crazy ways to insert and delete text, undo and redo and so much more. I might write a separate post just about vimtutor&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Start up vim (just run &lt;code&gt;vim&lt;/code&gt;), then type &lt;code&gt;:help&lt;/code&gt; to see more ways to learn. It has an extensive help section with clickable table of contents that cover everything in Vim.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 </content>
  </entry>
@@ -421,8 +446,8 @@ c) Become a Vim badass and do it really fast in the terminal&lt;/p&gt;&lt;/li&gt
 &lt;p&gt;To revise (and for non-tech readers), a hash is what you get when you run a piece of information through a hashing algorithm. A hash of a given data set has 2 properties:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;It’s unique&lt;/li&gt;
-&lt;li&gt;You can’t get the original data back just from the hash value&lt;/li&gt;
+  &lt;li&gt;It’s unique&lt;/li&gt;
+  &lt;li&gt;You can’t get the original data back just from the hash value&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;For example, the hash of the string “I love tacos” using the MD5 algorithm is:&lt;/p&gt;
@@ -434,8 +459,8 @@ c) Become a Vim badass and do it really fast in the terminal&lt;/p&gt;&lt;/li&gt
 &lt;p&gt;Do the same thing with DNA information (with a different, better algorithm, obviously) and the benefits are obvious:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Law enforcement has another tool to identify suspects uniquely. When they arrest a suspect, they swab him or her, a device calculates and stores the hash of the DNA on the swab and the swab is destroyed immediately. They compare the hash to hashes already in the database.&lt;/li&gt;
-&lt;li&gt;Privacy advocates are happy because it reduces DNA information to something as devoid of external meaning as a fingerprint. A DNA hash can’t betray anything about a person’s ancestry, probabilities of developing medical conditions or anything else that can be gleaned from a DNA sample.&lt;/li&gt;
+  &lt;li&gt;Law enforcement has another tool to identify suspects uniquely. When they arrest a suspect, they swab him or her, a device calculates and stores the hash of the DNA on the swab and the swab is destroyed immediately. They compare the hash to hashes already in the database.&lt;/li&gt;
+  &lt;li&gt;Privacy advocates are happy because it reduces DNA information to something as devoid of external meaning as a fingerprint. A DNA hash can’t betray anything about a person’s ancestry, probabilities of developing medical conditions or anything else that can be gleaned from a DNA sample.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Everyone wins here. Hashed databases have to be the way to go.&lt;/p&gt;
@@ -450,35 +475,40 @@ c) Become a Vim badass and do it really fast in the terminal&lt;/p&gt;&lt;/li&gt
    <content type="html">&lt;p&gt;In this series of posts on how I wrote a collection class for Backbone views, I covered the objectives of the enterprise in &lt;a href=&quot;http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1&quot;&gt;part 1&lt;/a&gt;. In &lt;a href=&quot;http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-2&quot;&gt;part 2&lt;/a&gt; the Backbone ViewCollection accomplished its first goal: create a lot of child views of a specified type, off of a collection passed to it.&lt;/p&gt;
 
 &lt;p&gt;This post will discuss how I event handling works with so many child views. I saw numerous blog posts and StackOverflow questions related to event binding when &lt;code&gt;empty&lt;/code&gt; is called on a jQuery object. For me, the most important bit of knowledge was that when you do the following &lt;a href=&quot;http://jsfiddle.net/jogjayr/3QfLc/1/&quot;&gt;JSFiddle&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var $child_el = $(&amp;quot;#my_div&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
-    console.log(&amp;quot;clicked me&amp;quot;);
+
+&lt;pre&gt;&lt;code&gt;var $child_el = $(&quot;#my_div&quot;).on(&quot;click&quot;, function() {
+    console.log(&quot;clicked me&quot;);
 })
-$(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child will do nothing
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;The CHILD VIEW&amp;#39;S EVENTS ARE LOST! I suppose this is general knowledge among those familiar with the DOM&amp;#39;s secrets, but it was a revelation to me.&lt;/p&gt;
+$(&quot;#parent_elem&quot;).html($child_el); //Clicking on the child will do nothing
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Second revelation (in fact, as I started writing this blog post), is that the child views&amp;#39; events actually need to delegate to the parent. Previously, I used to do the following:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var Backbone.ViewCollection = Backbone.View.extend({
-    //other View Collection methods here
+&lt;p&gt;The CHILD VIEW’S EVENTS ARE LOST! I suppose this is general knowledge among those familiar with the DOM’s secrets, but it was a revelation to me.&lt;/p&gt;
 
-    //delegateEvents not only re-attaches the collections&amp;#39;s events
-    //it also re-attaches childEvents without calling them individually
-    delegateEvents: function() {
-        Backbone.View.prototype.delegateEvents.call(this);
-        _(this.childViews).each(function(view, index, childViews) {
-            view.delegateEvents();
-        });
-    }
+&lt;p&gt;Second revelation (in fact, as I started writing this blog post), is that the child views’ events actually need to delegate to the parent. Previously, I used to do the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var Backbone.ViewCollection = Backbone.View.extend({
+	//other View Collection methods here
+
+	//delegateEvents not only re-attaches the collections&#39;s events
+	//it also re-attaches childEvents without calling them individually
+	delegateEvents: function() {
+		Backbone.View.prototype.delegateEvents.call(this);
+		_(this.childViews).each(function(view, index, childViews) {
+			view.delegateEvents();
+		});
+	}
 });
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Thanks to &lt;a href=&quot;http://lostechies.com/derickbailey/2011/10/11/backbone-js-getting-the-model-for-a-clicked-element/&quot;&gt;this blog post&lt;/a&gt; by the inestimable Derick Bailey of KendoUI and MarionetteJS fame, I have realized that this my existing approach is COMPLETELY MORONIC. I will have to go back to the projects that inspired this library and fix it, but I will do it first here.&lt;/p&gt;
 
-&lt;p&gt;The reason it&amp;#39;s so stupid is because when you attach an event to each individual child event:&lt;/p&gt;
+&lt;p&gt;The reason it’s so stupid is because when you attach an event to each individual child event:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Your application uses a lot more memory. Each event listener is extra overhead.&lt;/li&gt;
-&lt;li&gt;The clue was in the method name &lt;code&gt;delegateEvent&lt;/code&gt;. I should be using the time-tested &lt;a href=&quot;http://davidwalsh.name/event-delegate&quot;&gt;event delegation pattern&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Your application uses a lot more memory. Each event listener is extra overhead.&lt;/li&gt;
+  &lt;li&gt;The clue was in the method name &lt;code&gt;delegateEvent&lt;/code&gt;. I should be using the time-tested &lt;a href=&quot;http://davidwalsh.name/event-delegate&quot;&gt;event delegation pattern&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
 </content>
  </entry>
  
@@ -488,7 +518,8 @@ $(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child wil
    <updated>2013-05-22T00:00:00-07:00</updated>
    <id>hhttp://jayraj.net/backbone-view-collection-part-2</id>
    <content type="html">&lt;p&gt;In &lt;a href=&quot;http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1&quot;&gt;part 1&lt;/a&gt; of this series, I explained what I wanted from a Backbone View Collection. The first and foremost thing was a common render method:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
+
+&lt;pre&gt;&lt;code&gt;Backbone.ViewCollection = Backbone.View.extend({
   childViews: [],
   render: function() {
 
@@ -505,14 +536,16 @@ $(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child wil
     //add it to the list of child views the collection holds
     me.childViews.push(new_item_view);
 
-    //also add it to the view collection&amp;#39;s own HTML element
+    //also add it to the view collection&#39;s own HTML element
     me.$el.append(new_item_view.$el);
    });
   }
 });
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This approach carries a couple of issues. The first one I faced was actually quite silly; setting &lt;code&gt;childViews&lt;/code&gt; to an empty array in the class definition results in &lt;strong&gt;every&lt;/strong&gt; instance of that class pointing to the same array. This is quite disastrous; all the child items of every instance of ViewCollection are added to the same array. We have to fix this, and it&amp;#39;s quite simple:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This approach carries a couple of issues. The first one I faced was actually quite silly; setting &lt;code&gt;childViews&lt;/code&gt; to an empty array in the class definition results in &lt;strong&gt;every&lt;/strong&gt; instance of that class pointing to the same array. This is quite disastrous; all the child items of every instance of ViewCollection are added to the same array. We have to fix this, and it’s quite simple:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Backbone.ViewCollection = Backbone.View.extend({
   render: function() {
   //all the stuff we wrote above...
   },
@@ -521,18 +554,24 @@ $(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child wil
     this.childViews = [];
   }
 });
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;There&amp;#39;s also another problem, and it has to do with how we pass &lt;code&gt;ItemView&lt;/code&gt; to ViewCollection. If we were to create a new ViewCollection like so:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var PokedexView = new Backbone.ViewCollection({
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There’s also another problem, and it has to do with how we pass &lt;code&gt;ItemView&lt;/code&gt; to ViewCollection. If we were to create a new ViewCollection like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var PokedexView = new Backbone.ViewCollection({
   collection: Pokedex,
   ItemView: PokemonView 
 });
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;then the line:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var ItemViewClass = this.options.ItemView || Backbone.View;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;works perfectly. The &lt;code&gt;options&lt;/code&gt; attribute of a Backbone view is composed of the object you pass into the constructor. But what if you don&amp;#39;t call the constructor directly? Consider the following:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var PokedexView = Backbone.ViewCollection.extend({
+
+&lt;pre&gt;&lt;code&gt;var ItemViewClass = this.options.ItemView || Backbone.View;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;works perfectly. The &lt;code&gt;options&lt;/code&gt; attribute of a Backbone view is composed of the object you pass into the constructor. But what if you don’t call the constructor directly? Consider the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var PokedexView = Backbone.ViewCollection.extend({
   collection: Pokedex
 });
 //a specific type of Pokedex that uses a grid layout
@@ -540,20 +579,26 @@ var PokemonGridItemView = Backbone.View.extend({});
 var PokedexGridView = PokedexView.extend({
   ItemView: PokemonGridItemView
 });
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Now, &lt;code&gt;this.options.ItemView&lt;/code&gt; is &lt;code&gt;undefined&lt;/code&gt;. This does not bode well for being able to build complex class hierarchies with ViewCollection, so we have to modify what we wrote just a little bit:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//Either `this` is an instance of ViewCollection, in which case ItemView is an `option`
+
+&lt;pre&gt;&lt;code&gt;//Either `this` is an instance of ViewCollection, in which case ItemView is an `option`
 //or `this` is an instance of a another type derived from ViewCollection
 //or use the plain-old Backbone.View class
 var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Same thing applies for collection. So&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;_(me.collection).each(...)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;won&amp;#39;t work every time.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Having learned all this, here&amp;#39;s ViewCollection now:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
+&lt;p&gt;Same thing applies for collection. So&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;_(me.collection).each(...)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;won’t work every time.&lt;/p&gt;
+
+&lt;p&gt;Having learned all this, here’s ViewCollection now:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Backbone.ViewCollection = Backbone.View.extend({
   render: function() {
 
     //The Backbone view class passed in that is 
@@ -569,7 +614,7 @@ var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
       //add it to the list of child views the collection holds
       me.childViews.push(new_item_view);
 
-      //also add it to the view collection&amp;#39;s own HTML element
+      //also add it to the view collection&#39;s own HTML element
       me.$el.append(new_item_view.$el);
     });
   },
@@ -577,8 +622,9 @@ var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
     this.childViews = [];
   }
 });
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;To be continued...&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To be continued…&lt;/p&gt;
 </content>
  </entry>
  
@@ -587,15 +633,15 @@ var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
    <link href="http://jayraj.net/backbone-view-collection-part-1"/>
    <updated>2013-05-19T00:00:00-07:00</updated>
    <id>hhttp://jayraj.net/backbone-view-collection-part-1</id>
-   <content type="html">&lt;p&gt;I love &lt;a href=&quot;http://backbonejs.org&quot;&gt;Backbone.js&lt;/a&gt; for many reasons: it&amp;#39;s lightweight, small (it&amp;#39;s the first open-source library whose code I&amp;#39;ve actually completely read), super simple to get started with and has a very active community.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I love &lt;a href=&quot;http://backbonejs.org&quot;&gt;Backbone.js&lt;/a&gt; for many reasons: it’s lightweight, small (it’s the first open-source library whose code I’ve actually completely read), super simple to get started with and has a very active community.&lt;/p&gt;
 
-&lt;p&gt;Backbone Views leave a bit to be desired because they do very little. As the &lt;a href=&quot;http://backbonejs.org/#View&quot;&gt;documentation&lt;/a&gt; itself says &amp;quot;Backbone views are almost more convention than they are code&amp;quot;. &lt;/p&gt;
+&lt;p&gt;Backbone Views leave a bit to be desired because they do very little. As the &lt;a href=&quot;http://backbonejs.org/#View&quot;&gt;documentation&lt;/a&gt; itself says “Backbone views are almost more convention than they are code”.&lt;/p&gt;
 
-&lt;p&gt;One particular pain point I&amp;#39;ve had is the inability to manage collections of views. There already exist a &lt;a href=&quot;http://marionettejs.com/&quot;&gt;number&lt;/a&gt; of &lt;a href=&quot;http://chaplinjs.org/&quot;&gt;solutions&lt;/a&gt; that provide you a nice way to build applications with more structure that what Backbone alone will give you. I decided to write Backbone ViewCollection for 2 reasons:&lt;/p&gt;
+&lt;p&gt;One particular pain point I’ve had is the inability to manage collections of views. There already exist a &lt;a href=&quot;http://marionettejs.com/&quot;&gt;number&lt;/a&gt; of &lt;a href=&quot;http://chaplinjs.org/&quot;&gt;solutions&lt;/a&gt; that provide you a nice way to build applications with more structure that what Backbone alone will give you. I decided to write Backbone ViewCollection for 2 reasons:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;I wanted to write it myself, to learn how&lt;/li&gt;
-&lt;li&gt;A Backbone ViewCollection provides a better way of managing Backbone views while still keeping the application pure Backbone&lt;/li&gt;
+  &lt;li&gt;I wanted to write it myself, to learn how&lt;/li&gt;
+  &lt;li&gt;A Backbone ViewCollection provides a better way of managing Backbone views while still keeping the application pure Backbone&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;What should a View Collection Do?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -603,32 +649,35 @@ var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
 &lt;p&gt;These are the things I wanted from a View Collection class:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Renders a Backbone Collection into a Backbone View that is composed of further, child views. Each model in the collection corresponds to a child view&lt;/li&gt;
-&lt;li&gt;A &lt;code&gt;render&lt;/code&gt; method that calls &lt;code&gt;render&lt;/code&gt; on all its child elements&lt;/li&gt;
-&lt;li&gt;Handles &lt;code&gt;delegateEvent&lt;/code&gt; and all the other crap associated with it&lt;/li&gt;
-&lt;li&gt;Manages child view creation and destruction and prevents memory leaks or zombie views&lt;/li&gt;
-&lt;li&gt;Child views can be anything - as long as they are nodes of the parent view&lt;/li&gt;
+  &lt;li&gt;Renders a Backbone Collection into a Backbone View that is composed of further, child views. Each model in the collection corresponds to a child view&lt;/li&gt;
+  &lt;li&gt;A &lt;code&gt;render&lt;/code&gt; method that calls &lt;code&gt;render&lt;/code&gt; on all its child elements&lt;/li&gt;
+  &lt;li&gt;Handles &lt;code&gt;delegateEvent&lt;/code&gt; and all the other crap associated with it&lt;/li&gt;
+  &lt;li&gt;Manages child view creation and destruction and prevents memory leaks or zombie views&lt;/li&gt;
+  &lt;li&gt;Child views can be anything - as long as they are nodes of the parent view&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Here is an example of what such a class would do:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var Pokemon = Backbone.Model.extend({});
+
+&lt;pre&gt;&lt;code&gt;var Pokemon = Backbone.Model.extend({});
 var Pokedex = new Backbone.Collection({
-    model: Pokemon;
-});
-var PokemonView = Backbone.View.extend({
-    render: function() {
-        //some code to render a Pokemon&amp;#39;s info
-    }
-});
-var PokedexView = new Backbone.ViewCollection({
-    childView: PokemonView,
-    collection: Pokedex
-});
-//This will create an instance of PokemonView for each model in
-//the Pokedex collection and call its render() method
-PokedexView.render();
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+	model: Pokemon;
+ 	});
+ 	var PokemonView = Backbone.View.extend({
+	render: function() {
+		//some code to render a Pokemon&#39;s info
+	}
+ 	});
+ 	var PokedexView = new Backbone.ViewCollection({
+	childView: PokemonView,
+	collection: Pokedex
+ 	});
+ 	//This will create an instance of PokemonView for each model in
+ 	//the Pokedex collection and call its render() method
+ 	PokedexView.render();
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;In the coming blog posts, I will describe how I made my ViewCollection.&lt;/p&gt;
+
 </content>
  </entry>
  

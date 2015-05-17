@@ -1,0 +1,59 @@
+<p><strong>UPDATE</strong></p>
+
+<p><a href="http://blog.coolaj86.com">AJ ONeal</a>, author of <a href="http://dear.desi">Desi</a>, wrote up <a href="http://blog.coolaj86.com/articles/home-row-arrow-keys-on-os-x-with-karabiner.html">another way to do it</a>. My own way to do it is based on <a href="http://msol.io/blog/tech/2014/03/10/work-more-efficiently-on-your-mac-for-developers/">this blog post</a>.</p>
+
+<p><strong>..Continued</strong></p>
+
+<p>I didn’t even know it, but I was tired of taking my hands off home row to use the arrow keys. Inspired by <a href="http://duartes.org/gustavo/blog/post/home-row-computing/">this post</a>, I decided to set up my MacBook Pro to use Caps Lock + IJKL instead of arrow keys. Here’s how I did it:</p>
+
+<ol>
+  <li>Download and install <a href="https://pqrs.org/osx/karabiner/">Karabiner</a> and <a href="https://pqrs.org/osx/karabiner/seil.html.en">Seil</a>. Seil helps you remap the Caps Lock key and Karabiner helps you remap everything else. At this point, I’m unclear why you need two separate apps to do this though</li>
+  <li>Run Seil and remap the Caps Lock key to the Fn key (code 63), as in the screenshot. <img src="/assets/img/seil.png" alt="Remapping Caps Lock Key to Fn Key" title="Seil Remapping Caps Lock key" /></li>
+  <li>
+    <p>Run Karabiner and open <code>private.xml</code> from “Misc &amp; Uninstall”. <img src="/assets/img/privatexml.png" alt="Opening private.xml" title="Click on Misc &amp; Uninstall and private.xml" /> Put your desired mappings in <code>private.xml</code>. Mine, below, map Fn+IJKL to their respective arrow keys:</p>
+
+    <pre><code> &lt;?xml version="1.0"?&gt;
+ &lt;root&gt;
+     &lt;item&gt;
+         &lt;name&gt;Bind CapsLock + J to left arrow&lt;/name&gt;
+         &lt;identifier&gt;private.caps_leftarrow&lt;/identifier&gt;
+         &lt;autogen&gt;
+             __KeyToKey__ 
+             KeyCode::J, ModifierFlag::FN,
+             KeyCode::CURSOR_LEFT
+         &lt;/autogen&gt;
+     &lt;/item&gt;
+     &lt;item&gt;
+         &lt;name&gt;Bind CapsLock + K to down arrow&lt;/name&gt;
+         &lt;identifier&gt;private.caps_downarrow&lt;/identifier&gt;
+         &lt;autogen&gt;
+             __KeyToKey__ 
+             KeyCode::K, ModifierFlag::FN,
+             KeyCode::CURSOR_DOWN
+         &lt;/autogen&gt;
+     &lt;/item&gt;
+     &lt;item&gt;
+         &lt;name&gt;Bind CapsLock + L to right arrow&lt;/name&gt;
+         &lt;identifier&gt;private.caps_rightarrow&lt;/identifier&gt;
+         &lt;autogen&gt;
+             __KeyToKey__ 
+             KeyCode::L, ModifierFlag::FN,
+             KeyCode::CURSOR_RIGHT
+         &lt;/autogen&gt;
+     &lt;/item&gt;
+     &lt;item&gt;
+         &lt;name&gt;Bind CapsLock + I to up arrow&lt;/name&gt;
+         &lt;identifier&gt;private.caps_uparrow&lt;/identifier&gt;
+         &lt;autogen&gt;
+             __KeyToKey__ 
+             KeyCode::I, ModifierFlag::FN,
+             KeyCode::CURSOR_UP
+         &lt;/autogen&gt;
+     &lt;/item&gt;
+ &lt;/root&gt;
+</code></pre>
+  </li>
+  <li>Click “Reload XML” in “Change Key”. Your new mappings should show up in the list. Activate them by clicking on the check box next to them. <img src="/assets/img/karabinermappings.png" alt="Activate remappings" title="Activate remappings by checking checkboxes" /></li>
+</ol>
+
+<p>That’s it. You can now enjoy greater productivity :-)</p>

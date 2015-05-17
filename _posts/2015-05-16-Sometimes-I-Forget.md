@@ -1,7 +1,7 @@
 ---
 layout: post
 category: links
-title: I Need to Remind Myself Sometimes
+title: Sometimes I Forget
 teaser: 
 tags: 
 ---
@@ -19,7 +19,7 @@ tags:
 > \- _Harry Potter and the Chamber of Secrets_
 
 
-That I'm an engineer. Sometimes I forget that I know more than most people about computers. No, this isn't a story of how I wonder in amazement how laypeople can't "do the simplest things with computers". Quite the opposite.
+Sometimes I forget that I'm an engineer. No, this isn't a story of how I wonder in amazement how laypeople can't "do the simplest things with computers". I try to catch myself when I think like that. No, this story is the opposite of that.
 
 I've started dusting off my personal laptop again. For a long time, I've been playing with little bits and pieces of code on my work laptop, mostly because I didn't care about ownership issues. But now I'm starting up a project that I might come to care about, so I need my personal laptop development-ready.
 

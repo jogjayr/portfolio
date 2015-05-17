@@ -6,15 +6,6 @@ teaser: More bubble talk too
 tags: [link, summary, tech]
 ---
 
-###Coming up next: Groupon's Accounting Scandals
-
-Dan Frommer decided to write a story about what everyone else knows; Google is scared of Facebook. 
-
-This isn't news to anybody really. Therefore, quite why he felt the need to write a story titled [Why Facebook Terrifies Google](http://www.readwriteweb.com/archives/why_facebook_terrifies_google.php) is beyond this blog. Because it's really quite simple: people spend more time on Facebook, Facebook knows more about those people, Facebook can serve better ads. 
-
-Sure it's nice to include a few screenshots from FB's ad creation interface, to demonstrate what kind of targeting can be done. But if the bar for what is "news" has been lowered to this level, expect a piece on how SourceForge is changing the world of open-source softwa...oh. 
-
-
 ###What does Anecdotal Mean?
 
 Sparkling journalism from the one-Pulitzer-a-year New York Times, as they reported that growing numbers of children of immigrants to the US are moving back to their parents' homelands in search of opportunity. People in India know this of course, thanks to Shahrukh Khan in _Swades_. But surely Mr. Khan was an exception; not many have a Gayatri Joshi waiting for them. What kind of numbers are we talking about.

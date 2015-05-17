@@ -51,7 +51,7 @@
     <p>In this series of posts on how I wrote a collection class for Backbone views, I covered the objectives of the enterprise in <a href="http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1">part 1</a>. In <a href="http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-2">part 2</a> the Backbone ViewCollection accomplished its first goal: create a lot of child views of a specified type, off of a collection passed to it.</p>
 
 <p>This post will discuss how I event handling works with so many child views. I saw numerous blog posts and StackOverflow questions related to event binding when <code>empty</code> is called on a jQuery object. For me, the most important bit of knowledge was that when you do the following <a href="http://jsfiddle.net/jogjayr/3QfLc/1/">JSFiddle</a>:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">var $child_el = $(&quot;#my_div&quot;).on(&quot;click&quot;, function() {
+<div class="highlight"><pre><code class="language-text" data-lang="text">var $child_el = $(&quot;#my_div&quot;).on(&quot;click&quot;, function() {
     console.log(&quot;clicked me&quot;);
 })
 $(&quot;#parent_elem&quot;).html($child_el); //Clicking on the child will do nothing
@@ -59,7 +59,7 @@ $(&quot;#parent_elem&quot;).html($child_el); //Clicking on the child will do not
 <p>The CHILD VIEW&#39;S EVENTS ARE LOST! I suppose this is general knowledge among those familiar with the DOM&#39;s secrets, but it was a revelation to me.</p>
 
 <p>Second revelation (in fact, as I started writing this blog post), is that the child views&#39; events actually need to delegate to the parent. Previously, I used to do the following:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">var Backbone.ViewCollection = Backbone.View.extend({
+<div class="highlight"><pre><code class="language-text" data-lang="text">var Backbone.ViewCollection = Backbone.View.extend({
     //other View Collection methods here
 
     //delegateEvents not only re-attaches the collections&#39;s events

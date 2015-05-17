@@ -1,15 +1,16 @@
 
-http://jayraj.net/atom.xml
 http://jayraj.net/blog/about.html
 http://jayraj.net/blog/archive.html
-http://jayraj.net/blog/index.html
-http://jayraj.net/blog/reading_list.html
+http://jayraj.net/atom.xml
 http://jayraj.net/categories.html
 http://jayraj.net/hashing-for-crimefighting-privacy.html
+http://jayraj.net/blog/index.html
 http://jayraj.net/pages.html
+http://jayraj.net/blog/reading_list.html
 http://jayraj.net/sitemap.txt
 http://jayraj.net/tags.html
 
+http://jayraj.net/Need-to-Remind-Myself
 http://jayraj.net/Lessons-from-Jajavy
 http://jayraj.net/Goals-2015
 http://jayraj.net/Home-row-arrow-keys
@@ -23,7 +24,6 @@ http://jayraj.net/Hashing-DNA-Crimefighting
 http://jayraj.net/backbone-view-collection-part-3
 http://jayraj.net/backbone-view-collection-part-2
 http://jayraj.net/backbone-view-collection-part-1
-http://jayraj.net/Poor-Little-Rich-Kid
 http://jayraj.net/Farewell-Forbes
 http://jayraj.net/How-to-Meet-Deadlines
 http://jayraj.net/Did-you-Expect-any-Better-from-TV
@@ -33,17 +33,16 @@ http://jayraj.net/The-World-of-DIY-Drones
 http://jayraj.net/How-to-Solve-a-Quality-Problem
 http://jayraj.net/Those-are-Some-Mighty-Big-Feet
 http://jayraj.net/No-Sarcasm-Today
-http://jayraj.net/Waah%21
-http://jayraj.net/New-Research-Reveals-Billfold-is-Vulnerable
+http://jayraj.net/Waah!
 http://jayraj.net/Only-Chutzpah-when-Google-Does-It
 http://jayraj.net/The-New-Stasi
-http://jayraj.net/TIL-Facebook-tells-Lies
-http://jayraj.net/I%27m-Confused-as-to-What-We%27ve-Been-Doing-So-Far
-http://jayraj.net/Wasn%27t-Facebook-in-the-News-Today
+http://jayraj.net/Facebook's-Metrics
+http://jayraj.net/I'm-Confused-as-to-What-We've-Been-Doing-So-Far
+http://jayraj.net/Wasn't-Facebook-in-the-News-Today
 http://jayraj.net/You-Lost-Files
 http://jayraj.net/The-Safest-Job-in-the-World
 http://jayraj.net/Its-Not-Even-OK-for-AB-Testing
-http://jayraj.net/%24167-year-raises-are-newsworthy
+http://jayraj.net/$167-year-raises-are-newsworthy
 http://jayraj.net/Everyone-should-be-above-average
 http://jayraj.net/Should-Everyone-Else-Just-Give-Up
 http://jayraj.net/RIMs-Dear-Leader

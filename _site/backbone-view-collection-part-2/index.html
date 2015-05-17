@@ -49,7 +49,7 @@
 
 <div class="col-lg-9">
     <p>In <a href="http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1">part 1</a> of this series, I explained what I wanted from a Backbone View Collection. The first and foremost thing was a common render method:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">Backbone.ViewCollection = Backbone.View.extend({
+<div class="highlight"><pre><code class="language-text" data-lang="text">Backbone.ViewCollection = Backbone.View.extend({
   childViews: [],
   render: function() {
 
@@ -73,7 +73,7 @@
 });
 </code></pre></div>
 <p>This approach carries a couple of issues. The first one I faced was actually quite silly; setting <code>childViews</code> to an empty array in the class definition results in <strong>every</strong> instance of that class pointing to the same array. This is quite disastrous; all the child items of every instance of ViewCollection are added to the same array. We have to fix this, and it&#39;s quite simple:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">Backbone.ViewCollection = Backbone.View.extend({
+<div class="highlight"><pre><code class="language-text" data-lang="text">Backbone.ViewCollection = Backbone.View.extend({
   render: function() {
   //all the stuff we wrote above...
   },
@@ -84,16 +84,16 @@
 });
 </code></pre></div>
 <p>There&#39;s also another problem, and it has to do with how we pass <code>ItemView</code> to ViewCollection. If we were to create a new ViewCollection like so:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">var PokedexView = new Backbone.ViewCollection({
+<div class="highlight"><pre><code class="language-text" data-lang="text">var PokedexView = new Backbone.ViewCollection({
   collection: Pokedex,
   ItemView: PokemonView 
 });
 </code></pre></div>
 <p>then the line:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">var ItemViewClass = this.options.ItemView || Backbone.View;
+<div class="highlight"><pre><code class="language-text" data-lang="text">var ItemViewClass = this.options.ItemView || Backbone.View;
 </code></pre></div>
 <p>works perfectly. The <code>options</code> attribute of a Backbone view is composed of the object you pass into the constructor. But what if you don&#39;t call the constructor directly? Consider the following:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">var PokedexView = Backbone.ViewCollection.extend({
+<div class="highlight"><pre><code class="language-text" data-lang="text">var PokedexView = Backbone.ViewCollection.extend({
   collection: Pokedex
 });
 //a specific type of Pokedex that uses a grid layout
@@ -103,18 +103,18 @@ var PokedexGridView = PokedexView.extend({
 });
 </code></pre></div>
 <p>Now, <code>this.options.ItemView</code> is <code>undefined</code>. This does not bode well for being able to build complex class hierarchies with ViewCollection, so we have to modify what we wrote just a little bit:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">//Either `this` is an instance of ViewCollection, in which case ItemView is an `option`
+<div class="highlight"><pre><code class="language-text" data-lang="text">//Either `this` is an instance of ViewCollection, in which case ItemView is an `option`
 //or `this` is an instance of a another type derived from ViewCollection
 //or use the plain-old Backbone.View class
 var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
 </code></pre></div>
 <p>Same thing applies for collection. So</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">_(me.collection).each(...)
+<div class="highlight"><pre><code class="language-text" data-lang="text">_(me.collection).each(...)
 </code></pre></div>
 <p>won&#39;t work every time.</p>
 
 <p>Having learned all this, here&#39;s ViewCollection now:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">Backbone.ViewCollection = Backbone.View.extend({
+<div class="highlight"><pre><code class="language-text" data-lang="text">Backbone.ViewCollection = Backbone.View.extend({
   render: function() {
 
     //The Backbone view class passed in that is 

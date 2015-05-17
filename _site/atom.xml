@@ -4,13 +4,75 @@
  <title>Weekly Typed</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2015-04-19T19:27:21-07:00</updated>
+ <updated>2015-05-16T17:12:39-07:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
    <email>jog@jayraj.net</email>
  </author>
 
+ 
+ <entry>
+   <title>I Need to Remind Myself Sometimes</title>
+   <link href="http://jayraj.net/Need-to-Remind-Myself"/>
+   <updated>2015-05-16T00:00:00-07:00</updated>
+   <id>hhttp://jayraj.net/Need-to-Remind-Myself</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&amp;#39;Well, hurry up, I can&amp;#39;t breathe!&amp;#39; Harry gasped, wrestling it as it curled around his chest.&lt;/p&gt;
+
+&lt;p&gt;&amp;#39;Devil&amp;#39;s Snare, Devil&amp;#39;s Snare... what did Professor Sprout say? - it likes the dark and the damp -&amp;#39; &lt;/p&gt;
+
+&lt;p&gt;&amp;#39;So light a fire!&amp;#39; Harry choked.&lt;/p&gt;
+
+&lt;p&gt;&amp;#39;Yes- of course- but there&amp;#39;s no wood!&amp;#39; Hermione cried, wringing her hands.&lt;/p&gt;
+
+&lt;p&gt;&amp;#39;HAVE YOU GONE MAD?&amp;#39; Ron bellowed. &amp;#39;ARE YOU A WITCH OR NOT?&amp;#39; &lt;/p&gt;
+
+&lt;p&gt;- &lt;em&gt;Harry Potter and the Chamber of Secrets&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That I&amp;#39;m an engineer. Sometimes I forget that I know more than most people about computers. No, this isn&amp;#39;t a story of how I wonder in amazement how laypeople can&amp;#39;t &amp;quot;do the simplest things with computers&amp;quot;. Quite the opposite.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve started dusting off my personal laptop again. For a long time, I&amp;#39;ve been playing with little bits and pieces of code on my work laptop, mostly because I didn&amp;#39;t care about ownership issues. But now I&amp;#39;m starting up a project that I might come to care about, so I need my personal laptop development-ready.&lt;/p&gt;
+
+&lt;p&gt;It had gathered a little dust, metaphorically speaking. No &lt;code&gt;git&lt;/code&gt; installed; Homebrew &lt;em&gt;and&lt;/em&gt; Macports (what was I thinking?), no Seil or Karabiner for &lt;a href=&quot;/Home-row-arrow-keys/&quot;&gt;Home Row Arrow Keys&lt;/a&gt;. And of course, Citrix Receiver installed and in the top bar on startup. Wait, what? When did this happen?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/topbar.png&quot; alt=&quot;Citrix Receiver in top bar&quot; title=&quot;Citrix receiver icon in top bar&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Looked for &amp;quot;Citrix&amp;quot; in Spotlight, looked for it in &amp;quot;System Preferences -&amp;gt; Accounts -&amp;gt; Startup Items&amp;quot;. Nada. Where is this danged thing?&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;Uninstall Citrix Receiver Mac&amp;quot; -&amp;gt; Google. That gave me an uninstaller application from Citrix. What the hell, it&amp;#39;s Saturday morning. Who needs a brain? Let&amp;#39;s just run the &amp;quot;uninstaller&amp;quot;, like a Windows-using schmuck. But I restart and there&amp;#39;s the little icon staring at me again, smugly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/topbar.png&quot; alt=&quot;Citrix Receiver in top bar&quot; title=&quot;Citrix receiver icon in top bar&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;What now? Was I doomed to seeing this thing forever? Would I have to reset my Mac to factory settings? This things&amp;#39;s 7 years old; that would surely be the deathblow.&lt;/p&gt;
+
+&lt;p&gt;Almost at &lt;a href=&quot;/Lessons-from-Jajavy/&quot;&gt;&amp;quot;give-up-ness&amp;quot;&lt;/a&gt;, I was reminded of one of my favorite quotes from &lt;em&gt;Harry Potter and the Chamber of Secrets&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Of course I have other options!&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ps -ef | grep citrix
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Nothing. &lt;em&gt;Scratches chin&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ps -ef
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I don&amp;#39;t see anything named &amp;quot;Citrix&amp;quot;. Until...&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/psoutput.png&quot; alt=&quot;Citrix Receiver in ps -ef output&quot; title=&quot;Citrix receiver in ps -ef output&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Triumph! I know where the binary is! I can kill the process too! Only to have it come back, like an Inferi.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/stilllives.png&quot; alt=&quot;Citrix Receiver in still lives&quot; title=&quot;Citrix receiver still lives&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Who is doing this? The &lt;code&gt;ppid&lt;/code&gt; says it&amp;#39;s &lt;code&gt;launchd&lt;/code&gt;. Mystery solved. &lt;code&gt;launchd&lt;/code&gt;&amp;#39;s daemons live in various places. Per the man page:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;~/Library/LaunchAgents         Per-user agents provided by the user.
+/Library/LaunchAgents          Per-user agents provided by the administrator.
+/Library/LaunchDaemons         System-wide daemons provided by the administrator.
+/System/Library/LaunchAgents   Per-user agents provided by Mac OS X.
+/System/Library/LaunchDaemons  System-wide daemons provided by Mac OS X.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Conclusion: I need to challenge my brain more.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Lessons from Jajavy</title>
@@ -99,7 +161,7 @@
 &lt;li&gt;Download and install &lt;a href=&quot;https://pqrs.org/osx/karabiner/&quot;&gt;Karabiner&lt;/a&gt; and &lt;a href=&quot;https://pqrs.org/osx/karabiner/seil.html.en&quot;&gt;Seil&lt;/a&gt;. Seil helps you remap the Caps Lock key and Karabiner helps you remap everything else. At this point, I&amp;#39;m unclear why you need two separate apps to do this though&lt;/li&gt;
 &lt;li&gt;Run Seil and remap the Caps Lock key to the Fn key (code 63), as in the screenshot. &lt;img src=&quot;/assets/img/seil.png&quot; alt=&quot;Remapping Caps Lock Key to Fn Key&quot; title=&quot;Seil Remapping Caps Lock key&quot;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Run Karabiner and open &lt;code&gt;private.xml&lt;/code&gt; from &amp;quot;Misc &amp;amp; Uninstall&amp;quot;. &lt;img src=&quot;/assets/img/privatexml.png&quot; alt=&quot;Opening private.xml&quot; title=&quot;Click on Misc &amp;amp; Uninstall and private.xml&quot;&gt; Put your desired mappings in &lt;code&gt;private.xml&lt;/code&gt;. Mine, below, map Fn+IJKL to their respective arrow keys:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;
 &amp;lt;root&amp;gt;
     &amp;lt;item&amp;gt;
         &amp;lt;name&amp;gt;Bind CapsLock + J to left arrow&amp;lt;/name&amp;gt;
@@ -388,7 +450,7 @@ c) Become a Vim badass and do it really fast in the terminal&lt;/p&gt;&lt;/li&gt
    <content type="html">&lt;p&gt;In this series of posts on how I wrote a collection class for Backbone views, I covered the objectives of the enterprise in &lt;a href=&quot;http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1&quot;&gt;part 1&lt;/a&gt;. In &lt;a href=&quot;http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-2&quot;&gt;part 2&lt;/a&gt; the Backbone ViewCollection accomplished its first goal: create a lot of child views of a specified type, off of a collection passed to it.&lt;/p&gt;
 
 &lt;p&gt;This post will discuss how I event handling works with so many child views. I saw numerous blog posts and StackOverflow questions related to event binding when &lt;code&gt;empty&lt;/code&gt; is called on a jQuery object. For me, the most important bit of knowledge was that when you do the following &lt;a href=&quot;http://jsfiddle.net/jogjayr/3QfLc/1/&quot;&gt;JSFiddle&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;var $child_el = $(&amp;quot;#my_div&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var $child_el = $(&amp;quot;#my_div&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
     console.log(&amp;quot;clicked me&amp;quot;);
 })
 $(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child will do nothing
@@ -396,7 +458,7 @@ $(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child wil
 &lt;p&gt;The CHILD VIEW&amp;#39;S EVENTS ARE LOST! I suppose this is general knowledge among those familiar with the DOM&amp;#39;s secrets, but it was a revelation to me.&lt;/p&gt;
 
 &lt;p&gt;Second revelation (in fact, as I started writing this blog post), is that the child views&amp;#39; events actually need to delegate to the parent. Previously, I used to do the following:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;var Backbone.ViewCollection = Backbone.View.extend({
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var Backbone.ViewCollection = Backbone.View.extend({
     //other View Collection methods here
 
     //delegateEvents not only re-attaches the collections&amp;#39;s events
@@ -426,7 +488,7 @@ $(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child wil
    <updated>2013-05-22T00:00:00-07:00</updated>
    <id>hhttp://jayraj.net/backbone-view-collection-part-2</id>
    <content type="html">&lt;p&gt;In &lt;a href=&quot;http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1&quot;&gt;part 1&lt;/a&gt; of this series, I explained what I wanted from a Backbone View Collection. The first and foremost thing was a common render method:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
   childViews: [],
   render: function() {
 
@@ -450,7 +512,7 @@ $(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child wil
 });
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This approach carries a couple of issues. The first one I faced was actually quite silly; setting &lt;code&gt;childViews&lt;/code&gt; to an empty array in the class definition results in &lt;strong&gt;every&lt;/strong&gt; instance of that class pointing to the same array. This is quite disastrous; all the child items of every instance of ViewCollection are added to the same array. We have to fix this, and it&amp;#39;s quite simple:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
   render: function() {
   //all the stuff we wrote above...
   },
@@ -461,16 +523,16 @@ $(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child wil
 });
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;There&amp;#39;s also another problem, and it has to do with how we pass &lt;code&gt;ItemView&lt;/code&gt; to ViewCollection. If we were to create a new ViewCollection like so:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;var PokedexView = new Backbone.ViewCollection({
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var PokedexView = new Backbone.ViewCollection({
   collection: Pokedex,
   ItemView: PokemonView 
 });
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;then the line:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;var ItemViewClass = this.options.ItemView || Backbone.View;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var ItemViewClass = this.options.ItemView || Backbone.View;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;works perfectly. The &lt;code&gt;options&lt;/code&gt; attribute of a Backbone view is composed of the object you pass into the constructor. But what if you don&amp;#39;t call the constructor directly? Consider the following:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;var PokedexView = Backbone.ViewCollection.extend({
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var PokedexView = Backbone.ViewCollection.extend({
   collection: Pokedex
 });
 //a specific type of Pokedex that uses a grid layout
@@ -480,18 +542,18 @@ var PokedexGridView = PokedexView.extend({
 });
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now, &lt;code&gt;this.options.ItemView&lt;/code&gt; is &lt;code&gt;undefined&lt;/code&gt;. This does not bode well for being able to build complex class hierarchies with ViewCollection, so we have to modify what we wrote just a little bit:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;//Either `this` is an instance of ViewCollection, in which case ItemView is an `option`
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//Either `this` is an instance of ViewCollection, in which case ItemView is an `option`
 //or `this` is an instance of a another type derived from ViewCollection
 //or use the plain-old Backbone.View class
 var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Same thing applies for collection. So&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;_(me.collection).each(...)
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;_(me.collection).each(...)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;won&amp;#39;t work every time.&lt;/p&gt;
 
 &lt;p&gt;Having learned all this, here&amp;#39;s ViewCollection now:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
   render: function() {
 
     //The Backbone view class passed in that is 
@@ -549,7 +611,7 @@ var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
 &lt;/ol&gt;
 
 &lt;p&gt;Here is an example of what such a class would do:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;var Pokemon = Backbone.Model.extend({});
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var Pokemon = Backbone.Model.extend({});
 var Pokedex = new Backbone.Collection({
     model: Pokemon;
 });
@@ -567,45 +629,6 @@ var PokedexView = new Backbone.ViewCollection({
 PokedexView.render();
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;In the coming blog posts, I will describe how I made my ViewCollection.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Poor Little Rich Kid</title>
-   <link href="http://jayraj.net/Poor-Little-Rich-Kid"/>
-   <updated>2012-05-05T00:00:00-07:00</updated>
-   <id>hhttp://jayraj.net/Poor-Little-Rich-Kid</id>
-   <content type="html">&lt;h3&gt;A Rock and a Hard Place&lt;/h3&gt;
-
-&lt;p&gt;AT&amp;amp;T head honcho Randall Stephenson put his foot in his mouth on Wednesday, May 2, while demonstrating his commitment to shareholders.&lt;/p&gt;
-
-&lt;p&gt;At a conference hosted by the &lt;a href=&quot;http://www.milkeninstitute.org&quot;&gt;Milken institute&lt;/a&gt; the New York Times &lt;a href=&quot;http://bits.blogs.nytimes.com/2012/05/04/att-randall-stephenson/&quot;&gt;reported&lt;/a&gt; Stephenson bemoaning the decision to give iPhone users all-you-can-eat data.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;My only regret was how we introduced pricing in the beginning, because how did we introduce pricing? Thirty dollars and 
-you get all you can eat. And it’s a variable cost model. Every additional megabyte you use in this network, I have to &lt;/p&gt;
-
-&lt;h2&gt;invest capital.&lt;/h2&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Not much sympathy for him there. The iPhone was exclusive to AT&amp;amp;T for 4 years. People who hated AT&amp;amp;T would become subscribers because of the iPhone. And when its massive data sucking caused dropped calls for everyone, people not only put up with it, they &lt;em&gt;bought their own mini cell towers and operated them at their own cost&lt;/em&gt;. &lt;/p&gt;
-
-&lt;p&gt;Not content with pissing off the masses with his griping about having to spend so fuckin&amp;#39; much to provide service to his customers, Stephenson railed about the unfairness of it all, with iMessage eating into his sweet, sweet texting margins. Woe is me, indeed.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;You lie awake at night worrying about what is that which will disrupt your business model. Apple iMessage is a classic 
-example. If you’re using iMessage, you’re not using one of our messaging services, right? That’s disruptive to our &lt;/p&gt;
-
-&lt;h2&gt;messaging revenue stream&lt;/h2&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;That clearly didn&amp;#39;t go down well with commenters on the article either. Because text messages are so ridiculously lucrative for carriers, and carry such high margins, it&amp;#39;s not even funny. &lt;/p&gt;
-
-&lt;p&gt;Randall Stephenson was speaking at an industry conference surrounded by fellow worshippers of capitalism (the Milken institute &amp;quot;believes in the power of capital markets to solve urgent social and economic challenges and improve lives&amp;quot;). His remarks were clearly right for the setting, and right by his shareholders, but he might&amp;#39;ve stopped to consider the impression formed with a broader audience, who clearly see this as greedy bellyaching. (Just see the comments on the article)&lt;/p&gt;
 </content>
  </entry>
  
@@ -654,15 +677,7 @@ example. If you’re using iMessage, you’re not using one of our messaging ser
    <link href="http://jayraj.net/How-to-Meet-Deadlines"/>
    <updated>2012-04-16T00:00:00-07:00</updated>
    <id>hhttp://jayraj.net/How-to-Meet-Deadlines</id>
-   <content type="html">&lt;h3&gt;Coming up next: Groupon&amp;#39;s Accounting Scandals&lt;/h3&gt;
-
-&lt;p&gt;Dan Frommer decided to write a story about what everyone else knows; Google is scared of Facebook. &lt;/p&gt;
-
-&lt;p&gt;This isn&amp;#39;t news to anybody really. Therefore, quite why he felt the need to write a story titled &lt;a href=&quot;http://www.readwriteweb.com/archives/why_facebook_terrifies_google.php&quot;&gt;Why Facebook Terrifies Google&lt;/a&gt; is beyond this blog. Because it&amp;#39;s really quite simple: people spend more time on Facebook, Facebook knows more about those people, Facebook can serve better ads. &lt;/p&gt;
-
-&lt;p&gt;Sure it&amp;#39;s nice to include a few screenshots from FB&amp;#39;s ad creation interface, to demonstrate what kind of targeting can be done. But if the bar for what is &amp;quot;news&amp;quot; has been lowered to this level, expect a piece on how SourceForge is changing the world of open-source softwa...oh. &lt;/p&gt;
-
-&lt;h3&gt;What does Anecdotal Mean?&lt;/h3&gt;
+   <content type="html">&lt;h3&gt;What does Anecdotal Mean?&lt;/h3&gt;
 
 &lt;p&gt;Sparkling journalism from the one-Pulitzer-a-year New York Times, as they reported that growing numbers of children of immigrants to the US are moving back to their parents&amp;#39; homelands in search of opportunity. People in India know this of course, thanks to Shahrukh Khan in &lt;em&gt;Swades&lt;/em&gt;. But surely Mr. Khan was an exception; not many have a Gayatri Joshi waiting for them. What kind of numbers are we talking about.&lt;/p&gt;
 
@@ -721,9 +736,9 @@ example. If you’re using iMessage, you’re not using one of our messaging ser
 
 &lt;p&gt;Firstly, if it was that simple, piracy wouldn&amp;#39;t exist. If ordinary people can get &lt;i&gt;Game of Thrones&lt;/i&gt; for free from foreign websites, it&amp;#39;s reasonable to assume skilled Chinese uber-hackers could do the reverse without much trouble, no matter who&amp;#39;s watching the pipes. Then there&amp;#39;s also the issue of the DHS having to install filters on every line in and out, maintain a database of &amp;quot;sensitive files&amp;quot; which they would have to amass from companies, who need to be comfortable putting proprietary information into the hands of a government body that&amp;#39;s no more likely to be secure than the companies themselves. The whole idea of a government cyber border patrol manning a nation&amp;#39;s digital frontiers is laughable; an idea from the original &lt;i&gt;Tron&lt;/i&gt; or &lt;i&gt;VR Troopers&lt;/i&gt;.&lt;/p&gt;
 
-&lt;p&gt;There isn&amp;#39;t a single idea in this whole enterprise that doesn&amp;#39;t have a faint touch of the ridiculous. From gems like: &amp;quot;If government agencies were authorized to create a major program to grab stolen data leaving the country, they could drastically reduce today’s wholesale theft of American corporate secrets&amp;quot;, to the only flaw in the plan being &amp;quot;privacy advocates&amp;quot;. The only person who stands to benefit from any such legislation is Richard A Clarke himself. An expert like him could stand to mint a small fortune from consulting engagements, if such legislation or executive orders were considered. It seems about par for a man who has Amazon affiliate links to his own book on his own &lt;a href=&quot;http://www.richardaclarke.net/&quot;&gt;website&lt;/a&gt; (seriously, who does that?).&lt;/p&gt;
+&lt;p&gt;There isn&amp;#39;t a single idea in this whole enterprise that doesn&amp;#39;t have a faint touch of the ridiculous. From gems like: &amp;quot;If government agencies were authorized to create a major program to grab stolen data leaving the country, they could drastically reduce today’s wholesale theft of American corporate secrets&amp;quot;, to the only flaw in the plan being &amp;quot;privacy advocates&amp;quot;.&lt;/p&gt;
 
-&lt;p&gt;Interestingly, Mr. Clarke unwittingly offers a much simpler solution himself. He notes that the SEC recommends companies to disclose breaches in security. Perhaps it should be made mandatory. The only ways to get CEOs to pay attention to regulatory issues are the threat of jail time, or a drop in the stock price. Repeated breaches, when revealed by force of SEC regulation, will do plenty to ensure the latter. &lt;/p&gt;
+&lt;p&gt;Interestingly, Mr. Clarke unwittingly offers a much simpler solution himself. He notes that the SEC recommends companies to disclose breaches in security. Perhaps it should be made mandatory.&lt;/p&gt;
 
 &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/HGVeJ7w4R6U&quot; frameborder=&quot;0&quot; allowfullscreen=&#39;allowfullscreen&#39;&gt;&lt;/iframe&gt;
 </content>
@@ -778,8 +793,7 @@ advance the cause of Android app design.&lt;/p&gt;
    <id>hhttp://jayraj.net/Those-are-Some-Mighty-Big-Feet</id>
    <content type="html">&lt;h3&gt;Redefing a &amp;quot;shoestring&amp;quot; budget&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.geekwire.com/2012/startup-spotlight-28yearold-entrepreneur-guides-greencupboards-profits-shoestring&quot;&gt;Geekwire&lt;/a&gt; really played 
-fast and loose with the word &amp;quot;bootstrapping&amp;quot; today applying it to eco-product retailer &lt;a href=&quot;http://www.greencupboards.com/&quot;&gt;Greencupboards&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.geekwire.com/2012/startup-spotlight-28yearold-entrepreneur-guides-greencupboards-profits-shoestring&quot;&gt;Geekwire&lt;/a&gt; really played fast and loose with the word &amp;quot;bootstrapping&amp;quot; today applying it to eco-product retailer &lt;a href=&quot;http://www.greencupboards.com/&quot;&gt;Greencupboards&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;If $288,000 is shoestring, it&amp;#39;s safe to say those are shoes you could be murdered over.&lt;/p&gt;
 </content>
@@ -804,7 +818,7 @@ charger for power. It&amp;#39;s the geek&amp;#39;s equivalent of seeing a puppy.
  
  <entry>
    <title>Waah!</title>
-   <link href="http://jayraj.net/Waah%21"/>
+   <link href="http://jayraj.net/Waah!"/>
    <updated>2012-02-24T00:00:00-08:00</updated>
    <id>hhttp://jayraj.net/Waah!</id>
    <content type="html">&lt;h3&gt;Exclusive: No one cares&lt;/h3&gt;
@@ -812,25 +826,6 @@ charger for power. It&amp;#39;s the geek&amp;#39;s equivalent of seeing a puppy.
 &lt;p&gt;Delightful &lt;a href=&quot;http://parislemon.com/post/18182094905/the-wall-street-journal-is-fucking-bullshit&quot;&gt;little tantrum&lt;/a&gt; today from noted Apple (Designed in California&amp;trade;) fanboy, investor and blogger MG Siegler. &lt;/p&gt;
 
 &lt;p&gt;I&amp;#39;ll summarize it here as &amp;quot;The Wall Street Journal published an article based on a story I broke but didn&amp;#39;t give me credit or a link. So now onwards I will do the same. And yeah, the journalist who wrote the article should join Techcrunch or PandoDaily because she&amp;#39;s really nice.&amp;quot; No need to thank me for saving you 5 minutes.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>New Research Reveals Billfold is "Vulnerable"</title>
-   <link href="http://jayraj.net/New-Research-Reveals-Billfold-is-Vulnerable"/>
-   <updated>2012-02-11T00:00:00-08:00</updated>
-   <id>hhttp://jayraj.net/New-Research-Reveals-Billfold-is-Vulnerable</id>
-   <content type="html">&lt;h3&gt;Billfold Susceptible even Without &amp;quot;Rooting&amp;quot;&lt;/h3&gt;
-
-&lt;p&gt;More accurately, it&amp;#39;s the past couple of days as technology blogs have been quick to pounce on the fact that &lt;a href=&quot;https://zvelo.com/blog/entry/google-wallet-security-pin-exposure-vulnerability&quot;&gt;Google Wallet is hackable&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;Like most alarmist &amp;quot;research&amp;quot; done these days, it comes with a caveat: the phone needs to be rooted. Or failing that &lt;a href=&quot;http://www.theverge.com/2012/2/9/2787758/second-google-wallet-security-vulnerability-confirmed-affects-all&quot;&gt;stolen phones could have pre-paid credit stolen&lt;/a&gt; if the thief reinstalls the Wallet app.&lt;/p&gt;
-
-&lt;p&gt;Google, in a &lt;a href=&quot;http://googlecommerce.blogspot.com/2012/02/protecting-your-payments-with-google.html&quot;&gt;blog post&lt;/a&gt; today, made the quite reasonable argument that manufacturers disable root access to phones for precisely reasons like this. Any user that voluntarily roots their phone should know what they are getting into. And unlike a real wallet, you can put a security code on a cell phone to prevent someone from using it even if they steal it. &lt;/p&gt;
-
-&lt;p&gt;So basically what tech blogs are saying is: &amp;quot;Even though I&amp;#39;ll definitely lose all my cash, credit cards and ID if my physical wallet is stolen, Google Wallet is the one that&amp;#39;s &amp;#39;vulnerable&amp;#39;&amp;quot;. Gotta drive those pageviews people.&lt;/p&gt;
-
-&lt;p&gt;Having said that, I don&amp;#39;t think mobile payments are such a swell idea right now, or even in the near future. Having a single point of failure makes me uncomfortable. If my battery dies or my phone is stolen, or dropped into a toilet bowl, or eaten by a bear, not only can I not call for help, I can&amp;#39;t even pay for a cab to get me home.&lt;/p&gt;
 </content>
  </entry>
  
@@ -871,10 +866,10 @@ charger for power. It&amp;#39;s the geek&amp;#39;s equivalent of seeing a puppy.
  </entry>
  
  <entry>
-   <title>TIL - Facebook tells Lies</title>
-   <link href="http://jayraj.net/TIL-Facebook-tells-Lies"/>
+   <title>Facebook's Metrics</title>
+   <link href="http://jayraj.net/Facebook's-Metrics"/>
    <updated>2012-02-06T00:00:00-08:00</updated>
-   <id>hhttp://jayraj.net/TIL-Facebook-tells-Lies</id>
+   <id>hhttp://jayraj.net/Facebook's-Metrics</id>
    <content type="html">&lt;h3&gt;It&amp;#39;s All Semantics Really&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://dealbook.nytimes.com/2012/02/06/those-millions-on-facebook-some-may-not-actually-visit/&quot;&gt;Andrew Ross Sorkin&lt;/a&gt;
@@ -894,7 +889,7 @@ was freaking out over Facebook&amp;#39;s claims that it has 483 million active u
  
  <entry>
    <title>I'm Confused as to What We've Been Doing So Far</title>
-   <link href="http://jayraj.net/I%27m-Confused-as-to-What-We%27ve-Been-Doing-So-Far"/>
+   <link href="http://jayraj.net/I'm-Confused-as-to-What-We've-Been-Doing-So-Far"/>
    <updated>2012-02-03T00:00:00-08:00</updated>
    <id>hhttp://jayraj.net/I'm-Confused-as-to-What-We've-Been-Doing-So-Far</id>
    <content type="html">&lt;h3&gt;Startups - Conspiracy or Extended Hackathon?&lt;/h3&gt;
@@ -924,7 +919,7 @@ from pirate-sympathizers Techdirt, who argue that DRM will logically result in a
  
  <entry>
    <title>Wasn't Facebook in the News Today?</title>
-   <link href="http://jayraj.net/Wasn%27t-Facebook-in-the-News-Today"/>
+   <link href="http://jayraj.net/Wasn't-Facebook-in-the-News-Today"/>
    <updated>2012-02-01T00:00:00-08:00</updated>
    <id>hhttp://jayraj.net/Wasn't-Facebook-in-the-News-Today</id>
    <content type="html">&lt;h3&gt;Yesteryear&amp;#39;s Hot Consumer Electronics Firm Shakes Things Up&lt;/h3&gt;
@@ -1023,7 +1018,7 @@ paid to see the two of them race down the Golden Gate Bridge to settle this?
  
  <entry>
    <title>$167/year raises are newsworthy</title>
-   <link href="http://jayraj.net/%24167-year-raises-are-newsworthy"/>
+   <link href="http://jayraj.net/$167-year-raises-are-newsworthy"/>
    <updated>2012-01-26T00:00:00-08:00</updated>
    <id>hhttp://jayraj.net/$167-year-raises-are-newsworthy</id>
    <content type="html">&lt;h3&gt;New Employee Discount Program at Apple&lt;/h3&gt;
@@ -1114,43 +1109,24 @@ Or will it just be &amp;quot;good enough&amp;quot; if the program is better than
    <id>hhttp://jayraj.net/RIMs-Dear-Leader</id>
    <content type="html">&lt;h3&gt;RIM appoint new Dear Leader&lt;/h3&gt;
 
-&lt;p&gt;In the vastness of the frozen north, the Republic of Imaginary Millions&amp;#39; (RIM) Politburo selected Thorsten Heins as their general secretary.
-Heins replaces Jim Balsille, one of the founding fathers of the Republic, and Mike Lazaridis. Like his predecessors, Heins, retains his 
-firm belief in the nation&amp;#39;s destiny, &lt;a href=&quot;http://www.theglobeandmail.com/globe-investor/at-research-in-motion-a-new-ceo-vows-to-silence-the-doomsayers/article2310968/&quot;&gt;declaring&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;In the vastness of the frozen north, the Republic of Imaginary Millions&amp;#39; (RIM) Politburo selected Thorsten Heins as their general secretary. Heins replaces Jim Balsille, one of the founding fathers of the Republic, and Mike Lazaridis. Like his predecessors, Heins, retains his firm belief in the nation&amp;#39;s destiny, &lt;a href=&quot;http://www.theglobeandmail.com/globe-investor/at-research-in-motion-a-new-ceo-vows-to-silence-the-doomsayers/article2310968/&quot;&gt;declaring&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;It’s a fantastic growth story and it’s not coming to an end. What you will see with me is rigour and flawless execution.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;RIM is a major exporter of fruit, primarily Blackberries. Unfortunately, the world&amp;#39;s demand for Blackberries has slumped even as
-the market for fruit, especially Apples, has grown. The embattled nation has had to face defections, &lt;a href=&quot;http://www.bgr.com/2011/06/30/open-letter-to-blackberry-bosses-senior-rim-exec-tells-all-as-company-crumbles-around-him/&quot;&gt;public shamings&lt;/a&gt;
-and the draining of its treasury. Although some developing nations, such as India, are still pursuing &lt;a href=&quot;http://www.forbes.com/sites/kashmirhill/2012/01/09/leaked-memo-claims-phone-companies-let-india-spy-on-u-s-emails/&quot;&gt;strategic security alliances&lt;/a&gt;
-with the Republic, and even buying their old hardware, most of the Western world regards the nation as a power in terminal decline. &lt;/p&gt;
+&lt;p&gt;RIM is a major exporter of fruit, primarily Blackberries. Unfortunately, the world&amp;#39;s demand for Blackberries has slumped even as the market for fruit, especially Apples, has grown. The embattled nation has had to face defections, &lt;a href=&quot;http://www.bgr.com/2011/06/30/open-letter-to-blackberry-bosses-senior-rim-exec-tells-all-as-company-crumbles-around-him/&quot;&gt;public shamings&lt;/a&gt; and the draining of its treasury. Although some developing nations, such as India, are still pursuing &lt;a href=&quot;http://www.forbes.com/sites/kashmirhill/2012/01/09/leaked-memo-claims-phone-companies-let-india-spy-on-u-s-emails/&quot;&gt;strategic security alliances&lt;/a&gt; with the Republic, and even buying their old hardware, most of the Western world regards the nation as a power in terminal decline.&lt;/p&gt;
 
-&lt;p&gt;It remains to be seen whether Mr. Heins (hereafter, known as Dear Leader), will be able to breathe life back into the Republic of 
-Imaginary Millions.&lt;/p&gt;
-
-&lt;h3&gt;Filesonic Running for Cover&lt;/h3&gt;
-
-&lt;p&gt;Like ants from a broken anthill, file-sharing sites are scrambling to get out of the Justice Department and Big Content&amp;#39;s giant cross-hairs.
-The two have declared war on every single website and service that offers file uploading and downloading, leaving the likes &lt;a href=&quot;http://torrentfreak.com/filesonic-kills-file-sharing-after-megaupload-arrests-120122/&quot;&gt;Filesonic&lt;/a&gt;
-quivering in their boots. Filesonic has suspended file download capability, allowing users to only access their personal files.&lt;/p&gt;
-
-&lt;p&gt;This explains why Today I Read couldn&amp;#39;t download the latest installment of Dr. Do-me-a-little. For research. &lt;/p&gt;
+&lt;p&gt;It remains to be seen whether Mr. Heins (hereafter, known as Dear Leader), will be able to breathe life back into the Republic of Imaginary Millions.&lt;/p&gt;
 
 &lt;h3&gt;Joel Spolsky&amp;#39;s SOPA-smart idea&lt;/h3&gt;
 
-&lt;p&gt;StackOverflow and FogCreek Software founder, and software writer &lt;a href=&quot;https://plus.google.com/u/0/117114202722218150209/posts/4GgaRiSyaTf&quot;&gt;Joel Spolsky&lt;/a&gt;
-offered possibly some of the best solutions to SOPA/PIPA.&lt;/p&gt;
+&lt;p&gt;StackOverflow and FogCreek Software founder, and software writer &lt;a href=&quot;https://plus.google.com/u/0/117114202722218150209/posts/4GgaRiSyaTf&quot;&gt;Joel Spolsky&lt;/a&gt; offered possibly some of the best solutions to SOPA/PIPA.&lt;/p&gt;
 
-&lt;p&gt;Specifically, he proposed a counter-attack by lobbying to abolish software patents, introduce punitive legislation for patent trolls,
-enshrine linking to content in a law protecting free speech, and also called on Web companies who want to support pro-them candidates
-to offer free advertisement, so that they aren&amp;#39;t so beholden to other people for campaign funding. In my opinion, that last one is
-just a different way of funding campaigns, and it&amp;#39;s not difficult to see a future where Google would call a majority of the shots through
+&lt;p&gt;Specifically, he proposed a counter-attack by lobbying to abolish software patents, introduce punitive legislation for patent trolls, enshrine linking to content in a law protecting free speech, and also called on Web companies who want to support pro-them candidates to offer free advertisement, so that they aren&amp;#39;t so beholden to other people for campaign funding. In my opinion, that last one is just a different way of funding campaigns, and it&amp;#39;s not difficult to see a future where Google would call a majority of the shots through
 Youtube. Or, in an ironic twist, the content providers might get the last laugh by employing Hulu for this purpose.&lt;/p&gt;
 
-&lt;p&gt;Either way, it&amp;#39;s good to see that someone&amp;#39;s looking for a positive reaction to the whole thing, instead of resigning the industry to
-fight the MPAA every couple of years.&lt;/p&gt;
+&lt;p&gt;Either way, it&amp;#39;s good to see that someone&amp;#39;s looking for a positive reaction to the whole thing, instead of resigning the industry to fight the MPAA every couple of years.&lt;/p&gt;
 </content>
  </entry>
  
@@ -1161,32 +1137,11 @@ fight the MPAA every couple of years.&lt;/p&gt;
    <id>hhttp://jayraj.net/Apple-Destroys-American-middle-class</id>
    <content type="html">&lt;h3&gt;New York Times Blames Apple for America&amp;#39;s Manufacturing Woes&lt;/h3&gt;
 
-&lt;p&gt;Maverick stuff from the &lt;a href=&quot;http://www.nytimes.com/2012/01/22/business/apple-america-and-a-squeezed-middle-class.html?pagewanted=all&quot;&gt;New York Times&lt;/a&gt; today, as they laid out a narrative of America falling from its industrial greatness due to the flight of high-tech manufacturing to Asia. And leading the exodus, according to this narrative, was the world&amp;#39;s most valuable technology company Apple (Designed in California&amp;trade;). They acknowledge that Apple kept production in the family till as recently as 2002, but efficiencies and labor shortages drove them to the Orient.&lt;/p&gt;
+&lt;p&gt;Maverick stuff from the &lt;a href=&quot;http://www.nytimes.com/2012/01/22/business/apple-america-and-a-squeezed-middle-class.html?pagewanted=all&quot;&gt;New York Times&lt;/a&gt; today, as they laid out a narrative of America falling from its industrial greatness due to the flight of high-tech manufacturing to Asia. And leading the exodus, according to this narrative, was the world&amp;#39;s most valuable technology company Apple (Designed in California&amp;trade;). They acknowledge that Apple kept production in the family till as recently as 2002, but efficiencies and labor shortages drove them to the East.&lt;/p&gt;
 
-&lt;p&gt;The Times painted a terrifying picture of thousands of Chinese workers roused from their dorms at midnight by shouting, grey-uniformed, jackbooted Germans to accommodate Herr Jobs&amp;#39; newest demands. Many commenters described it as &amp;quot;slave labor&amp;quot; ignoring that the definition of slavery is involuntary servitude. IMO the term is appropriate for child prostitutes in Thailand or Cambodia, but over the top for workers at Foxconn; they are only slightly less fortunate than Wal-Mart workers in America. &lt;/p&gt;
+&lt;p&gt;The Times painted a terrifying picture of thousands of Chinese workers roused from their dorms at midnight by shouting, grey-uniformed, jackbooted Germans to accommodate Herr Jobs&amp;#39; newest demands. Many commenters described it as &amp;quot;slave labor&amp;quot; ignoring that the definition of slavery is involuntary servitude.&lt;/p&gt;
 
-&lt;p&gt;It&amp;#39;s also unfair to target Apple or even the computer electronics industry. It wasn&amp;#39;t the first industry to do it. General Electric, 
-that stalwart of American manufacturing and symbol of American ingenuity,  started the obsession with &amp;quot;shareholder value&amp;quot; 
-and began to offshore manufacturing in the late 70s and early 80s. For various reasons, the home appliances  industry, machine tools, 
-steel, shipbuilding and countless others began the march out of the US long before Americans had heard  of the Internet. 
-And even when there are opportunities for high-tech manufacturing in new industries, like solar power, the US has (cliches ahoy!) 
-managed to shoot itself in the foot and hand the initiative to other countries. Yes, China has terrible labor protections, 
-but that hasn&amp;#39;t stopped Germany or Japan competing with them to be the shopfloor of the world.&lt;/p&gt;
-
-&lt;h3&gt;MPAA Threatens to Stop Paying for Senators&amp;#39; Private Jets, Mistresses and Ponies&lt;/h3&gt;
-
-&lt;hr&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Those who count on quote &amp;#39;Hollywood&amp;#39; for support need to understand that this industry is watching very carefully who&amp;#39;s going to
-stand up for them when their job is at stake. Don&amp;#39;t ask me to write a check for you when you think your job is at risk and then &lt;/p&gt;
-
-&lt;h2&gt;don&amp;#39;t pay any attention to me when my job is at stake&lt;/h2&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;So spake former Senator, now MPAA mouthpiece, Chris Dodd. Threatening the vengeance of Thor, Iron-Man and the Punisher on all Congressmen who dared defy the MPAA&amp;#39;s edicts to pass SOPA/PIPA into law, Dodd (curiously, in another life, co-sponsor of legislation that &lt;a href=&quot;http://en.wikipedia.org/wiki/Dodd%E2%80%93Frank_Wall_Street_Reform_and_Consumer_Protection_Act#Overview&quot;&gt;protected consumers from big bully banks&lt;/a&gt;) singlehandedly dragged the MPAA&amp;#39;s previously squeaky clean name through mud. &lt;/p&gt;
-
-&lt;p&gt;I only wish lobbyists in India were this explicit. &lt;/p&gt;
+&lt;p&gt;It&amp;#39;s also unfair to target Apple or even the computer electronics industry. It wasn&amp;#39;t the first industry to do it. General Electric, that stalwart of American manufacturing and symbol of American ingenuity,  started the obsession with &amp;quot;shareholder value&amp;quot;and began to offshore manufacturing in the late 70s and early 80s. For various reasons, the home appliances  industry, machine tools, steel, shipbuilding and countless others began the march out of the US long before Americans had heard  of the Internet. And even when there are opportunities for high-tech manufacturing in new industries, like solar power, the US has (cliches ahoy!) managed to shoot itself in the foot and hand the initiative to other countries.&lt;/p&gt;
 </content>
  </entry>
  
@@ -1197,63 +1152,19 @@ stand up for them when their job is at stake. Don&amp;#39;t ask me to write a ch
    <id>hhttp://jayraj.net/Apple-Google-Adobe-informant-networks</id>
    <content type="html">&lt;h3&gt;Fallout from the Megaupload takedown&lt;/h3&gt;
 
-&lt;p&gt;At Ars Technica, 
-&lt;a href=&quot;http://arstechnica.com/tech-policy/news/2012/01/why-the-feds-smashed-megaupload.ars&quot; title=&quot;Why the feds smashed Megaupload&quot;&gt;Nate Anderson&lt;/a&gt;, 
-does a great piece on analyzing the specific timing of the Megaupload crackdown, with his sources implying that 
-it wasn&amp;#39;t a coincidence that it happened a day after Congress&amp;#39; SOPA/PIPA debacle.
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Kim_Schmitz&quot; title=&quot;Kim Dotcom&quot;&gt;Kim Dotcom&lt;/a&gt; is a great name, it has to be said. &lt;/p&gt;
+&lt;p&gt;At Ars Technica, &lt;a href=&quot;http://arstechnica.com/tech-policy/news/2012/01/why-the-feds-smashed-megaupload.ars&quot; title=&quot;Why the feds smashed Megaupload&quot;&gt;Nate Anderson&lt;/a&gt;, does a great piece on analyzing the specific timing of the Megaupload crackdown, with his sources implying that it wasn&amp;#39;t a coincidence that it happened a day after Congress&amp;#39; SOPA/PIPA debacle. &lt;a href=&quot;http://en.wikipedia.org/wiki/Kim_Schmitz&quot; title=&quot;Kim Dotcom&quot;&gt;Kim Dotcom&lt;/a&gt; is a great name, it has to be said.&lt;/p&gt;
 
-&lt;p&gt;Over at CNET 
-&lt;a href=&quot;http://news.cnet.com/8301-31322_3-57362437-256/anonymous-goes-nuclear-everybody-loses/&quot; title=&quot;Anonymous Megaupload&quot;&gt;Molly Wood&lt;/a&gt;
-criticized Anonymous&amp;#39; actions in DDoS-ing the Justice Department, MPAA, RIAA, Boy Scouts of America and half a dozen nuns
-at a mission in Costa Rica. IMHO, no one except Justice Department, MPAA and RIAA employees, and reporters doing 
-research, ever accesses those websites. Despite a scary looking screenshot from &lt;a href=&quot;http://www.akamai.com/html/technology/dataviz1.html,&quot; title=&quot;Akamai Internet Monitor&quot;&gt;Akamai&amp;#39;s Internet monitor&lt;/a&gt;, 
-it&amp;#39;s evident that the US has actually had fewer attacks in the last 24 hours (not sure how Akamai defines an &amp;quot;attack&amp;quot;) than parts
-of the world that have had nothing to do with these events, to wit Brazil, Peru, China, Russia and Taiwan.&lt;/p&gt;
-
-&lt;h3&gt;Google-Apple-Adobe Poaching Antitrust Lawsuit&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://techcrunch.com/2012/01/19/damning-evidence-emerges-in-google-apple-no-poach-antitrust-lawsuit/&quot; title=&quot;Google Apple Poaching&quot;&gt;Techcrunch&lt;/a&gt;
-reported that the Department of Justice found documentary evidence of &amp;quot;no-poaching&amp;quot; agreements between some of the Valley&amp;#39;s
-highest-profile companies, among them Google, Apple, Adobe, Intuit, Lucasfilm, Pixar and Intel. &lt;/p&gt;
-
-&lt;p&gt;The companies agreed not only to not steal each others&amp;#39; employees but even notify an applicant&amp;#39;s current employers,
-a move one would associate with the likes of Foxconn or Soviet Russia. Presumably, the offending employees are then
-sent off to gulags/iPhone-assembly factories with n-hexane. &lt;/p&gt;
-
-&lt;p&gt;From lobbying to loosen immigration laws for skilled workers to &lt;a href=&quot;http://www.codecademy.com/&quot;&gt;funding companies&lt;/a&gt; and 
-&lt;a href=&quot;http://news.cnet.com/8301-13772_3-57358837-52/nyc-high-school-will-train-badly-needed-software-engineers/&quot;&gt;even high schools&lt;/a&gt; 
-dedicated to teaching people how to program computers, tech companies are pulling out all the stops to keep programmer 
-costs down. I don&amp;#39;t know much about AI but given the incentives and economics of the thing,
-you have to figure that somewhere along the line, someone will surely teach computers how to program themselves 
-to a sufficiently high skill level. Hopefully, that won&amp;#39;t happen in my lifetime, but the odds aren&amp;#39;t good.&lt;/p&gt;
+&lt;p&gt;Over at CNET &lt;a href=&quot;http://news.cnet.com/8301-31322_3-57362437-256/anonymous-goes-nuclear-everybody-loses/&quot; title=&quot;Anonymous Megaupload&quot;&gt;Molly Wood&lt;/a&gt; criticized Anonymous&amp;#39; actions in DDoS-ing the Justice Department, MPAA, RIAA, Boy Scouts of America and half a dozen nuns at a mission in Costa Rica. IMHO, no one except Justice Department, MPAA and RIAA employees, and reporters doing research, ever accesses those websites. Despite a scary looking screenshot from &lt;a href=&quot;http://www.akamai.com/html/technology/dataviz1.html,&quot; title=&quot;Akamai Internet Monitor&quot;&gt;Akamai&amp;#39;s Internet monitor&lt;/a&gt;, it&amp;#39;s evident that the US has actually had fewer attacks in the last 24 hours (not sure how Akamai defines an &amp;quot;attack&amp;quot;) than parts of the world that have had nothing to do with these events, to wit Brazil, Peru, China, Russia and Taiwan.&lt;/p&gt;
 
 &lt;h3&gt;Apple&amp;#39;s Foray into Textbooks&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.theatlantic.com/technology/archive/2012/01/a-brief-history-of-textbooks-or-why-apples-new-textbook-experience-is-actually-revolutionary/251662/&quot;&gt;Megan Garber&lt;/a&gt;
-in The Atlantic reckons that Apple&amp;#39;s new approach to textbooks is revolutionary. The reason: textbooks become personal
-because students can write in them and keep them even after they&amp;#39;re done with the course. While I agree that there&amp;#39;s
-some value in getting to keep a textbook forever, the fact remains that once the student leaves school, she must buy an iDevice or read it on a computer screen from iTunes. There&amp;#39;s no escaping Apple&amp;#39;s walled garden. And in a world with Wikipedia, why would anyone restrict themselves to their history textbook as their sole source of information on
-the Mexican-American war?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.theatlantic.com/technology/archive/2012/01/a-brief-history-of-textbooks-or-why-apples-new-textbook-experience-is-actually-revolutionary/251662/&quot;&gt;Megan Garber&lt;/a&gt; in The Atlantic reckons that Apple&amp;#39;s new approach to textbooks is revolutionary. The reason: textbooks become personal because students can write in them and keep them even after they&amp;#39;re done with the course. While I agree that there&amp;#39;s some value in getting to keep a textbook forever, the fact remains that once the student leaves school, she must buy an iDevice or read it on a computer screen from iTunes. And in a world with Wikipedia, why would anyone restrict themselves to their history textbook as their sole source of information on the Mexican-American war?&lt;/p&gt;
 
-&lt;p&gt;In addition, the author&amp;#39;s arguments in favor of digital textbooks are contradictory. On the one hand, she asserts that
-the Web age has de-emphasized the need to retain information and paper textbooks frame education as an 
-&amp;quot;act of consumption, rather than exploration&amp;quot;. But putting video, audio and &amp;quot;interactive content&amp;quot; (a catch-all term 
-for stuff that lights up, jumps around and tries to make algebra seem less like work), into a medium that by its 
-very definition has boundaries, doesn&amp;#39;t change any of those facts.&lt;/p&gt;
+&lt;p&gt;In addition, the author&amp;#39;s arguments in favor of digital textbooks are contradictory. On the one hand, she asserts thatthe Web age has de-emphasized the need to retain information and paper textbooks frame education as an &amp;quot;act of consumption, rather than exploration&amp;quot;. But putting video, audio and &amp;quot;interactive content&amp;quot; (a catch-all term for stuff that lights up, jumps around and tries to make algebra seem less like work), into a medium that by its very definition has boundaries, doesn&amp;#39;t change any of those facts.&lt;/p&gt;
 
-&lt;p&gt;Some textbooks are &lt;a href=&quot;http://www.amazon.com/Computer-Networks-5th-Andrew-Tanenbaum/dp/0132126958&quot;&gt;timeless&lt;/a&gt; 
-&lt;a href=&quot;http://www.amazon.com/Modern-Operating-Systems-Andrew-Tanenbaum/dp/0136006639/ref=ntt_at_ep_dpt_1&quot;&gt;classics&lt;/a&gt;. But if
-most learning outside school is by reading things on the open Web, shouldn&amp;#39;t learning in schools occur through the same 
-medium? The concept of a textbook is outdated, in my opinion. A textbook is its author&amp;#39;s opinion of the best way to teach 
-someone something. Putting it on an iPad doesn&amp;#39;t change this, nor does it turn learning into &amp;quot;exploration&amp;quot;. 
-Great teachers do that. Students who ask insightful questions, and are serious about learning, do that.
-Engaged parents do that. &lt;/p&gt;
+&lt;p&gt;Some textbooks are &lt;a href=&quot;http://www.amazon.com/Computer-Networks-5th-Andrew-Tanenbaum/dp/0132126958&quot;&gt;timeless&lt;/a&gt; &lt;a href=&quot;http://www.amazon.com/Modern-Operating-Systems-Andrew-Tanenbaum/dp/0136006639/ref=ntt_at_ep_dpt_1&quot;&gt;classics&lt;/a&gt;. But if most learning outside school is by reading things on the open Web, shouldn&amp;#39;t learning in schools occur through the same medium? The concept of a textbook is outdated, in my opinion. A textbook is its author&amp;#39;s opinion of the best way to teach someone something. Putting it on an iPad doesn&amp;#39;t change this, nor does it turn learning into &amp;quot;exploration&amp;quot;. Great teachers do that. Students who ask insightful questions, and are serious about learning, do that. Engaged parents do that. &lt;/p&gt;
 
-&lt;p&gt;A totally open Web isn&amp;#39;t the answer (blocking pr0n, for instance, is important), but what about an educational
-search engine that is carefully curated to let students find relevant information? All we have here (mixed metaphors ahoy!) 
-is the world&amp;#39;s largest technology company peddling their walled-garden Kool-aid to administrators in an effort 
-to hook kids to their stuff early on.  &lt;/p&gt;
+&lt;p&gt;A totally open Web isn&amp;#39;t the answer (blocking pr0n, for instance, is important), but what about an educational search engine that is carefully curated to let students find relevant information? That&amp;#39;s the exact opposite of a textbook on an iPad.&lt;/p&gt;
 </content>
  </entry>
  

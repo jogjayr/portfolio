@@ -4,7 +4,7 @@
  <title>Weekly Typed</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2015-05-17T11:43:53-07:00</updated>
+ <updated>2015-05-17T19:33:28-07:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
@@ -19,31 +19,21 @@
    <id>hhttp://jayraj.net/Sometimes-I-Forget</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;‘Well, hurry up, I can’t breathe!’ Harry gasped, wrestling it as it curled around his chest.&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;blockquote&gt;
   &lt;p&gt;‘Devil’s Snare, Devil’s Snare… what did Professor Sprout say? - it likes the dark and the damp -‘&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;blockquote&gt;
   &lt;p&gt;‘So light a fire!’ Harry choked.&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;blockquote&gt;
   &lt;p&gt;‘Yes- of course- but there’s no wood!’ Hermione cried, wringing her hands.&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;blockquote&gt;
   &lt;p&gt;‘HAVE YOU GONE MAD?’ Ron bellowed. ‘ARE YOU A WITCH OR NOT?’&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;blockquote&gt;
   &lt;p&gt;- &lt;em&gt;Harry Potter and the Chamber of Secrets&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Sometimes I forget that I’m an engineer. No, this isn’t a story of how I wonder in amazement how laypeople can’t “do the simplest things with computers”. I try to catch myself when I think like that. No, this story is the opposite of that.&lt;/p&gt;
 
-&lt;p&gt;I’ve started dusting off my personal laptop again. For a long time, I’ve been playing with little bits and pieces of code on my work laptop, mostly because I didn’t care about ownership issues. But now I’m starting up a project that I might come to care about, so I need my personal laptop development-ready.&lt;/p&gt;
+&lt;p&gt;I’ve started dusting off my personal laptop again. For a long time, I’ve been playing with little bits and pieces of code on my work laptop, mostly because it was convenient and I didn’t care about ownership issues. But now I’m starting up a project that I might come to care about, so I need my personal laptop development-ready.&lt;/p&gt;
 
 &lt;p&gt;It had gathered a little dust, metaphorically speaking. No &lt;code&gt;git&lt;/code&gt; installed; Homebrew &lt;em&gt;and&lt;/em&gt; Macports (what was I thinking?), no Seil or Karabiner for &lt;a href=&quot;/Home-row-arrow-keys/&quot;&gt;Home Row Arrow Keys&lt;/a&gt;. And of course, Citrix Receiver installed and in the top bar on startup. Wait, what? When did this happen?&lt;/p&gt;
 

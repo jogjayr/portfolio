@@ -42,70 +42,96 @@
         <div class="col-lg-9">
             <div class="content another">
                 <div class="page-header col-lg-9">
-<h1 class='h2'>Sometimes I Forget</h1>
-<h5 class="date">May 16, 2015</h5>
+<h1 class='h2'>Storing Objects in localStorage Using Object.observe</h1>
+<h5 class="date">June  7, 2015</h5>
 </div>
 
 <div class="col-lg-9">
-    <blockquote>
-<p>&#39;Well, hurry up, I can&#39;t breathe!&#39; Harry gasped, wrestling it as it curled around his chest.</p>
+    <p>I&#39;ve been working on a <a href="https://github.com/jogjayr/productivity">project</a> recently where I needed to store objects in <code>localStorage</code>.</p>
 
-<p>&#39;Devil&#39;s Snare, Devil&#39;s Snare... what did Professor Sprout say? - it likes the dark and the damp -&#39;</p>
+<p><code>localStorage</code> can store key-value pairs in the browser&#39;s local store, segmented by domain name. The catch is that the values can only be strings, or other primitive types, that are coerced to strings.</p>
 
-<p>&#39;So light a fire!&#39; Harry choked.</p>
+<p>Storing objects is handy. The straightforward way to do this is:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">var obj = {
+    x: 5,
+    y: 7
+};
+//to store obj
+localStorage.setItem(&#39;obj&#39;, JSON.stringify(obj));
 
-<p>&#39;Yes- of course- but there&#39;s no wood!&#39; Hermione cried, wringing her hands.</p>
-
-<p>&#39;HAVE YOU GONE MAD?&#39; Ron bellowed. &#39;ARE YOU A WITCH OR NOT?&#39; </p>
-
-<p>- <em>Harry Potter and the Chamber of Secrets</em></p>
-</blockquote>
-
-<p>Sometimes I forget that I&#39;m an engineer. No, this isn&#39;t a story of how I wonder in amazement how laypeople can&#39;t &quot;do the simplest things with computers&quot;. I try to catch myself when I think like that. No, this story is the opposite of that.</p>
-
-<p>I&#39;ve started dusting off my personal laptop again. For a long time, I&#39;ve been playing with little bits and pieces of code on my work laptop, mostly because it was convenient and I didn&#39;t care about ownership issues. But now I&#39;m starting up a project that I might come to care about, so I need my personal laptop development-ready.</p>
-
-<p>It had gathered a little dust, metaphorically speaking. No <code>git</code> installed; Homebrew <em>and</em> Macports (what was I thinking?), no Seil or Karabiner for <a href="/Home-row-arrow-keys/">Home Row Arrow Keys</a>. And of course, Citrix Receiver installed and in the top bar on startup. Wait, what? When did this happen?</p>
-
-<p><img src="/assets/img/topbar.png" alt="Citrix Receiver in top bar" title="Citrix receiver icon in top bar"></p>
-
-<p>Looked for &quot;Citrix&quot; in Spotlight, looked for it in &quot;System Preferences -&gt; Accounts -&gt; Startup Items&quot;. Nada. Where is this danged thing?</p>
-
-<p>&quot;Uninstall Citrix Receiver Mac&quot; -&gt; Google. That gave me an uninstaller application from Citrix. What the hell, it&#39;s Saturday morning. Who needs a brain? Let&#39;s just run the &quot;uninstaller&quot;, like a Windows-using schmuck. But I restart and there&#39;s the little icon staring at me again, smugly.</p>
-
-<p><img src="/assets/img/topbar.png" alt="Citrix Receiver in top bar" title="Citrix receiver icon in top bar"></p>
-
-<p>What now? Was I doomed to seeing this thing forever? Would I have to reset my Mac to factory settings? This things&#39;s 7 years old; that would surely be the deathblow.</p>
-
-<p>Almost at <a href="/Lessons-from-Jajavy/">&quot;give-up-ness&quot;</a>, I was reminded of one of my favorite quotes from <em>Harry Potter and the Chamber of Secrets</em>.</p>
-
-<p>Of course I have other options!</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ps -ef | grep citrix
+//to retrieve obj
+JSON.parse(localStorage.getItem(&#39;obj&#39;));
 </code></pre></div>
-<p>Nothing. <em>Scratches chin</em></p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ps -ef
+<p>Since I am working in <a href="https://angularjs.org">AngularJS</a>, the obvious thing to do was make a <code>LocalStorage</code> service with the methods <code>getObject</code> and <code>setObject</code>. And this is what I did.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">MyApp.service(&#39;LocalStorage&#39;, function() {
+    this.setObject = function(key, obj) {
+        localStorage.setItem(key, JSON.stringify(obj));
+    };
+
+    //
+    this.getObject = function(key) {
+        var obj = localStorage.getItem(key);
+        if (obj) {
+            return JSON.parse(obj);
+        }
+        return false;
+    };
+});
 </code></pre></div>
-<p>I don&#39;t see anything named &quot;Citrix&quot;. Until...</p>
-
-<p><img src="/assets/img/psoutput.png" alt="Citrix Receiver in ps -ef output" title="Citrix receiver in ps -ef output"></p>
-
-<p>Triumph! I know where the binary is! I can kill the process too! Only to have it come back, like an Inferi.</p>
-
-<p><img src="/assets/img/stilllives.png" alt="Citrix Receiver in still lives" title="Citrix receiver still lives"></p>
-
-<p>Who is doing this? The <code>ppid</code> says it&#39;s <code>launchd</code>. Mystery solved. <code>launchd</code>&#39;s daemons live in various places. Per the man page:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">~/Library/LaunchAgents         Per-user agents provided by the user.
-/Library/LaunchAgents          Per-user agents provided by the administrator.
-/Library/LaunchDaemons         System-wide daemons provided by the administrator.
-/System/Library/LaunchAgents   Per-user agents provided by Mac OS X.
-/System/Library/LaunchDaemons  System-wide daemons provided by Mac OS X.
+<p>But this leads to an obvious problem. There&#39;s no way to cleanly update <code>localStorage</code> once you&#39;ve updated an object gotten using <code>LocalStorage.getObject</code>. I had a lot of code that looked like this:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">var objToBeModified = LocalStorage.getObject(&#39;somekey&#39;);
+objToBeModified.keyToChange = 20;
+LocalStorage.setObject(&#39;somekey&#39;, objToBeModified);
 </code></pre></div>
-<p>Conclusion: I need to challenge my brain more.</p>
+<p>Simple solution: instead of just returning a <code>JSON.parse</code>-d object from <code>localStorage</code>, attach an event listener to it to listen for changes, and automatically call <code>setObject</code>. Which led to this</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">MyApp.service(&#39;LocalStorage&#39;, function() {
+    //.getObject and .setObject are already defined
+    this.getSyncedObject = function(key) {
+        var obj = this.getObject(key);
+        var self = this;
+        obj = obj || {};
+
+        Object.observe(obj, function() {
+            self.setObject(key, obj);
+        });
+        return obj;
+
+    };
+});
+</code></pre></div>
+<p>This works beautifully. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">var objToBeModified = LocalStorage.getSyncedObject(&#39;somekey&#39;);
+objToBeModified.a = 5;
+objToBeModified.b = 7;
+//I can make as many changes as I want and it&#39;s all handled
+</code></pre></div>
+<p>Except...what if I store an array of objects? <code>Object.observe</code> is only one level deep. That&#39;s my plan scuppered then. There&#39;s really only two options:</p>
+
+<ol>
+<li>Turn every object in the value returned by <code>getSyncedObject</code> into a synced object by recursively attaching an  <code>Object.observe</code> event listener on it. Who knows what that&#39;ll do for performance though?</li>
+<li>Use another method to alert the service that an object in the array has changed. That&#39;s really no better than using <code>setObject</code>.</li>
+</ol>
+
+<p>This is where I stop. I don&#39;t know the right answer yet. But I&#39;ll figure it out.</p>
 
 </div>
 
 <ul class='list-unstyled col-lg-9'>
     <h3>Recent Posts</h3>
+      
+    <li>
+        <p class='post_title'>
+            <a href="/Sometimes-I-Forget">Sometimes I Forget</a>
+        </p>
+        <p>
+            <span class='post_date'>
+                &raquo; May 16, 2015
+            </span>
+        </p>
+        <p class='teaser'>
+             <a href="/Sometimes-I-Forget"> Read more...</a>
+        </p>
+    </li>
       
     <li>
         <p class='post_title'>
@@ -132,20 +158,6 @@
         </p>
         <p class='teaser'>
              <a href="/Goals-2015"> Read more...</a>
-        </p>
-    </li>
-      
-    <li>
-        <p class='post_title'>
-            <a href="/Home-row-arrow-keys">Home row arrow keys</a>
-        </p>
-        <p>
-            <span class='post_date'>
-                &raquo; November  9, 2014
-            </span>
-        </p>
-        <p class='teaser'>
-             <a href="/Home-row-arrow-keys"> Read more...</a>
         </p>
     </li>
      

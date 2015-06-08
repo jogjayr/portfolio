@@ -5,7 +5,7 @@ if test $1 = '--publish'; then
 	mv _drafts/$pubfilename $newfilename
 	echo 'Published: ' $newfilename
 else
-	filename=_drafts/$1.md
+	filename="_drafts/$1.md"
 	titlenohyphen=$(echo $1 | sed -e "s/-/\ /g")
 	touch $filename
 	echo "---

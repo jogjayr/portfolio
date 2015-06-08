@@ -4,13 +4,87 @@
  <title>Weekly Typed</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2015-05-22T20:49:46-07:00</updated>
+ <updated>2015-06-07T21:31:17-07:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
    <email>jog@jayraj.net</email>
  </author>
 
+ 
+ <entry>
+   <title>Storing Objects in localStorage Using Object.observe</title>
+   <link href="http://jayraj.net/Storing-Objects-in-localStorage-Using-Object.observe"/>
+   <updated>2015-06-07T00:00:00-07:00</updated>
+   <id>hhttp://jayraj.net/Storing-Objects-in-localStorage-Using-Object.observe</id>
+   <content type="html">&lt;p&gt;I&amp;#39;ve been working on a &lt;a href=&quot;https://github.com/jogjayr/productivity&quot;&gt;project&lt;/a&gt; recently where I needed to store objects in &lt;code&gt;localStorage&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;localStorage&lt;/code&gt; can store key-value pairs in the browser&amp;#39;s local store, segmented by domain name. The catch is that the values can only be strings, or other primitive types, that are coerced to strings.&lt;/p&gt;
+
+&lt;p&gt;Storing objects is handy. The straightforward way to do this is:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var obj = {
+    x: 5,
+    y: 7
+};
+//to store obj
+localStorage.setItem(&amp;#39;obj&amp;#39;, JSON.stringify(obj));
+
+//to retrieve obj
+JSON.parse(localStorage.getItem(&amp;#39;obj&amp;#39;));
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Since I am working in &lt;a href=&quot;https://angularjs.org&quot;&gt;AngularJS&lt;/a&gt;, the obvious thing to do was make a &lt;code&gt;LocalStorage&lt;/code&gt; service with the methods &lt;code&gt;getObject&lt;/code&gt; and &lt;code&gt;setObject&lt;/code&gt;. And this is what I did.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;MyApp.service(&amp;#39;LocalStorage&amp;#39;, function() {
+    this.setObject = function(key, obj) {
+        localStorage.setItem(key, JSON.stringify(obj));
+    };
+
+    //
+    this.getObject = function(key) {
+        var obj = localStorage.getItem(key);
+        if (obj) {
+            return JSON.parse(obj);
+        }
+        return false;
+    };
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But this leads to an obvious problem. There&amp;#39;s no way to cleanly update &lt;code&gt;localStorage&lt;/code&gt; once you&amp;#39;ve updated an object gotten using &lt;code&gt;LocalStorage.getObject&lt;/code&gt;. I had a lot of code that looked like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var objToBeModified = LocalStorage.getObject(&amp;#39;somekey&amp;#39;);
+objToBeModified.keyToChange = 20;
+LocalStorage.setObject(&amp;#39;somekey&amp;#39;, objToBeModified);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Simple solution: instead of just returning a &lt;code&gt;JSON.parse&lt;/code&gt;-d object from &lt;code&gt;localStorage&lt;/code&gt;, attach an event listener to it to listen for changes, and automatically call &lt;code&gt;setObject&lt;/code&gt;. Which led to this&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;MyApp.service(&amp;#39;LocalStorage&amp;#39;, function() {
+    //.getObject and .setObject are already defined
+    this.getSyncedObject = function(key) {
+        var obj = this.getObject(key);
+        var self = this;
+        obj = obj || {};
+
+        Object.observe(obj, function() {
+            self.setObject(key, obj);
+        });
+        return obj;
+
+    };
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This works beautifully. &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var objToBeModified = LocalStorage.getSyncedObject(&amp;#39;somekey&amp;#39;);
+objToBeModified.a = 5;
+objToBeModified.b = 7;
+//I can make as many changes as I want and it&amp;#39;s all handled
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Except...what if I store an array of objects? &lt;code&gt;Object.observe&lt;/code&gt; is only one level deep. That&amp;#39;s my plan scuppered then. There&amp;#39;s really only two options:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Turn every object in the value returned by &lt;code&gt;getSyncedObject&lt;/code&gt; into a synced object by recursively attaching an  &lt;code&gt;Object.observe&lt;/code&gt; event listener on it. Who knows what that&amp;#39;ll do for performance though?&lt;/li&gt;
+&lt;li&gt;Use another method to alert the service that an object in the array has changed. That&amp;#39;s really no better than using &lt;code&gt;setObject&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This is where I stop. I don&amp;#39;t know the right answer yet. But I&amp;#39;ll figure it out.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Sometimes I Forget</title>

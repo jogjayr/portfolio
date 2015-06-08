@@ -10,6 +10,7 @@ http://jayraj.net/blog/reading_list.html
 http://jayraj.net/sitemap.txt
 http://jayraj.net/tags.html
 
+http://jayraj.net/Storing-Objects-in-localStorage-Using-Object.observe
 http://jayraj.net/Sometimes-I-Forget
 http://jayraj.net/Lessons-from-Jajavy
 http://jayraj.net/Goals-2015

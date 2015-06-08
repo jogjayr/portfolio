@@ -22,7 +22,7 @@ I think an alternative is necessary. The [Mountain View public library](http://w
 
 1. Free, with fast Wi-fi
 2. Quiet spaces where you can work undisturbed
-3. Lots of books, magazines and newspapers to browse when you need a break. I think this is better than opening up Twitter and getting sucked down productivity-destroying black hole
+3. Lots of books, magazines and newspapers to browse when you need a break. I think this is better than opening up Twitter and getting sucked down a productivity-destroying black hole
 4. Conveniently located in downtown MV
 
 I think it would be fantastic if libraries also considered having "hacker spaces" of their own. 

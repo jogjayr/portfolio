@@ -75,3 +75,5 @@ Except...what if I store an array of objects? `Object.observe` is only one level
 2. Use another method to alert the service that an object in the array has changed. That's really no better than using `setObject`.
 
 This is where I stop. I don't know the right answer yet. But I'll figure it out.
+
+EDIT: I did figure it out. This stuff is mostly wrong. I should have just used Angular's digest cycle to watch for changes instead of using `Object.observe` directly.

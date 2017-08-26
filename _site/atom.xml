@@ -4,13 +4,33 @@
  <title>Weekly Typed</title>
  <link href="http://jayraj.net/atom.xml" rel="self"/>
  <link href="http://jayraj.net"/>
- <updated>2015-06-07T21:31:17-07:00</updated>
+ <updated>2017-08-26T00:49:37-07:00</updated>
  <id>http://jayraj.net</id>
  <author>
    <name>Jayraj Jog</name>
    <email>jog@jayraj.net</email>
  </author>
 
+ 
+ <entry>
+   <title>Understanding Python Wheels</title>
+   <link href="http://jayraj.net/Understanding-wheels"/>
+   <updated>2017-08-26T00:00:00-07:00</updated>
+   <id>hhttp://jayraj.net/Understanding-wheels</id>
+   <content type="html">&lt;p&gt;This post is just my study notes from reading &lt;a href=&quot;https://www.python.org/dev/peps/pep-0427/&quot;&gt;PEP-427&lt;/a&gt; which describes the &lt;a href=&quot;https://wheel.readthedocs.io/&quot;&gt;Wheel&lt;/a&gt; distribution format.&lt;/p&gt;
+
+&lt;p&gt;The &amp;quot;Jayraj&amp;#39;s understanding&amp;quot; version:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;A wheel is a zipfile with the extension &lt;code&gt;.whl&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;When you unzip a &lt;code&gt;.whl&lt;/code&gt; file, you get a directory with a &lt;code&gt;-dist-info&lt;/code&gt; suffix.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;dist-info&lt;/code&gt; directory has a file named &lt;code&gt;WHEEL&lt;/code&gt; which tells you things. One of these things is if the package is pure Python (purelib) or contains platform-specific (platlib) files.&lt;/li&gt;
+&lt;li&gt;Unless you&amp;#39;re running on &lt;a href=&quot;https://stackoverflow.com/a/27882460/635134&quot;&gt;64-bit Red Hat-based platforms&lt;/a&gt;, in both cases (purelib &amp;amp; platlib) the directory referenced in &lt;code&gt;dist-info/top-level.txt&lt;/code&gt; goes straight into your &lt;code&gt;site-packages&lt;/code&gt;. Depending on your &lt;code&gt;PYTHONPATH&lt;/code&gt; (I&amp;#39;m assuming) this will either be your system&amp;#39;s &lt;code&gt;site-packages&lt;/code&gt; or your virtualenvs&lt;/li&gt;
+&lt;li&gt;There is also a directoy with the suffix &lt;code&gt;.data&lt;/code&gt;. This contains further sub-directories that can have names such as &lt;code&gt;data&lt;/code&gt; or &lt;code&gt;scripts&lt;/code&gt;. As far as I can tell so far, the files in the &lt;code&gt;scripts&lt;/code&gt; directory go someplace that&amp;#39;s on your shell&amp;#39;s &lt;code&gt;PATH&lt;/code&gt;. No idea where &lt;code&gt;data&lt;/code&gt; goes. The spec is vague about the actual destinations of the things inside &lt;code&gt;.data&lt;/code&gt;, saying &amp;quot;Move each subtree of distribution-1.0.data/ onto its destination path&amp;quot;. From the context, I gather that the meaning of &amp;quot;its destination path&amp;quot; is generally-known to most people reading the doc.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dist-info&lt;/code&gt; contains another file called &lt;code&gt;RECORD&lt;/code&gt;. When you first unzip the &lt;code&gt;.whl&lt;/code&gt; it contains a listing of all the files in the distributions and their SHA-256 hashes for verification. After you&amp;#39;ve moved all the files where they&amp;#39;re supposed to go, the &lt;code&gt;RECORD&lt;/code&gt; file is updated with the new paths of each file.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Storing Objects in localStorage Using Object.observe</title>
@@ -22,18 +42,18 @@
 &lt;p&gt;&lt;code&gt;localStorage&lt;/code&gt; can store key-value pairs in the browser&amp;#39;s local store, segmented by domain name. The catch is that the values can only be strings, or other primitive types, that are coerced to strings.&lt;/p&gt;
 
 &lt;p&gt;Storing objects is handy. The straightforward way to do this is:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var obj = {
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;var obj = {
     x: 5,
     y: 7
 };
 //to store obj
-localStorage.setItem(&amp;#39;obj&amp;#39;, JSON.stringify(obj));
+localStorage.setItem('obj', JSON.stringify(obj));
 
 //to retrieve obj
-JSON.parse(localStorage.getItem(&amp;#39;obj&amp;#39;));
+JSON.parse(localStorage.getItem('obj'));
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Since I am working in &lt;a href=&quot;https://angularjs.org&quot;&gt;AngularJS&lt;/a&gt;, the obvious thing to do was make a &lt;code&gt;LocalStorage&lt;/code&gt; service with the methods &lt;code&gt;getObject&lt;/code&gt; and &lt;code&gt;setObject&lt;/code&gt;. And this is what I did.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;MyApp.service(&amp;#39;LocalStorage&amp;#39;, function() {
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;MyApp.service('LocalStorage', function() {
     this.setObject = function(key, obj) {
         localStorage.setItem(key, JSON.stringify(obj));
     };
@@ -49,12 +69,12 @@ JSON.parse(localStorage.getItem(&amp;#39;obj&amp;#39;));
 });
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;But this leads to an obvious problem. There&amp;#39;s no way to cleanly update &lt;code&gt;localStorage&lt;/code&gt; once you&amp;#39;ve updated an object gotten using &lt;code&gt;LocalStorage.getObject&lt;/code&gt;. I had a lot of code that looked like this:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var objToBeModified = LocalStorage.getObject(&amp;#39;somekey&amp;#39;);
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;var objToBeModified = LocalStorage.getObject('somekey');
 objToBeModified.keyToChange = 20;
-LocalStorage.setObject(&amp;#39;somekey&amp;#39;, objToBeModified);
+LocalStorage.setObject('somekey', objToBeModified);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Simple solution: instead of just returning a &lt;code&gt;JSON.parse&lt;/code&gt;-d object from &lt;code&gt;localStorage&lt;/code&gt;, attach an event listener to it to listen for changes, and automatically call &lt;code&gt;setObject&lt;/code&gt;. Which led to this&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;MyApp.service(&amp;#39;LocalStorage&amp;#39;, function() {
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;MyApp.service('LocalStorage', function() {
     //.getObject and .setObject are already defined
     this.getSyncedObject = function(key) {
         var obj = this.getObject(key);
@@ -70,10 +90,10 @@ LocalStorage.setObject(&amp;#39;somekey&amp;#39;, objToBeModified);
 });
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This works beautifully. &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var objToBeModified = LocalStorage.getSyncedObject(&amp;#39;somekey&amp;#39;);
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;var objToBeModified = LocalStorage.getSyncedObject('somekey');
 objToBeModified.a = 5;
 objToBeModified.b = 7;
-//I can make as many changes as I want and it&amp;#39;s all handled
+//I can make as many changes as I want and it's all handled
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Except...what if I store an array of objects? &lt;code&gt;Object.observe&lt;/code&gt; is only one level deep. That&amp;#39;s my plan scuppered then. There&amp;#39;s really only two options:&lt;/p&gt;
 
@@ -83,6 +103,8 @@ objToBeModified.b = 7;
 &lt;/ol&gt;
 
 &lt;p&gt;This is where I stop. I don&amp;#39;t know the right answer yet. But I&amp;#39;ll figure it out.&lt;/p&gt;
+
+&lt;p&gt;EDIT: I did figure it out. This stuff is mostly wrong. I should have just used Angular&amp;#39;s digest cycle to watch for changes instead of using &lt;code&gt;Object.observe&lt;/code&gt; directly.&lt;/p&gt;
 </content>
  </entry>
  
@@ -124,10 +146,10 @@ objToBeModified.b = 7;
 &lt;p&gt;Almost at &lt;a href=&quot;/Lessons-from-Jajavy/&quot;&gt;&amp;quot;give-up-ness&amp;quot;&lt;/a&gt;, I was reminded of one of my favorite quotes from &lt;em&gt;Harry Potter and the Chamber of Secrets&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Of course I have other options!&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ps -ef | grep citrix
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;ps -ef | grep citrix
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Nothing. &lt;em&gt;Scratches chin&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ps -ef
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;ps -ef
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;I don&amp;#39;t see anything named &amp;quot;Citrix&amp;quot;. Until...&lt;/p&gt;
 
@@ -138,13 +160,13 @@ objToBeModified.b = 7;
 &lt;p&gt;&lt;img src=&quot;/assets/img/stilllives.png&quot; alt=&quot;Citrix Receiver in still lives&quot; title=&quot;Citrix receiver still lives&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Who is doing this? The &lt;code&gt;ppid&lt;/code&gt; says it&amp;#39;s &lt;code&gt;launchd&lt;/code&gt;. Mystery solved. &lt;code&gt;launchd&lt;/code&gt;&amp;#39;s daemons live in various places. Per the man page:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;~/Library/LaunchAgents         Per-user agents provided by the user.
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;~/Library/LaunchAgents         Per-user agents provided by the user.
 /Library/LaunchAgents          Per-user agents provided by the administrator.
 /Library/LaunchDaemons         System-wide daemons provided by the administrator.
 /System/Library/LaunchAgents   Per-user agents provided by Mac OS X.
 /System/Library/LaunchDaemons  System-wide daemons provided by Mac OS X.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Conclusion: I need to challenge my brain more.&lt;/p&gt;
+&lt;p&gt;Conclusion: I need to challenge my brain more&lt;/p&gt;
 </content>
  </entry>
  
@@ -235,45 +257,45 @@ objToBeModified.b = 7;
 &lt;li&gt;Download and install &lt;a href=&quot;https://pqrs.org/osx/karabiner/&quot;&gt;Karabiner&lt;/a&gt; and &lt;a href=&quot;https://pqrs.org/osx/karabiner/seil.html.en&quot;&gt;Seil&lt;/a&gt;. Seil helps you remap the Caps Lock key and Karabiner helps you remap everything else. At this point, I&amp;#39;m unclear why you need two separate apps to do this though&lt;/li&gt;
 &lt;li&gt;Run Seil and remap the Caps Lock key to the Fn key (code 63), as in the screenshot. &lt;img src=&quot;/assets/img/seil.png&quot; alt=&quot;Remapping Caps Lock Key to Fn Key&quot; title=&quot;Seil Remapping Caps Lock key&quot;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Run Karabiner and open &lt;code&gt;private.xml&lt;/code&gt; from &amp;quot;Misc &amp;amp; Uninstall&amp;quot;. &lt;img src=&quot;/assets/img/privatexml.png&quot; alt=&quot;Opening private.xml&quot; title=&quot;Click on Misc &amp;amp; Uninstall and private.xml&quot;&gt; Put your desired mappings in &lt;code&gt;private.xml&lt;/code&gt;. Mine, below, map Fn+IJKL to their respective arrow keys:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;
-&amp;lt;root&amp;gt;
-    &amp;lt;item&amp;gt;
-        &amp;lt;name&amp;gt;Bind CapsLock + J to left arrow&amp;lt;/name&amp;gt;
-        &amp;lt;identifier&amp;gt;private.caps_leftarrow&amp;lt;/identifier&amp;gt;
-        &amp;lt;autogen&amp;gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;root&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;item&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Bind CapsLock + J to left arrow&lt;span class=&quot;nt&quot;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;identifier&amp;gt;&lt;/span&gt;private.caps_leftarrow&lt;span class=&quot;nt&quot;&gt;&amp;lt;/identifier&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;
             __KeyToKey__ 
             KeyCode::J, ModifierFlag::FN,
             KeyCode::CURSOR_LEFT
-        &amp;lt;/autogen&amp;gt;
-    &amp;lt;/item&amp;gt;
-    &amp;lt;item&amp;gt;
-        &amp;lt;name&amp;gt;Bind CapsLock + K to down arrow&amp;lt;/name&amp;gt;
-        &amp;lt;identifier&amp;gt;private.caps_downarrow&amp;lt;/identifier&amp;gt;
-        &amp;lt;autogen&amp;gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;item&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Bind CapsLock + K to down arrow&lt;span class=&quot;nt&quot;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;identifier&amp;gt;&lt;/span&gt;private.caps_downarrow&lt;span class=&quot;nt&quot;&gt;&amp;lt;/identifier&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;
             __KeyToKey__ 
             KeyCode::K, ModifierFlag::FN,
             KeyCode::CURSOR_DOWN
-        &amp;lt;/autogen&amp;gt;
-    &amp;lt;/item&amp;gt;
-    &amp;lt;item&amp;gt;
-        &amp;lt;name&amp;gt;Bind CapsLock + L to right arrow&amp;lt;/name&amp;gt;
-        &amp;lt;identifier&amp;gt;private.caps_rightarrow&amp;lt;/identifier&amp;gt;
-        &amp;lt;autogen&amp;gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;item&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Bind CapsLock + L to right arrow&lt;span class=&quot;nt&quot;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;identifier&amp;gt;&lt;/span&gt;private.caps_rightarrow&lt;span class=&quot;nt&quot;&gt;&amp;lt;/identifier&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;
             __KeyToKey__ 
             KeyCode::L, ModifierFlag::FN,
             KeyCode::CURSOR_RIGHT
-        &amp;lt;/autogen&amp;gt;
-    &amp;lt;/item&amp;gt;
-    &amp;lt;item&amp;gt;
-        &amp;lt;name&amp;gt;Bind CapsLock + I to up arrow&amp;lt;/name&amp;gt;
-        &amp;lt;identifier&amp;gt;private.caps_uparrow&amp;lt;/identifier&amp;gt;
-        &amp;lt;autogen&amp;gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;item&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Bind CapsLock + I to up arrow&lt;span class=&quot;nt&quot;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;identifier&amp;gt;&lt;/span&gt;private.caps_uparrow&lt;span class=&quot;nt&quot;&gt;&amp;lt;/identifier&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;
             __KeyToKey__ 
             KeyCode::I, ModifierFlag::FN,
             KeyCode::CURSOR_UP
-        &amp;lt;/autogen&amp;gt;
-    &amp;lt;/item&amp;gt;
-&amp;lt;/root&amp;gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/root&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Click &amp;quot;Reload XML&amp;quot; in &amp;quot;Change Key&amp;quot;. Your new mappings should show up in the list. Activate them by clicking on the check box next to them. &lt;img src=&quot;/assets/img/karabinermappings.png&quot; alt=&quot;Activate remappings&quot; title=&quot;Activate remappings by checking checkboxes&quot;&gt; &lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -425,7 +447,7 @@ objToBeModified.b = 7;
 
 &lt;p&gt;Faster work, less RSI, less boredom. Every minute I&amp;#39;ve spent studying keyboard shortcuts and other features has paid off many times over. &lt;/p&gt;
 
-&lt;h3&gt;5) &lt;a name=&#39;git&#39; class=&#39;hidden_link&#39;&gt;Get better at Git&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;5) &lt;a name='git' class='hidden_link'&gt;Get better at Git&lt;/a&gt;&lt;/h3&gt;
 
 &lt;hr&gt;
 
@@ -524,18 +546,18 @@ c) Become a Vim badass and do it really fast in the terminal&lt;/p&gt;&lt;/li&gt
    <content type="html">&lt;p&gt;In this series of posts on how I wrote a collection class for Backbone views, I covered the objectives of the enterprise in &lt;a href=&quot;http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1&quot;&gt;part 1&lt;/a&gt;. In &lt;a href=&quot;http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-2&quot;&gt;part 2&lt;/a&gt; the Backbone ViewCollection accomplished its first goal: create a lot of child views of a specified type, off of a collection passed to it.&lt;/p&gt;
 
 &lt;p&gt;This post will discuss how I event handling works with so many child views. I saw numerous blog posts and StackOverflow questions related to event binding when &lt;code&gt;empty&lt;/code&gt; is called on a jQuery object. For me, the most important bit of knowledge was that when you do the following &lt;a href=&quot;http://jsfiddle.net/jogjayr/3QfLc/1/&quot;&gt;JSFiddle&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var $child_el = $(&amp;quot;#my_div&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
-    console.log(&amp;quot;clicked me&amp;quot;);
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;var $child_el = $(&quot;#my_div&quot;).on(&quot;click&quot;, function() {
+    console.log(&quot;clicked me&quot;);
 })
-$(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child will do nothing
+$(&quot;#parent_elem&quot;).html($child_el); //Clicking on the child will do nothing
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The CHILD VIEW&amp;#39;S EVENTS ARE LOST! I suppose this is general knowledge among those familiar with the DOM&amp;#39;s secrets, but it was a revelation to me.&lt;/p&gt;
 
 &lt;p&gt;Second revelation (in fact, as I started writing this blog post), is that the child views&amp;#39; events actually need to delegate to the parent. Previously, I used to do the following:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var Backbone.ViewCollection = Backbone.View.extend({
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;var Backbone.ViewCollection = Backbone.View.extend({
     //other View Collection methods here
 
-    //delegateEvents not only re-attaches the collections&amp;#39;s events
+    //delegateEvents not only re-attaches the collections's events
     //it also re-attaches childEvents without calling them individually
     delegateEvents: function() {
         Backbone.View.prototype.delegateEvents.call(this);
@@ -562,7 +584,7 @@ $(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child wil
    <updated>2013-05-22T00:00:00-07:00</updated>
    <id>hhttp://jayraj.net/backbone-view-collection-part-2</id>
    <content type="html">&lt;p&gt;In &lt;a href=&quot;http://jayraj.net/blog/2013/05/19/backbone-view-collection-part-1&quot;&gt;part 1&lt;/a&gt; of this series, I explained what I wanted from a Backbone View Collection. The first and foremost thing was a common render method:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
   childViews: [],
   render: function() {
 
@@ -579,14 +601,14 @@ $(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child wil
     //add it to the list of child views the collection holds
     me.childViews.push(new_item_view);
 
-    //also add it to the view collection&amp;#39;s own HTML element
+    //also add it to the view collection's own HTML element
     me.$el.append(new_item_view.$el);
    });
   }
 });
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This approach carries a couple of issues. The first one I faced was actually quite silly; setting &lt;code&gt;childViews&lt;/code&gt; to an empty array in the class definition results in &lt;strong&gt;every&lt;/strong&gt; instance of that class pointing to the same array. This is quite disastrous; all the child items of every instance of ViewCollection are added to the same array. We have to fix this, and it&amp;#39;s quite simple:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
   render: function() {
   //all the stuff we wrote above...
   },
@@ -597,16 +619,16 @@ $(&amp;quot;#parent_elem&amp;quot;).html($child_el); //Clicking on the child wil
 });
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;There&amp;#39;s also another problem, and it has to do with how we pass &lt;code&gt;ItemView&lt;/code&gt; to ViewCollection. If we were to create a new ViewCollection like so:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var PokedexView = new Backbone.ViewCollection({
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;var PokedexView = new Backbone.ViewCollection({
   collection: Pokedex,
   ItemView: PokemonView 
 });
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;then the line:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var ItemViewClass = this.options.ItemView || Backbone.View;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;var ItemViewClass = this.options.ItemView || Backbone.View;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;works perfectly. The &lt;code&gt;options&lt;/code&gt; attribute of a Backbone view is composed of the object you pass into the constructor. But what if you don&amp;#39;t call the constructor directly? Consider the following:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var PokedexView = Backbone.ViewCollection.extend({
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;var PokedexView = Backbone.ViewCollection.extend({
   collection: Pokedex
 });
 //a specific type of Pokedex that uses a grid layout
@@ -616,18 +638,18 @@ var PokedexGridView = PokedexView.extend({
 });
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now, &lt;code&gt;this.options.ItemView&lt;/code&gt; is &lt;code&gt;undefined&lt;/code&gt;. This does not bode well for being able to build complex class hierarchies with ViewCollection, so we have to modify what we wrote just a little bit:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//Either `this` is an instance of ViewCollection, in which case ItemView is an `option`
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;//Either `this` is an instance of ViewCollection, in which case ItemView is an `option`
 //or `this` is an instance of a another type derived from ViewCollection
 //or use the plain-old Backbone.View class
 var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Same thing applies for collection. So&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;_(me.collection).each(...)
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;_(me.collection).each(...)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;won&amp;#39;t work every time.&lt;/p&gt;
 
 &lt;p&gt;Having learned all this, here&amp;#39;s ViewCollection now:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;Backbone.ViewCollection = Backbone.View.extend({
   render: function() {
 
     //The Backbone view class passed in that is 
@@ -643,7 +665,7 @@ var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
       //add it to the list of child views the collection holds
       me.childViews.push(new_item_view);
 
-      //also add it to the view collection&amp;#39;s own HTML element
+      //also add it to the view collection's own HTML element
       me.$el.append(new_item_view.$el);
     });
   },
@@ -685,13 +707,13 @@ var ItemViewClass = this.options.ItemView || this.ItemView || Backbone.View;
 &lt;/ol&gt;
 
 &lt;p&gt;Here is an example of what such a class would do:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var Pokemon = Backbone.Model.extend({});
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;var Pokemon = Backbone.Model.extend({});
 var Pokedex = new Backbone.Collection({
     model: Pokemon;
 });
 var PokemonView = Backbone.View.extend({
     render: function() {
-        //some code to render a Pokemon&amp;#39;s info
+        //some code to render a Pokemon's info
     }
 });
 var PokedexView = new Backbone.ViewCollection({

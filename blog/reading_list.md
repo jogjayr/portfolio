@@ -9,19 +9,19 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 
 ###Non-fiction (non-technical)
 
-* The World Without Us - Alan Weisman
+* <s>The World Without Us - Alan Weisman</s>
 * Economix: How our Economy Works (and Doesn't Work) - Michael Goodwin, David Bach, Joel Bakan, Dan Burr
 * Understanding Comics: The Invisible Art - Scott McCloud
 * Stone Age Economics - Marshall Sahlins
 * The Audacity of Hope - Barack Obama
 * The Revolution - Ron Paul
 * <s>Starting Strength 2nd Edition - Mark Rippetoe</s> (5/1/2015)
-* Starting Strength: Basic Barbell Training 3rd Edition - Mark Rippetoe *
-* The 4-Hour Body - Tim Ferriss 
+* <s>Starting Strength: Basic Barbell Training 3rd Edition - Mark Rippetoe</s>
+* <s>The 4-Hour Body - Tim Ferriss </s>
 * Man's Search for Meaning - Victor E. Frankl
 * Arnold's Bodybuilding for Men - Arnold Schwarzenegger
 * The Intelligent Asset Allocator - William J. Bernstein 
-* One Summer: America 1927 - Bill Bryson
+* <s>One Summer: America 1927 - Bill Bryson</s>
 * <s>How to Work a Room - Susan RoAne</s> (27/1/2015)
 * Inverting the Pyramid - Jonathan Wilson
 
@@ -34,7 +34,6 @@ This is a list of books that I plan to read. I will strike them out as I finish 
 
 ###Fiction
 
-* Speaker for the Dead - Orson Scott Card
 * River of Gods - Ian McDonald
 * The Stand - Stephen King
 * A Song of Ice and Fire series - George R R Martin

@@ -1,15 +1,16 @@
 
-http://jayraj.net/blog/about.html
-http://jayraj.net/blog/archive.html
+http://jayraj.net/blog/about
+http://jayraj.net/blog/archive
 http://jayraj.net/atom.xml
-http://jayraj.net/categories.html
-http://jayraj.net/hashing-for-crimefighting-privacy.html
-http://jayraj.net/blog/index.html
-http://jayraj.net/pages.html
-http://jayraj.net/blog/reading_list.html
+http://jayraj.net/categories
+http://jayraj.net/hashing-for-crimefighting-privacy
+http://jayraj.net/blog/
+http://jayraj.net/pages
+http://jayraj.net/blog/reading_list
 http://jayraj.net/sitemap.txt
-http://jayraj.net/tags.html
+http://jayraj.net/tags
 
+http://jayraj.net/Understanding-wheels
 http://jayraj.net/Storing-Objects-in-localStorage-Using-Object.observe
 http://jayraj.net/Sometimes-I-Forget
 http://jayraj.net/Lessons-from-Jajavy

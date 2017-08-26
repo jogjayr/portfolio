@@ -53,18 +53,18 @@
 <p><code>localStorage</code> can store key-value pairs in the browser&#39;s local store, segmented by domain name. The catch is that the values can only be strings, or other primitive types, that are coerced to strings.</p>
 
 <p>Storing objects is handy. The straightforward way to do this is:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">var obj = {
+<div class="highlight"><pre><code class="language-" data-lang="">var obj = {
     x: 5,
     y: 7
 };
 //to store obj
-localStorage.setItem(&#39;obj&#39;, JSON.stringify(obj));
+localStorage.setItem('obj', JSON.stringify(obj));
 
 //to retrieve obj
-JSON.parse(localStorage.getItem(&#39;obj&#39;));
+JSON.parse(localStorage.getItem('obj'));
 </code></pre></div>
 <p>Since I am working in <a href="https://angularjs.org">AngularJS</a>, the obvious thing to do was make a <code>LocalStorage</code> service with the methods <code>getObject</code> and <code>setObject</code>. And this is what I did.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">MyApp.service(&#39;LocalStorage&#39;, function() {
+<div class="highlight"><pre><code class="language-" data-lang="">MyApp.service('LocalStorage', function() {
     this.setObject = function(key, obj) {
         localStorage.setItem(key, JSON.stringify(obj));
     };
@@ -80,12 +80,12 @@ JSON.parse(localStorage.getItem(&#39;obj&#39;));
 });
 </code></pre></div>
 <p>But this leads to an obvious problem. There&#39;s no way to cleanly update <code>localStorage</code> once you&#39;ve updated an object gotten using <code>LocalStorage.getObject</code>. I had a lot of code that looked like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">var objToBeModified = LocalStorage.getObject(&#39;somekey&#39;);
+<div class="highlight"><pre><code class="language-" data-lang="">var objToBeModified = LocalStorage.getObject('somekey');
 objToBeModified.keyToChange = 20;
-LocalStorage.setObject(&#39;somekey&#39;, objToBeModified);
+LocalStorage.setObject('somekey', objToBeModified);
 </code></pre></div>
 <p>Simple solution: instead of just returning a <code>JSON.parse</code>-d object from <code>localStorage</code>, attach an event listener to it to listen for changes, and automatically call <code>setObject</code>. Which led to this</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">MyApp.service(&#39;LocalStorage&#39;, function() {
+<div class="highlight"><pre><code class="language-" data-lang="">MyApp.service('LocalStorage', function() {
     //.getObject and .setObject are already defined
     this.getSyncedObject = function(key) {
         var obj = this.getObject(key);
@@ -101,10 +101,10 @@ LocalStorage.setObject(&#39;somekey&#39;, objToBeModified);
 });
 </code></pre></div>
 <p>This works beautifully. </p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">var objToBeModified = LocalStorage.getSyncedObject(&#39;somekey&#39;);
+<div class="highlight"><pre><code class="language-" data-lang="">var objToBeModified = LocalStorage.getSyncedObject('somekey');
 objToBeModified.a = 5;
 objToBeModified.b = 7;
-//I can make as many changes as I want and it&#39;s all handled
+//I can make as many changes as I want and it's all handled
 </code></pre></div>
 <p>Except...what if I store an array of objects? <code>Object.observe</code> is only one level deep. That&#39;s my plan scuppered then. There&#39;s really only two options:</p>
 
@@ -115,14 +115,17 @@ objToBeModified.b = 7;
 
 <p>This is where I stop. I don&#39;t know the right answer yet. But I&#39;ll figure it out.</p>
 
+<p>EDIT: I did figure it out. This stuff is mostly wrong. I should have just used Angular&#39;s digest cycle to watch for changes instead of using <code>Object.observe</code> directly.</p>
+
     <hr>
     <ul class='pagination'>
         
         <li class="prev"><a href="/Sometimes-I-Forget" title="Sometimes I Forget">&larr; Previous</a>
         </li>
          
-        <li class="next disabled"><a>Next &rarr;</a>
-            
+        <li class="next"><a href="/Understanding-wheels" title="Understanding Python Wheels">Next &rarr;</a>
+        </li>
+        
     </ul>
 </div>
 

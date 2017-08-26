@@ -81,10 +81,10 @@
 <p>Almost at <a href="/Lessons-from-Jajavy/">&quot;give-up-ness&quot;</a>, I was reminded of one of my favorite quotes from <em>Harry Potter and the Chamber of Secrets</em>.</p>
 
 <p>Of course I have other options!</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ps -ef | grep citrix
+<div class="highlight"><pre><code class="language-" data-lang="">ps -ef | grep citrix
 </code></pre></div>
 <p>Nothing. <em>Scratches chin</em></p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ps -ef
+<div class="highlight"><pre><code class="language-" data-lang="">ps -ef
 </code></pre></div>
 <p>I don&#39;t see anything named &quot;Citrix&quot;. Until...</p>
 
@@ -95,13 +95,13 @@
 <p><img src="/assets/img/stilllives.png" alt="Citrix Receiver in still lives" title="Citrix receiver still lives"></p>
 
 <p>Who is doing this? The <code>ppid</code> says it&#39;s <code>launchd</code>. Mystery solved. <code>launchd</code>&#39;s daemons live in various places. Per the man page:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">~/Library/LaunchAgents         Per-user agents provided by the user.
+<div class="highlight"><pre><code class="language-" data-lang="">~/Library/LaunchAgents         Per-user agents provided by the user.
 /Library/LaunchAgents          Per-user agents provided by the administrator.
 /Library/LaunchDaemons         System-wide daemons provided by the administrator.
 /System/Library/LaunchAgents   Per-user agents provided by Mac OS X.
 /System/Library/LaunchDaemons  System-wide daemons provided by Mac OS X.
 </code></pre></div>
-<p>Conclusion: I need to challenge my brain more.</p>
+<p>Conclusion: I need to challenge my brain more</p>
 
     <hr>
     <ul class='pagination'>

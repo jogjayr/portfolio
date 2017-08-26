@@ -60,45 +60,45 @@
 <li>Download and install <a href="https://pqrs.org/osx/karabiner/">Karabiner</a> and <a href="https://pqrs.org/osx/karabiner/seil.html.en">Seil</a>. Seil helps you remap the Caps Lock key and Karabiner helps you remap everything else. At this point, I&#39;m unclear why you need two separate apps to do this though</li>
 <li>Run Seil and remap the Caps Lock key to the Fn key (code 63), as in the screenshot. <img src="/assets/img/seil.png" alt="Remapping Caps Lock Key to Fn Key" title="Seil Remapping Caps Lock key"></li>
 <li><p>Run Karabiner and open <code>private.xml</code> from &quot;Misc &amp; Uninstall&quot;. <img src="/assets/img/privatexml.png" alt="Opening private.xml" title="Click on Misc &amp; Uninstall and private.xml"> Put your desired mappings in <code>private.xml</code>. Mine, below, map Fn+IJKL to their respective arrow keys:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;?xml version=&quot;1.0&quot;?&gt;
-&lt;root&gt;
-    &lt;item&gt;
-        &lt;name&gt;Bind CapsLock + J to left arrow&lt;/name&gt;
-        &lt;identifier&gt;private.caps_leftarrow&lt;/identifier&gt;
-        &lt;autogen&gt;
+<div class="highlight"><pre><code class="language-" data-lang=""><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;root&gt;</span>
+    <span class="nt">&lt;item&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Bind CapsLock + J to left arrow<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;identifier&gt;</span>private.caps_leftarrow<span class="nt">&lt;/identifier&gt;</span>
+        <span class="nt">&lt;autogen&gt;</span>
             __KeyToKey__ 
             KeyCode::J, ModifierFlag::FN,
             KeyCode::CURSOR_LEFT
-        &lt;/autogen&gt;
-    &lt;/item&gt;
-    &lt;item&gt;
-        &lt;name&gt;Bind CapsLock + K to down arrow&lt;/name&gt;
-        &lt;identifier&gt;private.caps_downarrow&lt;/identifier&gt;
-        &lt;autogen&gt;
+        <span class="nt">&lt;/autogen&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;item&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Bind CapsLock + K to down arrow<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;identifier&gt;</span>private.caps_downarrow<span class="nt">&lt;/identifier&gt;</span>
+        <span class="nt">&lt;autogen&gt;</span>
             __KeyToKey__ 
             KeyCode::K, ModifierFlag::FN,
             KeyCode::CURSOR_DOWN
-        &lt;/autogen&gt;
-    &lt;/item&gt;
-    &lt;item&gt;
-        &lt;name&gt;Bind CapsLock + L to right arrow&lt;/name&gt;
-        &lt;identifier&gt;private.caps_rightarrow&lt;/identifier&gt;
-        &lt;autogen&gt;
+        <span class="nt">&lt;/autogen&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;item&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Bind CapsLock + L to right arrow<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;identifier&gt;</span>private.caps_rightarrow<span class="nt">&lt;/identifier&gt;</span>
+        <span class="nt">&lt;autogen&gt;</span>
             __KeyToKey__ 
             KeyCode::L, ModifierFlag::FN,
             KeyCode::CURSOR_RIGHT
-        &lt;/autogen&gt;
-    &lt;/item&gt;
-    &lt;item&gt;
-        &lt;name&gt;Bind CapsLock + I to up arrow&lt;/name&gt;
-        &lt;identifier&gt;private.caps_uparrow&lt;/identifier&gt;
-        &lt;autogen&gt;
+        <span class="nt">&lt;/autogen&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;item&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Bind CapsLock + I to up arrow<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;identifier&gt;</span>private.caps_uparrow<span class="nt">&lt;/identifier&gt;</span>
+        <span class="nt">&lt;autogen&gt;</span>
             __KeyToKey__ 
             KeyCode::I, ModifierFlag::FN,
             KeyCode::CURSOR_UP
-        &lt;/autogen&gt;
-    &lt;/item&gt;
-&lt;/root&gt;
+        <span class="nt">&lt;/autogen&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/root&gt;</span>
 </code></pre></div></li>
 <li><p>Click &quot;Reload XML&quot; in &quot;Change Key&quot;. Your new mappings should show up in the list. Activate them by clicking on the check box next to them. <img src="/assets/img/karabinermappings.png" alt="Activate remappings" title="Activate remappings by checking checkboxes"> </p></li>
 </ol>

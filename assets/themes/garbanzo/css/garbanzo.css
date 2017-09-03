@@ -1,22 +1,22 @@
 .site_brand_img {
-	padding:0;
+  padding:0;
 }
 .site_brand_img img {
-	width: 80px;
+  width: 80px;
 }
 .site_brand_text {
-	margin: 0 0 0 10px;
-	padding:0;
+  margin: 0 0 0 10px;
+  padding:0;
 }
 .site_title {
-	margin-top: 58px;
+  margin-top: 58px;
 }
 .site_side_nav {
-	clear:both;
+  clear:both;
 }
 .blog_footer {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 .hidden_link {
-	color:inherit;
+  color:inherit;
 }

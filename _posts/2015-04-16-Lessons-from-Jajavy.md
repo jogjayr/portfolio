@@ -18,7 +18,7 @@ I managed to convince a co-founder (who shall remain un-named till he reads and 
 
 ###What we did
 
-We made two products: Kanjus, the punchcard idea named after the Hindi word for cheap, and Corporate Web Identity Package, the ingenious brainchild of my co-founder. CWIP was a set of Selenium scripts that automated the signup process for a bunch of different social media sites. Why? Because when small business starts up, the owner farms out the social media stuff to their 15-year old niece or nephew. Who might do an incomplete job. Or lose passwords. No more, thanks to CWIP.
+We made two products: Kanjus, the punchcard idea named after the Hindi word for cheap, and Corporate Web Identity Package, the ingenious brainchild of my co-founder. CWIP was a set of Selenium scripts that automated the signup process for a bunch of different social media sites. Why? Because when a small business starts up, the owner farms out the social media stuff to their 15-year old niece or nephew. Who might do an incomplete job. Or lose passwords. No more, thanks to CWIP.
 
 ###Work Ends
 
